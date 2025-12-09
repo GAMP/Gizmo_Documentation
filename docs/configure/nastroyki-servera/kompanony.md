@@ -3,4 +3,4 @@ order: 2
 title: Компаньоны
 ---
 
-Компаньон (Gizmo Companion) - Это дополнитель
+Компаньон ([Gizmo Companion](./../../quick-start/overview/gizmo-companion)) - это дополнительная программа, которая позволяет использовать функции Gizmo в части организации связи 
