@@ -1,0 +1,4 @@
+build:
+  logo:
+    imageUrl: 'https://example.com/logo.png'
+    linkUrl: 'https://example.com'

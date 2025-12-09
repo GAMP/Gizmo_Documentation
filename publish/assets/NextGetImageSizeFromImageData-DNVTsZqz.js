@@ -1,0 +1,1 @@
+import n from"sharp";const f=async(i,e,o)=>{const s=n(i);let{width:t,height:a}=await s.metadata();if(t>e){const r=e/t;t=e,a=a*r}if(a>o){const r=o/a;a=o,t=t*r}return{width:t||0,height:a||0}};export{f as default};

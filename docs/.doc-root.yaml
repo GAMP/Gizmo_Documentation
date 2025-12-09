@@ -1,0 +1,20 @@
+title: Gizmo
+syntax: XML
+supportedLanguages:
+  - ru
+  - en
+properties: []
+relatedLinks:
+  - url: https://t.me/gramax_chat
+    title: Telegram-канал
+    icon: mail-question
+name: new-catalog
+repositoryName: new-catalog
+sourceName: github.com
+userInfo:
+  mail: lericol@yahoo.com
+  name: lericol
+  id: lericol@yahoo.com
+logo: logo.svg
+language: ru
+style: blue-green

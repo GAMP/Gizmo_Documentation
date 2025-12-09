@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="body_1"
+   width="230.784"
+   height="235.3555"
+   version="1.1"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     id="namedview30"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="1.8694737"
+     inkscape:cx="277.61824"
+     inkscape:cy="119.81982"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-x="640"
+     inkscape:window-y="1440"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="body_1">
+    <inkscape:grid
+       id="grid30"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <g
+     transform="scale(5)"
+     id="g30">
+    <path
+       d="M 46.1568,0 0,23.5356 46.1568,47.0711 V 14.9737 l -13.1876,7.084 v 4.7436 l -6.1054,-3.2657 19.293,-10.3637 z"
+       stroke="none"
+       fill="#526ed3"
+       fill-rule="nonzero"
+       id="path27" />
+    <g
+       id="g29">
+      <path
+         d="m 28.5993,22.6033 -14.8012,-5.7117 13.0655,6.644 z"
+         stroke="none"
+         fill="#101828"
+         fill-rule="nonzero"
+         fill-opacity="0.34902"
+         id="path28" />
+      <path
+         d="m 32.969,26.8013 v -1.9808 l 12.9435,8.5122 z"
+         stroke="none"
+         fill="#101828"
+         fill-rule="nonzero"
+         fill-opacity="0.34902"
+         id="path29" />
+    </g>
+  </g>
+</svg>

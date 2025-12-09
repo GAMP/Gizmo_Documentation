@@ -1,0 +1,1 @@
+import{r as h,U as f,u as l,j as m,b as p}from"./index-CSgQlNBm.js";const d=p,b=h.forwardRef((s,a)=>{const{href:r,children:e,dataQa:n,...o}=s,u=r?f.from(r):null,i=l(),t=u?.pathname,c=i.base.endsWith("/")&&t?.startsWith("/")?t.substring(1):t;return m.jsx(d,{...o,ref:a,"data-qa":n,href:c,children:e})});export{b as default};

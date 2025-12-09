@@ -1,0 +1,53 @@
+#custom-style {
+    --bg-main: rgba(243, 237, 255, 0.5);
+
+    --accent-60: rgba(60, 32, 101, 0.51);
+    --accent-80: rgba(76, 41, 130);
+    --accent-100: rgb(125, 72, 192);
+    --accent-120: rgb(164, 94, 255);
+}
+
+#custom-style[data-theme="light"] {
+    /* Цвет ссылок в приложении */
+    --color-link: #6E23C9;
+
+    /* Сайдбар слева (навигация) */
+    --color-nav-menu-bg: var(--bg-main);
+
+    /* Сайдбар справа */
+    --color-right-nav-bg: var(--bg-main);
+
+    /* В левой навигации, снизу, панель с гитом */
+    --version-control-primary: var(--accent-100);
+
+    /* Статья */
+    /* Так же эти переменные используются в компонентах статьи и модальных окнах */
+    --color-article-heading-text: black;
+    --color-article-text: black;
+
+    /* Стандартная */
+    --color-btn-default-bg: var(--accent-100);
+    --color-btn-default-text: #fff;
+    --border-btn-default: 1px solid transparent;
+    --opacity-btn-default-bg-hover: 1;
+    --color-btn-default-text-hover: #fff;
+    --color-btn-default-bg-hover: var(--accent-120);
+
+    /* Подчеркнутая снизу */
+    --color-btn-underline-text-hover: var(--accent-100);
+}
+
+#custom-style[data-theme="light"] {
+    /* Цвет фона главной страницы */
+    --color-home-bg: var(--bg-main);
+
+    /* Цвет границы карточки */
+    --color-home-card-border: rgba(125, 68, 214, 0.1);
+    --color-home-card-border-hover: rgba(125, 68, 214, 0.15);
+
+    /* Цвет заднего фона карточки */
+    --color-home-card-bg-hover: rgba(125, 68, 214, 0.05);
+
+    /* Тень карточки при наведении */
+    --box-shadow-home-card: 0px 0px 12px -5px #00000040;
+}

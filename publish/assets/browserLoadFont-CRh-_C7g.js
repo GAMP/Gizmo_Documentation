@@ -1,0 +1,1 @@
+import{k as s}from"./index-CSgQlNBm.js";const n=async o=>{try{const r=s().paths.base.value,e=r.endsWith("/")?r.slice(0,-1):r;return await(await fetch(`${e}/fonts/${o}`)).arrayBuffer()}catch(r){console.error(`Error loading font ${o}:`,r)}};export{n as browserLoadFont};

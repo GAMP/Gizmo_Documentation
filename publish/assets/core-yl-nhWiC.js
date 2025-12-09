@@ -1,0 +1,1 @@
+function o(r,e=!1){return window.__TAURI_INTERNALS__.transformCallback(r,e)}async function s(r,e={},n){return window.__TAURI_INTERNALS__.invoke(r,e,n)}function t(r,e="asset"){return window.__TAURI_INTERNALS__.convertFileSrc(r,e)}export{t as c,s as i,o as t};
