@@ -1,5 +1,5 @@
 ---
-order: 3.99
+order: 7
 external: Магазин
 ---
 
