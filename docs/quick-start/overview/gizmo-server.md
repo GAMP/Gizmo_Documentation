@@ -23,7 +23,7 @@ Gizmo Server может быть предоставлен в двух верси
 
 -  Gizmo Server для ОС Windows
 
--  Gizmo Server для ОС Debian (Linux)
+-  Gizmo Server для ОС Linux
 
 -  Gizmo Server для Docker
 
@@ -37,25 +37,25 @@ Gizmo Server может быть предоставлен в двух верси
 
 -  Microsoft SQL Server (версии 2017 и выше)
 
-<note type="info">
+:::info 
 
 Для Локальной версии База данных может быть установлена и располагаться как вместе с Gizmo Server (на одном сервере), так и отдельно от него (в том числе и во внешней сети).
 
-</note>
+:::
 
-<note type="info">
+:::info 
 
 Для Облачной версии используется База данных Postgres.
 
-</note>
+:::
 
 
 
 ### Минимальные системные требования сервера для локальной версии
 
-<tabs>
+[tabs]
 
-<tab name="Gizmo Server">
+[tab:Gizmo Server]
 
 **Windows**
 
@@ -67,7 +67,7 @@ Gizmo Server может быть предоставлен в двух верси
 
 
 
-**Debian**
+**Linux**
 
 Процессор: Intel Core i3 8th gen
 
@@ -85,9 +85,9 @@ Gizmo Server может быть предоставлен в двух верси
 
 Диск: 1 Гб SSD
 
-</tab>
+[/tab]
 
-<tab name="База данных">
+[tab:База данных]
 
 **Windows**
 
@@ -117,9 +117,9 @@ Gizmo Server может быть предоставлен в двух верси
 
 Диск: 30 Гб SSD NVMe
 
-</tab>
+[/tab]
 
-<tab name="Gizmo Server + База данных">
+[tab:Gizmo Server + База данных]
 
 **Windows**
 
@@ -149,6 +149,6 @@ Gizmo Server может быть предоставлен в двух верси
 
 Диск: 40 Гб SSD NVMe
 
-</tab>
+[/tab]
 
-</tabs>
+[/tabs]
