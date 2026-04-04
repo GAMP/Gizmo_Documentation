@@ -9,12 +9,12 @@ title: Настройки организации
 
 Содержание раздела:
 
--  [Общие сведения](./obschie-svedeniya)
+-  [Общие сведения](./obschie-svedeniya.md)
 
--  [Подписка](./podpiska)
+-  [Подписка](./podpiska.md)
 
--  [Налоги и валюта](./nalogi-i-valyuta)
+-  [Налоги и валюта](./nalogi-i-valyuta.md)
 
--  [Филиалы](./filialy/_index)
+-  [Филиалы](./filialy/_index.md)
 
--  [Пользовательское соглашение](./polzovatelskoe-soglashenie/_index)
+-  [Пользовательское соглашение](./polzovatelskoe-soglashenie/_index.md)

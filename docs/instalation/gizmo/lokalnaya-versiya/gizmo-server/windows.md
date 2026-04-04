@@ -3,11 +3,9 @@ order: 0.8
 title: Windows
 ---
 
-<note>
-
-Перед установкой Gizmo Server проверьте ваш серверный пк на соответствие [системным требованиям](./../../../../quick-start/overview/gizmo-server).
-
-</note>
+> [!WARNING]
+> 
+> Перед установкой Gizmo Server проверьте ваш серверный пк на соответствие [системным требованиям](./../../../../quick-start/overview/gizmo-server.md).
 
 ## Загрузка установщика
 

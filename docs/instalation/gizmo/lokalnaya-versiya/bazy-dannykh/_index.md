@@ -7,12 +7,10 @@ title: Базы данных
 
 **Gizmo Server** поддерживает следующие Базы данных:
 
--  [Postgres](./postgresql/_index)
+-  [Postgres](./postgresql/_index.md)
 
--  [Microsoft SQL](./microsoft-sql/_index)
+-  [Microsoft SQL](./microsoft-sql/_index.md)
 
-<note type="info">
-
-Для локальной установки в операционных системах система семейства Windows рекомендуется использовать Microsoft SQL Server Express
-
-</note>
+> [!NOTE]
+> 
+> Для локальной установки в операционных системах система семейства Windows рекомендуется использовать Microsoft SQL Server Express

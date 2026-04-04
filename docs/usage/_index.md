@@ -4,5 +4,3 @@ title: Использование
 ---
 
 <view defs="hierarchy=none" display="List"/>
-
-

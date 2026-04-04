@@ -4,5 +4,3 @@ title: Установка
 ---
 
 <view defs="hierarchy=none" display="List"/>
-
-

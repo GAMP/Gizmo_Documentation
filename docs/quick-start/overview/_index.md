@@ -7,7 +7,7 @@ title: Обзор компонентов
 
 Gizmo - комплексный продукт, который включает в себя следующие компоненты:
 
--  [Gizmo Server](./gizmo-server)
+-  [Gizmo Server](./gizmo-server.md)
 
 -  Gizmo Manager
 
