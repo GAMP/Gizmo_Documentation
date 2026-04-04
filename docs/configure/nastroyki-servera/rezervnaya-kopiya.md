@@ -51,7 +51,9 @@ title: Резервная копия
 <tr>
 <td>
 
-Вариант установки Gizmo Server
+Вариант установки 
+
+Gizmo Server
 
 </td>
 <td colspan="2">
