@@ -1,6 +1,6 @@
 ---
 order: 0.5
-title: О Gizmo
+title: Gizmo
 ---
 
 **Gizmo** - это комплексное решение для организации работы бизнеса в сфере entertaiment.

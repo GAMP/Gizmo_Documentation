@@ -1,6 +1,6 @@
 ---
 order: 2
-title: About Gizmo
+title: About
 ---
 
 <view defs="hierarchy=none" display="List"/>
