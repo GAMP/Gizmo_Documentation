@@ -32,6 +32,9 @@ jobs:
       - name: Build static site
         run: gramax-cli build --source ./docs --destination ./build --base-url https://docs.gizmopowered.net
 
+      - name: Copy favicon
+        run: cp ./docs/assets/favicon.ico ./build/favicon.ico
+        
       - name: Copy CNAME
         run: echo "docs.gizmopowered.net" > ./build/CNAME
 
