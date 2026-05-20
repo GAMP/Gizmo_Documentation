@@ -1,6 +1,5 @@
 ---
-order: 2
-properties: []
-external: Карта устройств
+order: 0.26
+external: Карта
 ---
 
