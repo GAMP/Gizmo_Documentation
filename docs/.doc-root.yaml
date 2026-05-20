@@ -1,11 +1,11 @@
 title: Gizmo
 syntax: GitHub Flavored Markdown
 supportedLanguages:
-  - ru
   - en
+  - ru
 properties: []
 relatedLinks:
-  - url: https://t.me/gramax_chat
+  - url: https://Telegram.org
     title: Telegram-канал
     icon: mail-question
 name: new-catalog
@@ -16,5 +16,5 @@ userInfo:
   name: lericol
   id: lericol@yahoo.com
 logo: logo.svg
-language: ru
+language: en
 style: blue-green
