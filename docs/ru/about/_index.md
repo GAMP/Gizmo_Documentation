@@ -1,6 +1,6 @@
 ---
 order: 2
-title: About Gizmo
+title: О Gizmo
 ---
 
 <view defs="hierarchy=none" display="List"/>

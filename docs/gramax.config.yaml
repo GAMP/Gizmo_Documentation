@@ -1,4 +1,6 @@
 build:
   logo:
-    imageUrl: 'https://example.com/logo.png'
-    linkUrl: 'https://example.com'
+    imageUrl: 'https://docs.gizmopowered.net/docs/logo.svg'
+    linkUrl: 'https://docs.gizmopowered.net'
+
+  forceUiLangSync: true  
