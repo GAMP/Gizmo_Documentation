@@ -5,8 +5,8 @@ title: Windows
 
 > [!WARNING]
 > 
-> Перед установкой Gizmo Server проверьте ваш серверный пк на соответствие [системным требованиям](./../../../../about/overview/gizmo-server.md).
+> Before installing Gizmo Server, verify that your server PC meets the system requirements.
 
-## Загрузка установщика
+## **Downloading the installer**
 
-Последнюю версию установщика можно скачать по [ссылке](https://www.gizmopowered.net/downloads/releases/stable/GizmoServiceSetup.exe).
+The latest version of the installer can be downloaded via the link.

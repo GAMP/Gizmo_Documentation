@@ -1,5 +1,5 @@
 ---
 order: 2
-title: GIzmo Companion
+title: Gizmo Companion
 ---
 

@@ -31,23 +31,23 @@ Self-hosted version has three variants of installation:
 
 ### Databases
 
-Для Локальной версии (Self-hosted решение) могут быть использованы следующие версии баз данных:
+For Self-hosted solution there are two variants of databases:
 
--  Postgres (версии 15 и выше)
+-  Postgres (version 15 and above)
 
--  Microsoft SQL Server (версии 2017 и выше)
-
-> [!NOTE]
-> 
-> Для Локальной версии База данных может быть установлена и располагаться как вместе с Gizmo Server (на одном сервере), так и отдельно от него (в том числе и во внешней сети).
+-  Microsoft SQL Server (version 2017 and above)
 
 > [!NOTE]
 > 
-> Для Облачной версии используется База данных Postgres.
+> For the Self-hosted version, the database can be installed and hosted either together with Gizmo Server (on the same server) or separately from it (including on an external network).
+
+> [!NOTE]
+> 
+> For the Cloud version, a PostgreSQL database is used.
 
 
 
-### Минимальные системные требования сервера для локальной версии
+### Minimum server system requirements for the local version
 
 <tabs>
 
@@ -55,95 +55,95 @@ Self-hosted version has three variants of installation:
 
 **Windows**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 1 Гб SSD
+Storage: 1 Gb SSD
 
 
 
 **Linux**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 4 Гб DDR4
+RAM: 4 Gb DDR4
 
-Диск: 1 Гб SSD
+Storage: 1 Gb SSD
 
 
 
-**Docker** (установленный на Linux)
+**Docker** (Linux version)
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 2 Гб DDR4
+RAM: 2 Gb DDR4
 
-Диск: 1 Гб SSD
+Storage: 1 Gb SSD
 
 </tab>
 
-<tab name="База данных">
+<tab name="Database">
 
 **Windows**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 30 Гб SSD NVMe
+Storage: 30 Gb SSD NVMe
 
 
 
 **Debian**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 30 Гб SSD NVMe
+Storage: 30 Gb SSD NVMe
 
 
 
-**Docker** (установленный на Linux)
+**Docker** (Linux version)
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 4 Гб DDR4
+RAM: 4 Gb DDR4
 
-Диск: 30 Гб SSD NVMe
+Storage: 30 Gb SSD NVMe
 
 </tab>
 
-<tab name="Gizmo Server + База данных">
+<tab name="Gizmo Server & Database">
 
 **Windows**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 16 Гб DDR4
+RAM: 16 Gb DDR4
 
-Диск: 40 Гб SSD NVMe
+Storage: 40 Gb SSD NVMe
 
 
 
 **Debian**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 40 Гб SSD NVMe
+Storage: 40 Gb SSD NVMe
 
 
 
-**Docker** (установленный на Linux)
+**Docker** (Linux version)
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 4-8 Гб DDR4 (при загрузке в 50+ подключенных клиентов рекомендуется 8 Гб)
+RAM: 4-8 Gb DDR4 (8 Gb is recommended for 50+ connected clients)
 
-Диск: 40 Гб SSD NVMe
+Storage: 40 Гб SSD NVMe
 
 </tab>
 
