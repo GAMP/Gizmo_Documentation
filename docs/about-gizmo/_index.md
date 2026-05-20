@@ -1,6 +1,6 @@
 ---
 order: 2
-title: Quick start
+title: About Gizmo
 ---
 
 <view defs="hierarchy=none" display="List"/>
