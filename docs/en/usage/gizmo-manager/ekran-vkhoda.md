@@ -1,6 +1,5 @@
 ---
-order: 4
-properties: []
+order: 0.1
 external: Экран входа
 ---
 
