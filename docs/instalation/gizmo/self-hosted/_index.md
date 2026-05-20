@@ -1,6 +1,6 @@
 ---
 order: 2.3
-title: Локальная версия
+title: Self-hosted version
 ---
 
 <view defs="hierarchy=none" display="List"/>
