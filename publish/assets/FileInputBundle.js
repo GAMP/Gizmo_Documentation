@@ -1,1 +1,0 @@
-import{j as o}from"./index-CSgQlNBm.js";import{F as t,l as r}from"./index-C59M9fmE.js";import{e as n,m as s}from"./editor.main-eBhjzstA.js";self.MonacoEnvironment={getWorker(){return null}};n.defineTheme("new-vs-dark",{base:"vs-dark",inherit:!0,rules:[],colors:{"editor.background":"#020617"}});r.config({monaco:s});r.init();const l=e=>o.jsx(t,{...e});export{l as default};

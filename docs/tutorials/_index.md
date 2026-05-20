@@ -1,5 +1,6 @@
 ---
 order: 6
-title: Пошаговые инструкции
+title: Instuctions
 ---
 
+<view defs="hierarchy=none" display="List"/>

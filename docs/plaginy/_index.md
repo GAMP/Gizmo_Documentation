@@ -1,5 +1,6 @@
 ---
 order: 6.8
-title: Плагины
+title: Plugins
 ---
 
+<view defs="hierarchy=none" display="List"/>

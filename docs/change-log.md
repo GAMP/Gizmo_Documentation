@@ -1,6 +1,6 @@
 ---
 order: 8
-title: История изменений
+title: Change log
 ---
 
 Версия 3.0.17

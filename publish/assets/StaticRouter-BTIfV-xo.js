@@ -1,1 +1,0 @@
-import{g as s,p as o}from"./index-CSgQlNBm.js";import e from"./BrowserRouter-D0Noimiw.js";import"./Router-CZMiZmVB.js";class n{static additionalRules=[t=>{const a=s.config.paths.base.value;return o.join(a,t)}];static use(t){return e.use([...t,...this.additionalRules])}}export{n as default};

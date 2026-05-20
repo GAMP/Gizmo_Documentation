@@ -1,6 +1,6 @@
 ---
 order: 2
-title: Приступая к работе
+title: Quick start
 ---
 
 <view defs="hierarchy=none" display="List"/>

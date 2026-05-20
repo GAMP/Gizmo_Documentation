@@ -1,6 +1,6 @@
 ---
 order: 6.5
-title: Статьи
+title: Articles
 ---
 
 <view defs="hierarchy=none" display="List"/>

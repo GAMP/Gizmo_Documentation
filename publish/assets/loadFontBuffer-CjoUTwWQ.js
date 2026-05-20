@@ -1,1 +1,0 @@
-import{o as n,p as a,q as c}from"./index-CSgQlNBm.js";const u=()=>l(n.cwd(),"public/fonts"),l=(t,o)=>s=>{const f=a.join(t,o,s),e=c.readFileSync(f),r=e.buffer.slice(e.byteOffset,e.byteOffset+e.byteLength);return Promise.resolve(r)};export{l as loadFontBuffer,u as nextLoadFont};

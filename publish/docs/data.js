@@ -1,1 +1,0 @@
-window.__DIRECTORY__ = {"type":"dir","name":"docs","children":[{"type":"dir","name":"docs","children":[{"type":"file","name":".doc-root.yaml"},{"type":"file","name":"new-article.md"},{"type":"dir","name":"start-page","children":[{"type":"file","name":"_index.md"},{"type":"file","name":"test-2.md"}]}]},{"type":"dir","name":".storage","children":[{"type":"file","name":"docs"}]}]}

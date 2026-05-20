@@ -1,1 +1,0 @@
-import{f as i}from"./index-CSgQlNBm.js";import{o as s,h as p}from"./commands-faLjieX-.js";const m=async(e,t,o,a)=>{await s("done",n=>{const r=n.payload?.replace?.("&from=http://localhost:52054","")?.replace("enterpriseToken=","");i(r,t,o,a)}),await p({url:e,action:{type:"tryClose"},callbackName:"done"})};export{m as default};
