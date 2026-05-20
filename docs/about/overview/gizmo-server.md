@@ -3,33 +3,33 @@ order: 1
 title: Gizmo Server
 ---
 
-**Gizmo Server** - основной компонент системы **Gizmo**.
+**Gizmo Server** is the main component of **Gizmo**.
 
-## Архитектура Gizmo
+## Gizmo Architecture
 
 ![](./gizmo-server.png "Gizmo arch"){width=7048px height=3208px}
 
 ### Gizmo Server
 
-Gizmo Server может быть предоставлен в двух версиях:
+Gizmo Server have two versions:
 
--  Облачная версия (SaaS-решение)
+-  Cloud version (SaaS)
 
--  Локальная версия (Self-hosted решение)
-
-
-
-Локальная версия (Self-hosted решение) может быть предоставлена в следующих вариантах:
-
--  Gizmo Server для ОС Windows
-
--  Gizmo Server для ОС Linux
-
--  Gizmo Server для Docker
+-  Self-hosted version
 
 
 
-### База данных
+Self-hosted version has three variants of installation:
+
+-  Gizmo Server for Windows
+
+-  Gizmo Server for Linux
+
+-  Gizmo Server for Docker
+
+
+
+### Databases
 
 Для Локальной версии (Self-hosted решение) могут быть использованы следующие версии баз данных:
 
