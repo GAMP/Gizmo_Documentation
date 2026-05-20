@@ -1,6 +1,5 @@
 ---
 order: 1
-properties: []
-external: Карточка продукта
+title: Карточка продукта
 ---
 

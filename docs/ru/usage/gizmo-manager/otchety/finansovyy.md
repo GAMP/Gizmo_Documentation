@@ -1,6 +1,5 @@
 ---
 order: 1
-properties: []
-external: Финансовый отчет
+title: Финансовый отчет
 ---
 

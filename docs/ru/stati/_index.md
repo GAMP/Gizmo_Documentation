@@ -1,6 +1,6 @@
 ---
 order: 6.5
-properties: []
-external: Статьи
+title: Статьи
 ---
 
+<view defs="hierarchy=none" display="List"/>

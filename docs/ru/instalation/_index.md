@@ -1,6 +1,6 @@
 ---
 order: 3
-properties: []
-external: Установка
+title: Установка
 ---
 
+<view defs="hierarchy=none" display="List"/>

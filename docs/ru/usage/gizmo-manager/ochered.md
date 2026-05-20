@@ -1,6 +1,5 @@
 ---
 order: 3.86
-properties: []
-external: Очередь ожидания
+title: Очередь ожидания
 ---
 

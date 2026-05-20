@@ -1,6 +1,5 @@
 ---
 order: 4.5
-properties: []
-external: Облачная версия
+title: Облачная версия
 ---
 

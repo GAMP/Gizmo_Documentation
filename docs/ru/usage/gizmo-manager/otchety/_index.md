@@ -1,6 +1,6 @@
 ---
 order: 3.9
-properties: []
-external: Отчеты
+title: Отчеты
 ---
 
+<view defs="hierarchy=none" display="List"/>

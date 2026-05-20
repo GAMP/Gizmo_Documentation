@@ -1,6 +1,5 @@
 ---
 order: 2
-properties: []
-external: Экран авторизации
+title: Экран авторизации
 ---
 

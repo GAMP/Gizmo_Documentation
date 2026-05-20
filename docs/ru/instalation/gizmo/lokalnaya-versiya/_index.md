@@ -1,6 +1,6 @@
 ---
 order: 2.3
-properties: []
-external: Локальная версия
+title: Локальная версия
 ---
 
+<view defs="hierarchy=none" display="List"/>

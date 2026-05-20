@@ -1,6 +1,6 @@
 ---
 order: 3.99
-properties: []
-external: Магазин
+title: Магазин
 ---
 
+<view defs="hierarchy=none" display="List"/>

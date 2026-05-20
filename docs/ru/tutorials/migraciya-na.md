@@ -1,6 +1,5 @@
 ---
 order: 4
-properties: []
-external: Миграция на v3
+title: Миграция на v3
 ---
 

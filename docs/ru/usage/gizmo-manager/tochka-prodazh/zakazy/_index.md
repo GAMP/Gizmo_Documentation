@@ -1,6 +1,6 @@
 ---
 order: 2
-properties: []
-external: Заказы
+title: Заказы
 ---
 
+<view defs="hierarchy=none" display="List"/>

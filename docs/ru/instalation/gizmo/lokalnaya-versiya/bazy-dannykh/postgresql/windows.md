@@ -1,6 +1,5 @@
 ---
 order: 1
-properties: []
-external: Windows
+title: Windows
 ---
 

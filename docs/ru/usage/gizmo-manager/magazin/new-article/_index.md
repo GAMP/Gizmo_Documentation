@@ -1,6 +1,6 @@
 ---
 order: 1
-properties: []
-external: Продукты
+title: Продукты
 ---
 
+<view defs="hierarchy=none" display="List"/>

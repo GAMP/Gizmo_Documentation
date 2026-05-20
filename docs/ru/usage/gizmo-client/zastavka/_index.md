@@ -1,6 +1,5 @@
 ---
 order: 1
-properties: []
-external: Заставка
+title: Заставка
 ---
 

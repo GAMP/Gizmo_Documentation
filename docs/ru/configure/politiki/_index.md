@@ -1,6 +1,5 @@
 ---
 order: 6
-properties: []
-external: Политики
+title: Политики
 ---
 

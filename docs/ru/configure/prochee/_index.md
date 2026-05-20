@@ -1,6 +1,5 @@
 ---
 order: 7
-properties: []
-external: Прочее
+title: Прочее
 ---
 

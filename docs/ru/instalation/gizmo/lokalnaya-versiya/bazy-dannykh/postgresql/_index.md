@@ -1,6 +1,6 @@
 ---
 order: 1
-properties: []
-external: Postgres
+title: Postgres
 ---
 
+<view defs="hierarchy=none" display="List"/>

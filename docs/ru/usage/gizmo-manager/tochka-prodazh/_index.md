@@ -1,6 +1,6 @@
 ---
 order: 0.5
-properties: []
-external: Точка продаж
+title: Точка продаж
 ---
 
+<view defs="hierarchy=none" display="List"/>

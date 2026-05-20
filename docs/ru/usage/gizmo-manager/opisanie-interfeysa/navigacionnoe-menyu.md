@@ -1,6 +1,5 @@
 ---
 order: 4
-properties: []
-external: Навигационное меню
+title: Навигационное меню
 ---
 

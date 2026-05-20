@@ -1,6 +1,6 @@
 ---
 order: 2
-properties: []
-external: Приступая к работе
+title: Приступая к работе
 ---
 
+<view defs="hierarchy=none" display="List"/>
