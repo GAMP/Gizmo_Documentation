@@ -47,7 +47,7 @@ For Self-hosted solution there are two variants of databases:
 
 
 
-### Minimum server system requirements for the local version
+### Minimum server system requirements for the Self-hosted version
 
 <tabs>
 
