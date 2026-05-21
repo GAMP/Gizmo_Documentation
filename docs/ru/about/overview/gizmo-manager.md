@@ -1,5 +1,5 @@
 ---
 order: 3
-external: Gizmo Manager
+title: Gizmo Manager
 ---
 
