@@ -5,7 +5,7 @@ title: Обзор компонентов
 
 ## Компоненты системы
 
-**Gizmo** \- комплексный продукт, который включает в себя следующие компоненты:
+**Gizmo** - комплексный продукт, который включает в себя следующие компоненты:
 
 -  [Gizmo Server](./gizmo-server.md)
 
@@ -13,7 +13,7 @@ title: Обзор компонентов
 
 -  Gizmo Client
 
--  Gizmo Companion
+-  [Gizmo Companion](./gizmo-companion.md)
 
 -  Gizmo Manager Mobile (coming soon)
 
