@@ -5,9 +5,9 @@ title: Gizmo
 
 Добро пожаловать на сайт документации по продукту **Gizmo**!
 
-<view defs="hierarchy=none" display="List"/>
-
 Впервые на сайте? Начни с раздела [Быстрый старт](./../tutorials/bystryy-start.md)!
+
+<view defs="hierarchy=none" display="List"/>
 
 ## Оглавление
 
