@@ -3,7 +3,7 @@ order: 2
 title: Gizmo Companion
 ---
 
-Gizmo Companion - вспомогательная программа для Gizmo Server.
+**Gizmo Companion** - вспомогательная программа для **Gizmo Server**.
 
 ## Назначение
 
