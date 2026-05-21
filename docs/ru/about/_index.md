@@ -3,7 +3,7 @@ order: 2
 title: Gizmo
 ---
 
-Добро пожаловать на сайт документации по продукту Gizmo!
+Добро пожаловать на сайт документации по продукту **Gizmo**!
 
 <view defs="hierarchy=none" display="List"/>
 
