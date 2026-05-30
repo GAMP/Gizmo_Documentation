@@ -25,4 +25,4 @@ title: Gizmo
 
 -  [Для разработчиков](./../for-developers/_index.md)
 
--  [История изменений](./../change-log.md)
+-  [История изменений](./../change-log/_index.md)
