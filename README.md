@@ -35,12 +35,40 @@ Section 6 (step-by-step process) and section 2 (setup) are what you actually nee
 
 **Important:** the site is rebuilt **only** on push/merge to `main`. As long as changes live in `dev` or another branch, they won't appear on the site. Publishing takes a few minutes after the merge (you can check the **Actions** tab of the repository).
 
-## 2. Setup and connecting the project
+## 2. Quick start: Setup, connecting and usage
 
-1. Download the **Gramax** app: https://gram.ax
-2. In Gramax: **Connect catalog** → enter the repository URL `https://github.com/GAMP/Gizmo_Documentation`, authenticate via GitHub.
-3. Switch to a working branch (**dev**, or create your own feature branch off of dev (left corner) — **never edit `main` directly**.
-4. The documentation root is the `docs/` folder — all pages live inside it.
+1. Download and install the **Gramax** app: https://gram.ax
+2. Open the Gramax app and select **"Load existing"**
+<img width="493" height="582" alt="image" src="https://github.com/user-attachments/assets/6450d3c1-ec95-467e-b844-e3a525b9988e" />
+
+3. Select the type of storage - **Github**
+4. Push the button **"Log in to GitHub"**
+5. Authorise to ypur Github account in a browser   **Connect catalog** → enter the repository URL `https://github.com/GAMP/Gizmo_Documentation`, authenticate via GitHub.
+6. Switch to the Grammax app and push the **"Add"** button
+<img width="618" height="448" alt="image" src="https://github.com/user-attachments/assets/58a61157-8e41-4ea6-b3f4-ecf8065c4e5a" />
+
+7. Select the **"GAMP"** account
+8. Select the **"GAMP/Gizmo_Documentation"** repository
+9. Push the **"Load"** button
+<img width="616" height="408" alt="image" src="https://github.com/user-attachments/assets/9b37ab45-a83c-47ea-9cf1-c743f9f42ff2" />
+
+10. Now you can open the Gizmo docs. Just click on it
+<img width="483" height="273" alt="image" src="https://github.com/user-attachments/assets/40f0a2e9-ceff-480a-a6d9-37890c700a7c" />
+
+11. Select the working branch (**dev**, or create your own feature branch off of dev (left corner) — **never edit `main` directly**.
+<img width="988" height="656" alt="image" src="https://github.com/user-attachments/assets/c59dc11b-d85d-4cb6-a3f2-a9294641c7cd" />
+<img width="991" height="657" alt="image" src="https://github.com/user-attachments/assets/005a42fc-625e-43fb-ad28-adb6b0bc1924" />
+
+
+12. Now, you can write some docs.
+13. To save your progress - Just push the **"Publish"** button to push the changes
+<img width="987" height="661" alt="image" src="https://github.com/user-attachments/assets/2fcb90e9-8eb6-41d8-ba98-698e14ea893f" />
+
+14. To load other people progress - Just push the **"Publish"** button to push the changes
+<img width="984" height="663" alt="image" src="https://github.com/user-attachments/assets/dc779e35-b2e1-44f3-8329-9a339c4fb2aa" />
+
+15. The documentation root is the `docs/` folder — all pages live inside it.
+
 
 ## 3. Repository structure
 
@@ -58,7 +86,7 @@ docs/
 │   ├── usage/
 │   ├── articles/
 │   └── ...
-└── (docs/ root)  # English/default version — currently mostly empty
+└── (docs/ is root)  # English/default version — currently mostly empty
 ```
 
 Each section is a folder containing an `_index.md` file (describes the section itself) plus nested `.md` files (articles) or subfolders (subsections).
