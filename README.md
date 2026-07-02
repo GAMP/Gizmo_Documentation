@@ -38,33 +38,32 @@ Section 6 (step-by-step process) and section 2 (setup) are what you actually nee
 ## 2. Quick start: Setup, connecting and usage
 
 1. Download and install the **Gramax** app: https://gram.ax
-2. Open the Gramax app and select **"Load existing"**
+2. Open the Gramax app and select **"Load existing"**.
 <img width="493" height="582" alt="image" src="https://github.com/user-attachments/assets/6450d3c1-ec95-467e-b844-e3a525b9988e" />
 
-3. Select the type of storage - **Github**
-4. Push the button **"Log in to GitHub"**
-5. Authorise to ypur Github account in a browser   **Connect catalog** → enter the repository URL `https://github.com/GAMP/Gizmo_Documentation`, authenticate via GitHub.
-6. Switch to the Grammax app and push the **"Add"** button
+3. Select the storage type — **GitHub**.
+4. Click the **"Log in to GitHub"** button.
+5. A browser window will open — log in to your GitHub account there.
+6. Switch back to the Gramax app and click the **"Add"** button.
 <img width="618" height="448" alt="image" src="https://github.com/user-attachments/assets/58a61157-8e41-4ea6-b3f4-ecf8065c4e5a" />
 
-7. Select the **"GAMP"** account
-8. Select the **"GAMP/Gizmo_Documentation"** repository
-9. Push the **"Load"** button
+7. Select the **"GAMP"** account.
+8. Select the **"GAMP/Gizmo_Documentation"** repository.
+9. Click the **"Load"** button.
 <img width="616" height="408" alt="image" src="https://github.com/user-attachments/assets/9b37ab45-a83c-47ea-9cf1-c743f9f42ff2" />
 
-10. Now you can open the Gizmo docs. Just click on it
+10. You can now open the Gizmo docs — just click on it.
 <img width="483" height="273" alt="image" src="https://github.com/user-attachments/assets/40f0a2e9-ceff-480a-a6d9-37890c700a7c" />
 
-11. Select the working branch (**dev**, or create your own feature branch off of dev (left corner) — **never edit `main` directly**.
+11. Select the working branch — **dev**, or create your own feature branch off `dev` (top-left corner) — **never edit `main` directly**.
 <img width="988" height="656" alt="image" src="https://github.com/user-attachments/assets/c59dc11b-d85d-4cb6-a3f2-a9294641c7cd" />
 <img width="991" height="657" alt="image" src="https://github.com/user-attachments/assets/005a42fc-625e-43fb-ad28-adb6b0bc1924" />
 
-
-12. Now, you can write some docs.
-13. To save your progress - Just push the **"Publish"** button to push the changes
+12. Now you can start writing documentation.
+13. To save your progress, click the **"Publish"** button to push your changes.
 <img width="987" height="661" alt="image" src="https://github.com/user-attachments/assets/2fcb90e9-8eb6-41d8-ba98-698e14ea893f" />
 
-14. To load other people progress - Just push the **"Publish"** button to push the changes
+14. To load other people's progress, click the **"[?]"** button to pull their changes.
 <img width="984" height="663" alt="image" src="https://github.com/user-attachments/assets/dc779e35-b2e1-44f3-8329-9a339c4fb2aa" />
 
 15. The documentation root is the `docs/` folder — all pages live inside it.
