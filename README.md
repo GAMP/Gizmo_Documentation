@@ -58,7 +58,7 @@ docs/
 │   ├── usage/
 │   ├── articles/
 │   └── ...
-└── (docs/ root without /ru/)  # English/default version — currently mostly empty
+└── (docs/ root)  # English/default version — currently mostly empty
 ```
 
 Each section is a folder containing an `_index.md` file (describes the section itself) plus nested `.md` files (articles) or subfolders (subsections).
