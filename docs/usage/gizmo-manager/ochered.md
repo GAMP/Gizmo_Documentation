@@ -1,5 +1,5 @@
 ---
 order: 3.86
-title: Очередь ожидания
+title: Queues
 ---
 

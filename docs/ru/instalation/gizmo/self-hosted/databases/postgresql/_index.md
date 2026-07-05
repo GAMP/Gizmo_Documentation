@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Postgres
+external: Postgres
 ---
 
 > [!WARNING]
@@ -8,5 +8,3 @@ title: Postgres
 > Рекомендуется использовать 15 версию Postgres или новее
 
 Установка Postgres:
-
-<view defs="hierarchy=none" display="List"/>

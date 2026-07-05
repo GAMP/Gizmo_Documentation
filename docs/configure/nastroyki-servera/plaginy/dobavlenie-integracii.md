@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Добавление интеграции
+title: Adding a new plugin
 ---
 

@@ -1,5 +1,5 @@
 ---
 order: 7
-title: Прочее
+title: Others
 ---
 

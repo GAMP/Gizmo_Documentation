@@ -24,5 +24,3 @@ title: Обзор компонентов
 -  Gizmo Kiosk (coming soon)
 
 Основным компонентом системы является Gizmo Server
-
-## 

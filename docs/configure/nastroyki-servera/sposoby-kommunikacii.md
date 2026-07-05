@@ -1,5 +1,5 @@
 ---
 order: 7
-title: Способы коммуникации
+title: Communication methods
 ---
 

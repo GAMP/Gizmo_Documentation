@@ -1,5 +1,5 @@
 ---
 order: 1.2
-title: Gizmo Companion
+external: Gizmo Companion
 ---
 

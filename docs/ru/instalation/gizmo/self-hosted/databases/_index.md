@@ -7,9 +7,9 @@ title: Базы данных
 
 **Gizmo Server** поддерживает следующие Базы данных:
 
--  [Postgres](./postgresql/_index.md)
+-  Postgres
 
--  [Microsoft SQL](./microsoft-sql/_index.md)
+-  Microsoft SQL
 
 > [!NOTE]
 > 

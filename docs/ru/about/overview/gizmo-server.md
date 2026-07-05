@@ -1,13 +1,15 @@
 ---
 order: 1
-title: Gizmo Server
+external: Gizmo Server
 ---
 
 **Gizmo Server** - основной компонент системы **Gizmo**.
 
 ## Архитектура Gizmo
 
-![](./gizmo-server.png "Gizmo arch"){width=7048px height=3208px}
+![](./gizmo-server-2.png){width=7048px height=3208px}
+
+Gizmo arch
 
 ### Gizmo Server
 

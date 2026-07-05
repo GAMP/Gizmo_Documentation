@@ -1,5 +1,5 @@
 ---
 order: 2
-title: Debian
+external: Debian
 ---
 

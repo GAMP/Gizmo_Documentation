@@ -1,6 +1,5 @@
 ---
 order: 0.5
-title: Точка продаж
+title: POS
 ---
 
-<view defs="hierarchy=none" display="List"/>
