@@ -1,12 +1,8 @@
 ---
 order: 0.8
-properties: []
-external: Databases
+title: Базы данных
 ---
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< ours
 Для работы Локальной версии Gizmo Server необходимо произвести установку Базы данных.
 
 **Gizmo Server** поддерживает следующие Базы данных:
@@ -18,6 +14,3 @@ external: Databases
 > [!NOTE]
 > 
 > Для локальной установки в операционных системах система семейства Windows рекомендуется использовать Microsoft SQL Server Express
-=======
->>>>>>> theirs
->>>>>>> Stashed changes

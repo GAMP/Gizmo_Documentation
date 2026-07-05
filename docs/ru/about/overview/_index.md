@@ -3,9 +3,6 @@ order: 1
 external: Components
 ---
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< ours
 ## Компоненты системы
 
 **Gizmo** - комплексный продукт, который включает в себя следующие компоненты:
@@ -27,6 +24,3 @@ external: Components
 -  Gizmo Kiosk (coming soon)
 
 Основным компонентом системы является Gizmo Server
-=======
->>>>>>> theirs
->>>>>>> Stashed changes

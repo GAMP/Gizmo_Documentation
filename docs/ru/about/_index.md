@@ -1,17 +1,10 @@
 ---
 order: 2
-properties: []
-external: About
+title: Gizmo
 ---
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< ours
 Добро пожаловать на сайт документации по продукту **Gizmo**!
 
 Впервые на сайте? Начни с раздела Быстрый старт!
 
 ## Оглавление
-=======
->>>>>>> theirs
->>>>>>> Stashed changes
