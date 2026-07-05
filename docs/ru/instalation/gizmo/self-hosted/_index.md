@@ -1,8 +1,15 @@
 ---
 order: 2.3
-title: Локальная версия
+properties: []
+external: Self-hosted version
 ---
 
+<<<<<<< ours
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< ours
+>>>>>>> theirs
 <view defs="hierarchy=none" display="List"/>
 
 Локальная весия (Self-hosted) - это версия, которая устанавливается на ваш личный или ваш облачный сервер.
@@ -12,3 +19,6 @@ title: Локальная версия
 -  Установка Базы данных
 
 -  Установка Gizmo Server
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes

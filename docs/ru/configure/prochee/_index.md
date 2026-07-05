@@ -1,6 +1,6 @@
 ---
 order: 7
-title: Прочее
+external: Others
 ---
 
 <view defs="hierarchy=none" display="List"/>

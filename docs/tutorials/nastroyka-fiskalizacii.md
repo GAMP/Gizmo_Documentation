@@ -1,5 +1,5 @@
 ---
 order: 2
-title: Настройка фискализации
+title: Fiscalisation
 ---
 

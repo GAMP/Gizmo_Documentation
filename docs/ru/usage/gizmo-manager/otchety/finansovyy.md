@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Финансовый отчет
+external: Financial report
 ---
 

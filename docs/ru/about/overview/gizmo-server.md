@@ -1,5 +1,15 @@
 ---
 order: 1
+<<<<<<< ours
+=======
+<<<<<<< Updated upstream
+properties: []
+external: Gizmo Server
+---
+
+=======
+<<<<<<< ours
+>>>>>>> theirs
 external: Gizmo Server
 ---
 
@@ -132,3 +142,10 @@ Gizmo Server может быть предоставлен в двух верси
 </tab>
 
 </tabs>
+=======
+properties: []
+external: Gizmo Server
+---
+
+>>>>>>> theirs
+>>>>>>> Stashed changes

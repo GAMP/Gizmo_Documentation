@@ -1,5 +1,5 @@
 ---
 order: 0.3
-title: Бронирование
+external: Reservations
 ---
 

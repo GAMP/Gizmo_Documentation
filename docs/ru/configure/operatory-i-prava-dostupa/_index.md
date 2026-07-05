@@ -1,6 +1,6 @@
 ---
 order: 5
-title: Операторы и права доступа
+external: Operators and permissions
 ---
 
 <view defs="hierarchy=none" display="List"/>

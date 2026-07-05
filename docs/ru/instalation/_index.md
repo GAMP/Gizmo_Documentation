@@ -1,5 +1,6 @@
 ---
 order: 3
-title: Установка
+properties: []
+external: Instalation
 ---
 

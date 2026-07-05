@@ -1,6 +1,16 @@
 ---
 order: 2
+<<<<<<< ours
+=======
+<<<<<<< Updated upstream
+properties: []
+=======
+<<<<<<< ours
+=======
+properties: []
+>>>>>>> theirs
+>>>>>>> Stashed changes
+>>>>>>> theirs
 external: Microsoft SQL
 ---
 
-<view defs="hierarchy=none" display="List"/>
