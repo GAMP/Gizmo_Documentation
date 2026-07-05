@@ -4,8 +4,11 @@ title: Login screen
 ---
 
 <<<<<<< ours
+<<<<<<< ours
 ##
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 ## 
 =======
@@ -15,4 +18,7 @@ title: Login screen
 ## 
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs

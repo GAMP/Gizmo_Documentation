@@ -29,7 +29,12 @@ external: Components
 <<<<<<< ours
 Основным компонентом системы является Gizmo Server
 =======
+<<<<<<< ours
 Основным компонентом системы является Gizmo Server
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes
+>>>>>>> theirs
 =======
 >>>>>>> theirs
 >>>>>>> Stashed changes

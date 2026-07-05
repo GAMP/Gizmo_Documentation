@@ -13,7 +13,12 @@ external: Organization
 <<<<<<< ours
 Содержание раздела:
 =======
+<<<<<<< ours
 Содержание раздела:
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes
+>>>>>>> theirs
 =======
 >>>>>>> theirs
 >>>>>>> Stashed changes

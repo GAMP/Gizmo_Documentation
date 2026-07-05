@@ -1,7 +1,10 @@
 ---
 order: 0.8
 <<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 properties: []
 external: Windows
@@ -9,6 +12,9 @@ external: Windows
 
 =======
 <<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 external: Windows
 ---
@@ -20,8 +26,11 @@ external: Windows
 ## Загрузка установщика
 
 <<<<<<< ours
+<<<<<<< ours
 Последнюю версию установщика можно скачать по ссылке.
 =======
+=======
+>>>>>>> theirs
 Последнюю версию установщика можно скачать по ссылке.
 =======
 properties: []
@@ -30,4 +39,7 @@ external: Windows
 
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs

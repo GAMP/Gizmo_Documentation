@@ -12,7 +12,12 @@ external: Gizmo Server & Gizmo Manager
 <<<<<<< ours
 > Gizmo Manager устанавливается вместе с Gizmo Server.
 =======
+<<<<<<< ours
 > Gizmo Manager устанавливается вместе с Gizmo Server.
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes
+>>>>>>> theirs
 =======
 >>>>>>> theirs
 >>>>>>> Stashed changes

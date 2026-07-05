@@ -14,7 +14,12 @@ external: About
 <<<<<<< ours
 ## Оглавление
 =======
+<<<<<<< ours
 ## Оглавление
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes
+>>>>>>> theirs
 =======
 >>>>>>> theirs
 >>>>>>> Stashed changes

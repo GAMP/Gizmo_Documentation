@@ -1,8 +1,11 @@
 ---
 order: 2.5
 <<<<<<< ours
+<<<<<<< ours
 title: Виджет чата техподдержки
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 properties: []
 external: Support widjet
@@ -14,6 +17,9 @@ properties: []
 external: Support widjet
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 ---
 

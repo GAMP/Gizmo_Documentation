@@ -5,6 +5,12 @@ external: Self-hosted version
 ---
 
 <<<<<<< ours
+<<<<<<< ours
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< ours
+>>>>>>> theirs
 =======
 <<<<<<< Updated upstream
 =======

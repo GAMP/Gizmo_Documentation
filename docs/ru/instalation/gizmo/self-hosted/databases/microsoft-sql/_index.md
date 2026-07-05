@@ -1,7 +1,10 @@
 ---
 order: 2
 <<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 properties: []
 =======
@@ -10,6 +13,9 @@ properties: []
 properties: []
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 external: Microsoft SQL
 ---

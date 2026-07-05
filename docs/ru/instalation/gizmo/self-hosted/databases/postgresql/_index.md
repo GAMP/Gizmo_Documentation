@@ -1,7 +1,10 @@
 ---
 order: 1
 <<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 properties: []
 external: Postgres
@@ -9,6 +12,9 @@ external: Postgres
 
 =======
 <<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 external: Postgres
 ---
@@ -20,12 +26,18 @@ external: Postgres
 <<<<<<< ours
 Установка Postgres:
 =======
+<<<<<<< ours
 Установка Postgres:
 =======
+=======
+>>>>>>> theirs
 properties: []
 external: Postgres
 ---
 
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs

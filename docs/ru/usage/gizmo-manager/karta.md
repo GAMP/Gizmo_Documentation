@@ -4,6 +4,12 @@ external: Map
 ---
 
 <<<<<<< ours
+<<<<<<< ours
+=======
+<<<<<<< Updated upstream
+=======
+<<<<<<< ours
+>>>>>>> theirs
 =======
 <<<<<<< Updated upstream
 =======
@@ -142,4 +148,7 @@ external: Map
 =======
 >>>>>>> theirs
 >>>>>>> Stashed changes
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs

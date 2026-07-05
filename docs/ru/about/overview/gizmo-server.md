@@ -1,7 +1,10 @@
 ---
 order: 1
 <<<<<<< ours
+<<<<<<< ours
 =======
+=======
+>>>>>>> theirs
 <<<<<<< Updated upstream
 properties: []
 external: Gizmo Server
@@ -9,6 +12,9 @@ external: Gizmo Server
 
 =======
 <<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
 >>>>>>> theirs
 external: Gizmo Server
 ---
