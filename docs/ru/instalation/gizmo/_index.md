@@ -4,3 +4,12 @@ properties: []
 external: Gizmo Server & Gizmo Manager
 ---
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< ours
+> [!NOTE]
+> 
+> Gizmo Manager устанавливается вместе с Gizmo Server.
+=======
+>>>>>>> theirs
+>>>>>>> Stashed changes
