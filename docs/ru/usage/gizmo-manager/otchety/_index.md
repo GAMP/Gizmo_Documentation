@@ -1,6 +1,5 @@
 ---
 order: 3.9
-title: Отчеты
+external: Reports
 ---
 
-<view defs="hierarchy=none" display="List"/>

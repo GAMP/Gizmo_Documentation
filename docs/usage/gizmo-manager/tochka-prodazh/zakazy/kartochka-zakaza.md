@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Карточка заказа
+title: Order card
 ---
 

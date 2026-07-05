@@ -1,5 +1,5 @@
 ---
 order: 5
-title: Операторы и права доступа
+external: Operators and permissions
 ---
 

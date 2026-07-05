@@ -1,5 +1,5 @@
 ---
 order: 4
-title: Навигационное меню
+external: Navigation menu
 ---
 

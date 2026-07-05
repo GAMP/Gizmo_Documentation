@@ -1,6 +1,5 @@
 ---
 order: 3.99
-title: Магазин
+external: Shop
 ---
 
-<view defs="hierarchy=none" display="List"/>

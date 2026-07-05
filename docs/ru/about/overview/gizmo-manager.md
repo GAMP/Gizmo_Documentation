@@ -1,5 +1,6 @@
 ---
 order: 3
-title: Gizmo Manager
+properties: []
+external: Gizmo Manager
 ---
 

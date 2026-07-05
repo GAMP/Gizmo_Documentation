@@ -1,6 +1,5 @@
 ---
 order: 2
-title: Заказы
+title: Orders
 ---
 
-<view defs="hierarchy=none" display="List"/>

@@ -1,6 +1,6 @@
 ---
 order: 1.5
-title: Gizmo Server
+properties: []
+external: Gizmo Server
 ---
 
-<view defs="hierarchy=none" display="List"/>

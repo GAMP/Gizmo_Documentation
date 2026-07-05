@@ -1,12 +1,6 @@
 ---
 order: 1
-title: Postgres
+properties: []
+external: Postgres
 ---
 
-> [!WARNING]
-> 
-> Рекомендуется использовать 15 версию Postgres или новее
-
-Установка Postgres:
-
-<view defs="hierarchy=none" display="List"/>

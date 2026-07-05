@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Фискализация чеков в РФ
+title: Fiscalization
 ---
 

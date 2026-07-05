@@ -1,5 +1,5 @@
 ---
 order: 3
-title: Использование переменных
+title: Variables. How to use
 ---
 

@@ -1,5 +1,5 @@
 ---
 order: 4.8
-title: Финансовые настройки
+external: Finances
 ---
 

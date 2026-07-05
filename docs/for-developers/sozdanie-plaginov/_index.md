@@ -1,5 +1,5 @@
 ---
 order: 2
-title: Создание плагинов
+title: Plugins creation
 ---
 

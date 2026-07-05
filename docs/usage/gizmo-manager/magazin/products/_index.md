@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Продукты
+title: Products
 ---
 
 <view defs="hierarchy=none" display="List"/>

@@ -1,5 +1,6 @@
 ---
 order: 2
-title: Gizmo Companion
+properties: []
+external: Gizmo Companion
 ---
 
