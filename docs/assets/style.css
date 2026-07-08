@@ -1,53 +1,108 @@
-#custom-style {
-    --bg-main: rgba(243, 237, 255, 0.5);
+/* =====================================================================
+   Gizmo — фирменная тёмно-синяя тема Gramax (крупная + контрастная).
+   Шрифт Segoe UI + палитра из брендбука Gizmo.
+   Вставлять в: Настройки пространства → CSS-стили → Редактировать.
+   ===================================================================== */
 
-    --accent-60: rgba(60, 32, 101, 0.51);
-    --accent-80: rgba(76, 41, 130);
-    --accent-100: rgb(125, 72, 192);
-    --accent-120: rgb(164, 94, 255);
+/* Крупнее весь интерфейс */
+html { font-size: 17px; }
+
+#custom-style {
+    --app-font-famaly: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+
+    --gz-primary:       #526ed3;
+    --gz-primary-hover: #6c86e2;
+    --gz-brand-border:  #99b1e6;
+    --gz-navy-900:      #0e1524;
+    --gz-navy-800:      #17213c;
+    --gz-navy-700:      #222c3d;
+    --gz-text:          #d7deea;
+    --gz-text-strong:   #ffffff;
 }
 
-#custom-style[data-theme="light"] {
-    /* Цвет ссылок в приложении */
-    --color-link: #6E23C9;
+/* Типографика — крупные заголовки по брендбуку */
+#custom-style h1 { font-size: 2.6rem;  line-height: 1.25; font-weight: 700; }
+#custom-style h2 { font-size: 1.85rem; line-height: 1.3;  font-weight: 700; }
+#custom-style h3 { font-size: 1.5rem;  line-height: 1.33; font-weight: 600; }
+#custom-style h4 { font-size: 1.25rem; line-height: 1.4;  font-weight: 600; }
 
-    /* Сайдбар слева (навигация) */
-    --color-nav-menu-bg: var(--bg-main);
+/* Крупнее и просторнее тело статьи */
+#custom-style p,
+#custom-style li {
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
 
-    /* Сайдбар справа */
-    --color-right-nav-bg: var(--bg-main);
+/* Заголовки статьи — брендовый голубой акцент (тёмная тема) */
+#custom-style[data-theme="dark"] h1,
+#custom-style[data-theme="dark"] h2 { color: #9db4f0; }
 
-    /* В левой навигации, снизу, панель с гитом */
-    --version-control-primary: var(--accent-100);
+/* ==============================  ТЁМНАЯ ТЕМА  ============================== */
+#custom-style[data-theme="dark"] {
+    --color-article-heading-text: #ffffff;
+    --color-article-text: var(--gz-text);
+    --color-link: #83a0ff;
+    --color-primary: #83a0ff;
+    --color-primary-general: var(--gz-text);
 
-    /* Статья */
-    /* Так же эти переменные используются в компонентах статьи и модальных окнах */
-    --color-article-heading-text: black;
-    --color-article-text: black;
+    --color-nav-menu-bg: var(--gz-navy-800);
+    --color-right-nav-bg: var(--gz-navy-800);
+    --color-nav-item: #aeb8c9;
+    --color-nav-item-selected: #ffffff;
 
-    /* Стандартная */
-    --color-btn-default-bg: var(--accent-100);
-    --color-btn-default-text: #fff;
+    --version-control-primary: var(--gz-primary);
+    --color-tooltip-background: var(--gz-navy-700);
+
+    --color-admonition-quote-border: var(--gz-primary);
+    --color-admonition-quote-bg: rgba(82, 110, 211, 0.18);
+    --color-admonition-text: var(--gz-text);
+
+    --color-btn-default-bg: var(--gz-primary);
+    --color-btn-default-text: #ffffff;
     --border-btn-default: 1px solid transparent;
     --opacity-btn-default-bg-hover: 1;
-    --color-btn-default-text-hover: #fff;
-    --color-btn-default-bg-hover: var(--accent-120);
+    --color-btn-default-text-hover: #ffffff;
+    --color-btn-default-bg-hover: var(--gz-primary-hover);
+    --color-btn-underline-text-hover: var(--gz-primary-hover);
 
-    /* Подчеркнутая снизу */
-    --color-btn-underline-text-hover: var(--accent-100);
+    --color-home-bg: var(--gz-navy-900);
+    --color-home-card-bg: var(--gz-navy-800);
+    --color-home-card-bg-hover: rgba(82, 110, 211, 0.14);
+    --color-home-card-border: rgba(153, 177, 230, 0.22);
+    --color-home-card-border-hover: rgba(153, 177, 230, 0.45);
+    --color-home-card-link: #ffffff;
+    --color-home-card-link-hover: #ffffff;
+    --box-shadow-home-card: 0 10px 28px -12px rgba(0, 0, 0, 0.7);
 }
 
+/* ==============================  СВЕТЛАЯ ТЕМА  ============================== */
 #custom-style[data-theme="light"] {
-    /* Цвет фона главной страницы */
-    --color-home-bg: var(--bg-main);
-
-    /* Цвет границы карточки */
-    --color-home-card-border: rgba(125, 68, 214, 0.1);
-    --color-home-card-border-hover: rgba(125, 68, 214, 0.15);
-
-    /* Цвет заднего фона карточки */
-    --color-home-card-bg-hover: rgba(125, 68, 214, 0.05);
-
-    /* Тень карточки при наведении */
-    --box-shadow-home-card: 0px 0px 12px -5px #00000040;
+    --color-article-heading-text: #101828;
+    --color-article-text: #242424;
+    --color-link: var(--gz-primary);
+    --color-primary: var(--gz-primary);
+    --color-nav-menu-bg: #f5f7fa;
+    --color-right-nav-bg: #f5f7fa;
+    --color-nav-item: #66727f;
+    --color-nav-item-selected: #101828;
+    --version-control-primary: var(--gz-primary);
+    --color-tooltip-background: #101828;
+    --color-admonition-quote-border: var(--gz-primary);
+    --color-admonition-quote-bg: rgba(82, 110, 211, 0.08);
+    --color-admonition-text: #242424;
+    --color-btn-default-bg: var(--gz-primary);
+    --color-btn-default-text: #ffffff;
+    --border-btn-default: 1px solid transparent;
+    --opacity-btn-default-bg-hover: 1;
+    --color-btn-default-text-hover: #ffffff;
+    --color-btn-default-bg-hover: var(--gz-primary-hover);
+    --color-btn-underline-text-hover: var(--gz-primary);
+    --color-home-bg: #f5f7fa;
+    --color-home-card-bg: #ffffff;
+    --color-home-card-bg-hover: rgba(82, 110, 211, 0.05);
+    --color-home-card-border: rgba(82, 110, 211, 0.12);
+    --color-home-card-border-hover: rgba(82, 110, 211, 0.28);
+    --color-home-card-link: #101828;
+    --color-home-card-link-hover: #101828;
+    --box-shadow-home-card: 0 8px 24px -14px rgba(16, 24, 40, 0.25);
 }

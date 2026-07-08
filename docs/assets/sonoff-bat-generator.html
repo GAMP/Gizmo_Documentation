@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генератор .bat для реле Sonoff</title>
+<style>
+  /* ==== Единый бренд-стиль Gizmo (дизайн-токены) ==== */
+  :root{
+    --primary:#526ed3; --primary-hover:#6c86e2; --brand-border:#99b1e6;
+    --navy-900:#0e1524; --navy-800:#17213c; --navy-700:#222c3d;
+    --text:#d7deea; --text-strong:#ffffff; --muted:#8b97ad;
+    --success:#4ac99b; --radius:14px;
+    --font:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font);color:var(--text);
+    background:var(--navy-900);line-height:1.6;padding:20px}
+  .wrap{max-width:820px;margin:0 auto}
+  .gen{background:linear-gradient(180deg,#141d33,#0f1729);
+    border:1px solid rgba(153,177,230,.15);border-radius:18px;overflow:hidden;
+    box-shadow:0 20px 50px -24px #000}
+  .gen-head{padding:22px 26px;
+    background:linear-gradient(120deg,#22346b 0%,#2f2a63 60%,#173a52 100%);
+    border-bottom:1px solid rgba(153,177,230,.14)}
+  .gen-head h2{margin:0 0 4px;color:#fff;font-size:22px;font-weight:700}
+  .gen-head p{margin:0;color:#c7d2e8;font-size:14px}
+  .gen-body{padding:22px 26px}
+
+  .relays{display:flex;flex-direction:column;gap:14px}
+  .relay{background:#101a30;border:1px solid rgba(153,177,230,.12);
+    border-radius:var(--radius);padding:16px 16px 6px;position:relative}
+  .relay .rtitle{font-size:12px;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--brand-border);font-weight:700;margin-bottom:12px}
+  .relay .del{position:absolute;top:12px;right:12px;background:transparent;
+    border:1px solid rgba(255,120,120,.35);color:#ff8c8c;border-radius:8px;
+    width:28px;height:28px;cursor:pointer;font-size:15px;line-height:1}
+  .relay .del:hover{background:rgba(255,120,120,.12)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  @media(max-width:620px){.grid{grid-template-columns:1fr}}
+  .field label{display:block;font-size:12.5px;color:var(--muted);margin-bottom:5px}
+  .field input{width:100%;background:#0b1322;border:1px solid rgba(153,177,230,.20);
+    border-radius:9px;padding:9px 11px;color:#eaf0fb;font:inherit;font-size:14px;
+    outline:none;transition:.15s;font-family:'Consolas',monospace}
+  .field input:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(82,110,211,.25)}
+  .field input.err{border-color:#e26060;box-shadow:0 0 0 3px rgba(226,96,96,.2)}
+  .hint{font-size:11px;color:#6b7791;margin:4px 0 12px}
+
+  .addbtn{margin-top:14px;background:transparent;border:1px dashed rgba(153,177,230,.35);
+    color:var(--brand-border);border-radius:10px;padding:10px 14px;cursor:pointer;
+    font:inherit;font-size:14px;width:100%;transition:.15s}
+  .addbtn:hover{background:rgba(82,110,211,.10);border-color:var(--primary);color:#fff}
+
+  .preview{margin-top:22px}
+  .tabs{display:flex;gap:8px;margin-bottom:0}
+  .tab{padding:9px 16px;border-radius:10px 10px 0 0;background:#0b1322;color:var(--muted);
+    border:1px solid rgba(153,177,230,.12);border-bottom:none;cursor:pointer;font:inherit;font-size:13.5px}
+  .tab.active{background:#0f172a;color:#fff;font-weight:600}
+  pre{margin:0;background:#0b1120;border:1px solid rgba(153,177,230,.14);
+    border-radius:0 10px 10px 10px;padding:16px;overflow-x:auto;color:#dbe4f4;
+    font-family:'Consolas','JetBrains Mono',monospace;font-size:13px;line-height:1.65;min-height:120px}
+  .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .btn{border:0;border-radius:10px;padding:11px 18px;font:inherit;font-size:14px;font-weight:600;cursor:pointer;transition:.15s;display:inline-flex;align-items:center;gap:8px}
+  .btn-primary{background:var(--primary);color:#fff}
+  .btn-primary:hover{background:var(--primary-hover)}
+  .btn-ghost{background:transparent;color:var(--brand-border);border:1px solid rgba(153,177,230,.3)}
+  .btn-ghost:hover{background:rgba(82,110,211,.12);color:#fff}
+  .btn.done{background:var(--success);color:#06210c}
+
+  .where{margin-top:22px;background:rgba(82,110,211,.10);border:1px solid rgba(82,110,211,.3);
+    border-left:4px solid var(--primary);border-radius:10px;padding:14px 16px;font-size:14px;color:#dbe4f4}
+  .where b{color:#fff}
+  .where code{background:#0b1322;padding:2px 7px;border-radius:5px;font-family:'Consolas',monospace;
+    font-size:12.5px;color:#aebdf5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="gen">
+    <div class="gen-head">
+      <h2>⚙️ Генератор .bat-скриптов для реле Sonoff</h2>
+      <p>Впишите данные ваших реле — получите готовые PowerOn.bat и PowerOff.bat. Без ручного редактирования.</p>
+    </div>
+    <div class="gen-body">
+
+      <div class="relays" id="relays"></div>
+      <button class="addbtn" id="addRelay">+ Добавить ещё одно реле</button>
+
+      <div class="preview">
+        <div class="tabs">
+          <button class="tab active" data-t="on">PowerOn.bat</button>
+          <button class="tab" data-t="off">PowerOff.bat</button>
+        </div>
+        <pre id="out"></pre>
+        <div class="actions">
+          <button class="btn btn-primary" id="dlOn">⬇ Скачать PowerOn.bat</button>
+          <button class="btn btn-primary" id="dlOff">⬇ Скачать PowerOff.bat</button>
+          <button class="btn btn-ghost" id="copyBtn">Скопировать текущий</button>
+        </div>
+      </div>
+
+      <div class="where">
+        <b>Куда положить файлы:</b> перенесите <code>PowerOn.bat</code>, <code>PowerOff.bat</code> и
+        <code>SonoffPowerManager.exe</code> по пути
+        <code>C:\Program Files\NETProjects\Gizmo Server\batch</code>.
+        В вашем случае путь может отличаться. Если файлы с такими именами уже есть — замените их.
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  const relaysEl = document.getElementById('relays');
+  const out = document.getElementById('out');
+  let current = 'on';
+
+  const relays = [{console:'101', host:'', deviceid:''}];
+
+  function relayCard(r, i){
+    const canDelete = relays.length > 1;
+    return `
+    <div class="relay">
+      <div class="rtitle">Реле ${i+1}</div>
+      ${canDelete ? `<button class="del" data-del="${i}" title="Удалить">✕</button>` : ''}
+      <div class="grid">
+        <div class="field">
+          <label>Номер консоли (Gizmo)</label>
+          <input data-i="${i}" data-k="console" value="${r.console}" placeholder="101">
+        </div>
+        <div class="field">
+          <label>IP:порт реле</label>
+          <input data-i="${i}" data-k="host" value="${r.host}" placeholder="192.168.63.101:8081">
+        </div>
+        <div class="field">
+          <label>deviceid</label>
+          <input data-i="${i}" data-k="deviceid" value="${r.deviceid}" placeholder="1001ee63f1">
+        </div>
+      </div>
+      <div class="hint">Номер консоли — это конечная точка в Gizmo. deviceid берётся из tool_01DIY85. IP реле — в настройках роутера.</div>
+    </div>`;
+  }
+
+  function render(){
+    relaysEl.innerHTML = relays.map(relayCard).join('');
+    relaysEl.querySelectorAll('input').forEach(inp=>{
+      inp.addEventListener('input', e=>{
+        const i=+e.target.dataset.i, k=e.target.dataset.k;
+        relays[i][k]=e.target.value.trim();
+        e.target.classList.remove('err');
+        buildPreview();
+      });
+    });
+    relaysEl.querySelectorAll('[data-del]').forEach(b=>{
+      b.addEventListener('click', ()=>{ relays.splice(+b.dataset.del,1); render(); buildPreview(); });
+    });
+  }
+
+  function buildScript(onoff){
+    // onoff: '1' = включение, '0' = выключение
+    const hosts = relays.map((r,i)=>`set host${i+1}=${r.host||'192.168.63.10'+(i+1)+':8081'}`).join('\n');
+    const dids  = relays.map((r,i)=>`set deviceid${i+1}=${r.deviceid||'1001ee63f'+(i+1)}`).join('\n');
+    const ifs   = relays.map((r,i)=>`if %1==${r.console||'10'+(i+1)} set host=%host${i+1}% & set deviceid=%deviceid${i+1}%`).join('\n');
+    return `@echo off\n\nset WORKING_DIRECTORY="%~dp0\n${hosts}\n\n${dids}\n\n@echo off\n${ifs}\n\n%WORKING_DIRECTORY%SonoffPowerManager.exe" %deviceid% %host% ${onoff}`;
+  }
+
+  function buildPreview(){
+    out.textContent = buildScript(current === 'on' ? '1' : '0');
+  }
+
+  document.querySelectorAll('.tab').forEach(t=>{
+    t.addEventListener('click', ()=>{
+      document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+      t.classList.add('active'); current=t.dataset.t; buildPreview();
+    });
+  });
+
+  document.getElementById('addRelay').addEventListener('click', ()=>{
+    const n = relays.length+1;
+    relays.push({console:String(100+n), host:'', deviceid:''});
+    render(); buildPreview();
+  });
+
+  function download(name, text){
+    const blob = new Blob([text], {type:'application/octet-stream'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a'); a.href=url; a.download=name; a.click();
+    URL.revokeObjectURL(url);
+  }
+  document.getElementById('dlOn').addEventListener('click', ()=>download('PowerOn.bat', buildScript('1')));
+  document.getElementById('dlOff').addEventListener('click', ()=>download('PowerOff.bat', buildScript('0')));
+  document.getElementById('copyBtn').addEventListener('click', (e)=>{
+    navigator.clipboard.writeText(out.textContent).then(()=>{
+      const b=e.target; const t=b.textContent; b.classList.add('done'); b.textContent='Скопировано!';
+      setTimeout(()=>{b.classList.remove('done'); b.textContent=t;},1500);
+    });
+  });
+
+  render(); buildPreview();
+</script>
+</body>
+</html>
