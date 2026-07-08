@@ -36,12 +36,6 @@ title: Настройка реле от Sonoff
     box-sizing: border-box;
   }
 
-  /* border-top другой толщины, чем остальные стороны border, в углу,
-     где сходятся два разных border-width, браузер "митрит" стык — на
-     скруглённом углу это может дать кривой заусенец/полоску ровно в
-     месте перехода 3px -> 1px. Меняем акцент на inset box-shadow: он
-     не участвует в геометрии border вообще, всегда чисто обрезается
-     по border-radius, разной толщины сторон тут просто не существует. */
   .gx-hero {
     position: relative;
     width: 100%;
@@ -110,15 +104,6 @@ title: Настройка реле от Sonoff
     font-weight: 500;
   }
 
-  .gx-tag::before {
-    content: "";
-    width: 5px;
-    height: 5px;
-    border-radius: 999px;
-    background: currentColor;
-    opacity: 0.7;
-  }
-
   .gx-tag.medium {
     border-color: rgba(250, 204, 21, 0.4);
     background: rgba(250, 204, 21, 0.12);
@@ -172,7 +157,6 @@ title: Настройка реле от Sonoff
 })();
 </script>
 </body>
-
 </html>
 
 </html>
@@ -918,6 +902,8 @@ title: Настройка реле от Sonoff
 })();
 </script>
 </body>
+
+
 
 
 
