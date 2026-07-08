@@ -151,6 +151,7 @@ title: Настройка реле от Sonoff
   </section>
 </body>
 
+
 </html>
 
 </html>
@@ -192,8 +193,6 @@ title: Настройка реле от Sonoff
 
 
 -  **Индикатор на устройстве будет непрерывно мигать.**
-
-   ![](./nastroyka-rele-ot-sonoff-2.gif){width=242px height=250px}
 
 
 
@@ -872,6 +871,7 @@ title: Настройка реле от Sonoff
 })();
 </script>
 </body>
+
 
 
 
