@@ -19,38 +19,54 @@ title: Настройка реле от Sonoff
 
   html,
   body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: transparent !important;
+    background: #1a1e33;
     font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  }
+
+  @media (prefers-color-scheme: light) {
+    html,
+    body {
+      background: #ffffff;
+    }
   }
 
   * {
     box-sizing: border-box;
   }
 
+  /* border-top другой толщины, чем остальные стороны border, в углу,
+     где сходятся два разных border-width, браузер "митрит" стык — на
+     скруглённом углу это может дать кривой заусенец/полоску ровно в
+     месте перехода 3px -> 1px. Меняем акцент на inset box-shadow: он
+     не участвует в геометрии border вообще, всегда чисто обрезается
+     по border-radius, разной толщины сторон тут просто не существует. */
   .gx-hero {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    padding: 34px 38px 30px;
+    height: 100%;
+    padding: 34px 38px;
     border-radius: 20px;
     overflow: hidden;
     color: #ffffff;
-    border: 1px solid rgba(255,255,255,0.07);
-    background:
-      radial-gradient(circle at 90% 0%, rgba(108, 134, 226, 0.35), transparent 45%),
-      linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 55%, #1c2c57 100%);
-    box-shadow: 0 14px 32px -16px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 60%, #1c2c57 100%);
+    box-shadow: inset 0 3px 0 0 var(--gz-primary);
   }
 
-  .gx-hero::before {
-    content: "";
+  .gx-debug {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--gz-primary), var(--gz-primary-light), transparent);
+    bottom: 8px;
+    right: 12px;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 10px;
+    color: rgba(255,255,255,0.32);
+    pointer-events: none;
   }
 
   .gx-kicker {
@@ -148,12 +164,75 @@ title: Настройка реле от Sonoff
       <span class="gx-tag medium">Сложность: средняя</span>
       <span class="gx-tag">Требует доступа к сетевому оборудованию</span>
     </div>
+
+    <span class="gx-debug" id="gx-debug"></span>
   </section>
+
+<script>
+(function () {
+  var LIGHT_BG = '#ffffff';
+  var DARK_BG = '#1a1e33';
+
+  // debugInfo копит подробности последней попытки — почему не сработало.
+  var debugInfo = '';
+
+  function readParentTheme() {
+    try {
+      var doc = window.parent.document;
+      var root = doc.querySelector('#custom-style');
+      if (!root) {
+        debugInfo = 'нет #custom-style в родителе';
+        return null;
+      }
+      var t = root.getAttribute('data-theme');
+      if (t === 'light' || t === 'dark') {
+        debugInfo = 'ok';
+        return t;
+      }
+      debugInfo = 'нет data-theme (' + t + ')';
+      return null;
+    } catch (e) {
+      debugInfo = (e && e.name) ? e.name : 'ошибка доступа';
+      return null;
+    }
+  }
+
+  function systemTheme() {
+    try {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    } catch (e) {}
+    return 'dark';
+  }
+
+  function applyBg() {
+    var fromGramax = readParentTheme();
+    var theme = fromGramax || systemTheme();
+    var bg = theme === 'light' ? LIGHT_BG : DARK_BG;
+
+    document.documentElement.style.backgroundColor = bg;
+    document.body.style.backgroundColor = bg;
+
+    var dbg = document.getElementById('gx-debug');
+    if (dbg) {
+      dbg.textContent = 'тема: ' + theme + ' • источник: ' + (fromGramax ? 'gramax' : 'system (' + debugInfo + ')');
+    }
+  }
+
+  applyBg();
+
+  try {
+    var root = window.parent.document.querySelector('#custom-style');
+    if (root && window.MutationObserver) {
+      new MutationObserver(applyBg).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    }
+  } catch (e) {}
+
+  try {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
+  } catch (e) {}
+})();
+</script>
 </body>
-
-
-
-
 </html>
 
 </html>
@@ -255,11 +334,19 @@ title: Настройка реле от Sonoff
 
   html,
   body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: transparent !important;
+    background: #1a1e33;
     font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
     color: #ffffff;
+  }
+
+  @media (prefers-color-scheme: light) {
+    html,
+    body {
+      background: #ffffff;
+    }
   }
 
   * {
@@ -268,13 +355,13 @@ title: Настройка реле от Sonoff
 
   .cfg {
     width: 100%;
-    height: 460px;
+    height: 100%;
+    min-height: 460px;
     overflow: hidden;
     border-radius: 20px;
-    background:
-      radial-gradient(circle at 86% -20%, rgba(108, 134, 226, 0.30), transparent 42%),
-      linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 50%, #1c2c57 100%);
-    box-shadow: 0 14px 32px -16px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 60%, #1c2c57 100%);
+    box-shadow: inset 0 3px 0 0 var(--gz-primary);
   }
 
   .cfg-inner {
@@ -534,7 +621,7 @@ title: Настройка реле от Sonoff
 
   @media (max-width: 720px) {
     .cfg {
-      height: 560px;
+      min-height: 560px;
     }
 
     .cfg-head {
@@ -578,6 +665,48 @@ title: Настройка реле от Sonoff
 </head>
 
 <body>
+<script>
+(function () {
+  var LIGHT_BG = '#ffffff';
+  var DARK_BG = '#1a1e33';
+
+  function readParentTheme() {
+    try {
+      var root = window.parent.document.querySelector('#custom-style');
+      var t = root && root.getAttribute('data-theme');
+      if (t === 'light' || t === 'dark') return t;
+    } catch (e) {}
+    return null;
+  }
+
+  function systemTheme() {
+    try {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    } catch (e) {}
+    return 'dark';
+  }
+
+  function applyBg() {
+    var theme = readParentTheme() || systemTheme();
+    var bg = theme === 'light' ? LIGHT_BG : DARK_BG;
+    document.documentElement.style.backgroundColor = bg;
+    document.body.style.backgroundColor = bg;
+  }
+
+  applyBg();
+
+  try {
+    var root = window.parent.document.querySelector('#custom-style');
+    if (root && window.MutationObserver) {
+      new MutationObserver(applyBg).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    }
+  } catch (e) {}
+
+  try {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
+  } catch (e) {}
+})();
+</script>
 <div class="cfg">
   <div class="cfg-inner">
     <div class="cfg-head">
@@ -873,6 +1002,8 @@ title: Настройка реле от Sonoff
 })();
 </script>
 </body>
+
+
 
 
 
