@@ -19,7 +19,6 @@ title: Настройка реле от Sonoff
 
   html,
   body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background: #1a1e33;
@@ -45,11 +44,7 @@ title: Настройка реле от Sonoff
      по border-radius, разной толщины сторон тут просто не существует. */
   .gx-hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
-    height: 100%;
     padding: 34px 38px;
     border-radius: 20px;
     overflow: hidden;
@@ -57,16 +52,6 @@ title: Настройка реле от Sonoff
     border: 1px solid rgba(255,255,255,0.08);
     background: linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 60%, #1c2c57 100%);
     box-shadow: inset 0 3px 0 0 var(--gz-primary);
-  }
-
-  .gx-debug {
-    position: absolute;
-    bottom: 8px;
-    right: 12px;
-    font-family: Consolas, Monaco, monospace;
-    font-size: 10px;
-    color: rgba(255,255,255,0.32);
-    pointer-events: none;
   }
 
   .gx-kicker {
@@ -156,7 +141,7 @@ title: Настройка реле от Sonoff
     </p>
 
     <h1 class="gx-title">
-      Как подключить умную розетку Sonoff, перевести её в DIY-режим и настроить управление питанием через <span class="gx-accent">Gizmo</span>
+      Как подключить умную розетку Sonoff, перевести её в DIY-режим и настроить управление через <span class="gx-accent">Gizmo</span>
     </h1>
 
     <div class="gx-tags">
@@ -164,8 +149,6 @@ title: Настройка реле от Sonoff
       <span class="gx-tag medium">Сложность: средняя</span>
       <span class="gx-tag">Требует доступа к сетевому оборудованию</span>
     </div>
-
-    <span class="gx-debug" id="gx-debug"></span>
   </section>
 
 <script>
@@ -173,66 +156,23 @@ title: Настройка реле от Sonoff
   var LIGHT_BG = '#ffffff';
   var DARK_BG = '#1a1e33';
 
-  // debugInfo копит подробности последней попытки — почему не сработало.
-  var debugInfo = '';
-
-  function readParentTheme() {
-    try {
-      var doc = window.parent.document;
-      var root = doc.querySelector('#custom-style');
-      if (!root) {
-        debugInfo = 'нет #custom-style в родителе';
-        return null;
-      }
-      var t = root.getAttribute('data-theme');
-      if (t === 'light' || t === 'dark') {
-        debugInfo = 'ok';
-        return t;
-      }
-      debugInfo = 'нет data-theme (' + t + ')';
-      return null;
-    } catch (e) {
-      debugInfo = (e && e.name) ? e.name : 'ошибка доступа';
-      return null;
-    }
-  }
-
-  function systemTheme() {
-    try {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    } catch (e) {}
-    return 'dark';
-  }
-
   function applyBg() {
-    var fromGramax = readParentTheme();
-    var theme = fromGramax || systemTheme();
+    var theme = document.documentElement.dataset.theme;
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
     var bg = theme === 'light' ? LIGHT_BG : DARK_BG;
-
     document.documentElement.style.backgroundColor = bg;
     document.body.style.backgroundColor = bg;
-
-    var dbg = document.getElementById('gx-debug');
-    if (dbg) {
-      dbg.textContent = 'тема: ' + theme + ' • источник: ' + (fromGramax ? 'gramax' : 'system (' + debugInfo + ')');
-    }
   }
 
   applyBg();
-
-  try {
-    var root = window.parent.document.querySelector('#custom-style');
-    if (root && window.MutationObserver) {
-      new MutationObserver(applyBg).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
-    }
-  } catch (e) {}
-
-  try {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-  } catch (e) {}
+  new MutationObserver(applyBg).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
 })();
 </script>
 </body>
+
 </html>
 
 </html>
@@ -334,7 +274,6 @@ title: Настройка реле от Sonoff
 
   html,
   body {
-    height: 100%;
     margin: 0;
     padding: 0;
     background: #1a1e33;
@@ -355,8 +294,7 @@ title: Настройка реле от Sonoff
 
   .cfg {
     width: 100%;
-    height: 100%;
-    min-height: 460px;
+    height: 460px;
     overflow: hidden;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.08);
@@ -621,7 +559,7 @@ title: Настройка реле от Sonoff
 
   @media (max-width: 720px) {
     .cfg {
-      min-height: 560px;
+      height: 560px;
     }
 
     .cfg-head {
@@ -670,41 +608,19 @@ title: Настройка реле от Sonoff
   var LIGHT_BG = '#ffffff';
   var DARK_BG = '#1a1e33';
 
-  function readParentTheme() {
-    try {
-      var root = window.parent.document.querySelector('#custom-style');
-      var t = root && root.getAttribute('data-theme');
-      if (t === 'light' || t === 'dark') return t;
-    } catch (e) {}
-    return null;
-  }
-
-  function systemTheme() {
-    try {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    } catch (e) {}
-    return 'dark';
-  }
-
   function applyBg() {
-    var theme = readParentTheme() || systemTheme();
+    var theme = document.documentElement.dataset.theme;
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
     var bg = theme === 'light' ? LIGHT_BG : DARK_BG;
     document.documentElement.style.backgroundColor = bg;
     document.body.style.backgroundColor = bg;
   }
 
   applyBg();
-
-  try {
-    var root = window.parent.document.querySelector('#custom-style');
-    if (root && window.MutationObserver) {
-      new MutationObserver(applyBg).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
-    }
-  } catch (e) {}
-
-  try {
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-  } catch (e) {}
+  new MutationObserver(applyBg).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
 })();
 </script>
 <div class="cfg">
@@ -1002,6 +918,7 @@ title: Настройка реле от Sonoff
 })();
 </script>
 </body>
+
 
 
 
