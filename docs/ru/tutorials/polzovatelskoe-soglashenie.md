@@ -5,19 +5,8 @@ title: Пользовательское соглашение
 
 <html>
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  :root {
-    --gz-primary: #526ed3;
-    --gz-primary-light: #6c86e2;
-    --gz-navy-900: #0e1524;
-    --gz-navy-800: #17213c;
-  }
-
-  html,
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     background: #1a1e33;
@@ -25,8 +14,7 @@ title: Пользовательское соглашение
   }
 
   @media (prefers-color-scheme: light) {
-    html,
-    body {
+    html, body {
       background: #ffffff;
     }
   }
@@ -35,116 +23,70 @@ title: Пользовательское соглашение
     box-sizing: border-box;
   }
 
-  .gx-hero {
+  .gx-card {
     position: relative;
     width: 100%;
-    padding: 34px 38px;
-    border-radius: 20px;
+    border-radius: 18px;
     overflow: hidden;
-    color: #ffffff;
-    border: 1px solid rgba(255,255,255,0.08);
-    background: linear-gradient(135deg, var(--gz-navy-900) 0%, var(--gz-navy-800) 60%, #1c2c57 100%);
-    box-shadow: inset 0 3px 0 0 var(--gz-primary);
+    background: #232a4a;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+    border: none;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04) inset;
+    padding: 26px 32px 28px;
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
   }
-
-  .gx-kicker {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 0 0 14px 0;
-    color: rgba(255,255,255,0.72);
-    font-size: 13px;
-    line-height: 1.3;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  .gx-card .gx-glow {
+    position: absolute;
+    inset: -30px -44px auto -60px;
+    height: 200px;
+    background: radial-gradient(45% 100% at 8% 0%, rgba(82, 110, 211, 0.28) 0%, rgba(82, 110, 211, 0) 72%);
+    filter: blur(2px);
+    pointer-events: none;
   }
-
-  .gx-kicker svg {
-    flex: none;
-    width: 16px;
-    height: 16px;
-    color: var(--gz-primary-light);
+  .gx-card .gx-card-content { position: relative; }
+  .gx-card .gx-kicker {
+    display: flex; align-items: center; gap: 8px; margin: 0 0 14px 0;
+    color: #7c93e8; font-size: 12px; line-height: 1.3; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
   }
-
-  .gx-title {
-    max-width: 920px;
-    margin: 0;
-    color: #ffffff;
-    font-size: clamp(24px, 3.4vw, 32px);
-    line-height: 1.3;
-    font-weight: 700;
-    letter-spacing: -0.015em;
+  .gx-card .gx-kicker svg { flex: none; width: 15px; height: 15px; }
+  .gx-card .gx-title {
+    max-width: 560px; margin: 0 0 18px 0; color: #ffffff;
+    font-size: clamp(22px, 3vw, 27px); line-height: 1.34; font-weight: 700; letter-spacing: -0.015em;
   }
-
-  .gx-title .gx-accent {
-    color: #9db4f0;
+  .gx-card .gx-accent { color: #a9bdf5; }
+  .gx-card .gx-meta {
+    display: flex; align-items: center; color: rgba(255, 255, 255, 0.5);
+    font-size: 11.5px; line-height: 1; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
   }
-
-  .gx-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 20px;
-  }
-
-  .gx-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    min-height: 28px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    border: 1px solid rgba(255,255,255,0.16);
-    background: rgba(255,255,255,0.08);
-    color: #d7deea;
-    font-size: 13px;
-    line-height: 1;
-    font-weight: 500;
-  }
-
-  .gx-tag.low {
-    border-color: rgba(74, 222, 128, 0.4);
-    background: rgba(74, 222, 128, 0.12);
-    color: #86efac;
-  }
-
-  .gx-tag.medium {
-    border-color: rgba(250, 204, 21, 0.4);
-    background: rgba(250, 204, 21, 0.12);
-    color: #fde68a;
-  }
-
-  .gx-tag.high {
-    border-color: rgba(248, 113, 113, 0.4);
-    background: rgba(248, 113, 113, 0.12);
-    color: #fca5a5;
-  }
-
-  @media (max-width: 640px) {
-    .gx-hero {
-      padding: 24px;
-    }
+  .gx-card .gx-meta-sep { margin: 0 12px; opacity: 0.4; }
+  .gx-card .gx-meta-level { color: #86efac; }
+  .gx-card .gx-meta-level.medium { color: #fde68a; }
+  .gx-card .gx-meta-level.high { color: #fca5a5; }
+  .gx-card .gx-desc {
+    max-width: 560px; margin: 16px 0 0 0; color: rgba(255, 255, 255, 0.56);
+    font-size: 13px; line-height: 1.6;
   }
 </style>
-</head>
 
-<body>
-  <section class="gx-hero">
+<div class="gx-card">
+  <div class="gx-glow"></div>
+  <div class="gx-card-content">
     <p class="gx-kicker">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/></svg>
       В этом блоке вы узнаете
     </p>
-
-    <h1 class="gx-title">
+    <h2 class="gx-title">
       Как настроить пользовательское соглашение для ваших клиентов в <span class="gx-accent">Gizmo</span>
-    </h1>
-
-    <div class="gx-tags">
-      <span class="gx-tag">3–5 минут</span>
-      <span class="gx-tag low">Низкая сложность</span>
+    </h2>
+    <div class="gx-meta">
+      <span>3–5 минут</span>
+      <span class="gx-meta-sep">/</span>
+      <span class="gx-meta-level">Низкая сложность</span>
     </div>
-  </section>
+    <p class="gx-desc">Разберём, где включить соглашение, как оформить его текст и сделать обязательным для клиента при регистрации.</p>
+  </div>
+</div>
 
 <script>
 (function () {
@@ -166,7 +108,6 @@ title: Пользовательское соглашение
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
 })();
 </script>
-</body>
 
 </html>
 

@@ -1,6 +1,6 @@
 ---
 order: 3
-title: Instalation
+title: Установка
 ---
 
 <view defs="hierarchy=none" display="List"/>

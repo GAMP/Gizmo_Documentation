@@ -1,5 +1,6 @@
 ---
 order: 8
-title: Change log
+title: История обновлений
 ---
 
+<view defs="hierarchy=none" display="List"/>
