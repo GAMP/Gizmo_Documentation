@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Установка плагинов
+title: Plugin instalation
 ---
 

@@ -1,49 +1,53 @@
 ---
 order: 1
-external: Gizmo Server
+title: Gizmo Server
 ---
 
-**Gizmo Server** - основной компонент системы **Gizmo**.
+**Gizmo Server** is the main component of **Gizmo**.
 
-## Архитектура Gizmo
+## Gizmo Architecture
 
-![](./gizmo-server-2.png){width=7048px height=3208px}
-
-Gizmo arch
+![](./gizmo-server.png "Gizmo arch"){width=7048px height=3208px}
 
 ### Gizmo Server
 
-Gizmo Server может быть предоставлен в двух версиях:
+Gizmo Server have two versions:
 
--  Облачная версия (SaaS-решение)
+-  Cloud version (SaaS)
 
--  Локальная версия (Self-hosted решение)
+-  Self-hosted version
 
-Локальная версия (Self-hosted решение) может быть предоставлена в следующих вариантах:
 
--  Gizmo Server для ОС Windows
 
--  Gizmo Server для ОС Linux
+Self-hosted version has three variants of installation:
 
--  Gizmo Server для Docker
+-  Gizmo Server for Windows
 
-### База данных
+-  Gizmo Server for Linux
 
-Для Локальной версии (Self-hosted решение) могут быть использованы следующие версии баз данных:
+-  Gizmo Server for Docker
 
--  Postgres (версии 15 и выше)
 
--  Microsoft SQL Server (версии 2017 и выше)
+
+### Databases
+
+For Self-hosted solution there are two variants of databases:
+
+-  Postgres (version 15 and above)
+
+-  Microsoft SQL Server (version 2017 and above)
 
 > [!NOTE]
 > 
-> Для Локальной версии База данных может быть установлена и располагаться как вместе с Gizmo Server (на одном сервере), так и отдельно от него (в том числе и во внешней сети).
+> For the Self-hosted version, the database can be installed and hosted either together with Gizmo Server (on the same server) or separately from it (including on an external network).
 
 > [!NOTE]
 > 
-> Для Облачной версии используется База данных Postgres.
+> For the Cloud version, a PostgreSQL database is used.
 
-### Минимальные системные требования сервера для локальной версии
+
+
+### Minimum server system requirements for the Self-hosted version
 
 <tabs>
 
@@ -51,83 +55,95 @@ Gizmo Server может быть предоставлен в двух верси
 
 **Windows**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 1 Гб SSD
+Storage: 1 Gb SSD
+
+
 
 **Linux**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 4 Гб DDR4
+RAM: 4 Gb DDR4
 
-Диск: 1 Гб SSD
+Storage: 1 Gb SSD
 
-**Docker** (установленный на Linux)
 
-Процессор: Intel Core i3 8th gen
 
-Память: 2 Гб DDR4
+**Docker** (Linux version)
 
-Диск: 1 Гб SSD
+CPU: Intel Core i3 8th gen
 
-</tab>
+RAM: 2 Gb DDR4
 
-<tab name="База данных">
-
-**Windows**
-
-Процессор: Intel Core i3 8th gen
-
-Память: 8 Гб DDR4
-
-Диск: 30 Гб SSD NVMe
-
-**Debian**
-
-Процессор: Intel Core i3 8th gen
-
-Память: 8 Гб DDR4
-
-Диск: 30 Гб SSD NVMe
-
-**Docker** (установленный на Linux)
-
-Процессор: Intel Core i3 8th gen
-
-Память: 4 Гб DDR4
-
-Диск: 30 Гб SSD NVMe
+Storage: 1 Gb SSD
 
 </tab>
 
-<tab name="Gizmo Server + База данных">
+<tab name="Database">
 
 **Windows**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 16 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 40 Гб SSD NVMe
+Storage: 30 Gb SSD NVMe
+
+
 
 **Debian**
 
-Процессор: Intel Core i3 8th gen
+CPU: Intel Core i3 8th gen
 
-Память: 8 Гб DDR4
+RAM: 8 Gb DDR4
 
-Диск: 40 Гб SSD NVMe
+Storage: 30 Gb SSD NVMe
 
-**Docker** (установленный на Linux)
 
-Процессор: Intel Core i3 8th gen
 
-Память: 4-8 Гб DDR4 (при загрузке в 50+ подключенных клиентов рекомендуется 8 Гб)
+**Docker** (Linux version)
 
-Диск: 40 Гб SSD NVMe
+CPU: Intel Core i3 8th gen
+
+RAM: 4 Gb DDR4
+
+Storage: 30 Gb SSD NVMe
+
+</tab>
+
+<tab name="Gizmo Server & Database">
+
+**Windows**
+
+CPU: Intel Core i3 8th gen
+
+RAM: 16 Gb DDR4
+
+Storage: 40 Gb SSD NVMe
+
+
+
+**Debian**
+
+CPU: Intel Core i3 8th gen
+
+RAM: 8 Gb DDR4
+
+Storage: 40 Gb SSD NVMe
+
+
+
+**Docker** (Linux version)
+
+CPU: Intel Core i3 8th gen
+
+RAM: 4-8 Gb DDR4 (8 Gb is recommended for 50+ connected clients)
+
+Storage: 40 Гб SSD NVMe
 
 </tab>
 

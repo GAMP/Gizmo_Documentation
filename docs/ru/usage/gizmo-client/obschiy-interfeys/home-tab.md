@@ -1,5 +1,5 @@
 ---
 order: 8
-external: Home tab
+title: Home tab
 ---
 

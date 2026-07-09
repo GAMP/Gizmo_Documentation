@@ -1,5 +1,5 @@
 ---
 order: 4
-external: Gizmo Client
+title: Gizmo Client
 ---
 

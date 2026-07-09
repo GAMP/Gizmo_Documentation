@@ -1,6 +1,5 @@
 ---
 order: 2.2
-external: Gizmo Client
+title: Gizmo Client
 ---
 
-<view defs="hierarchy=none" display="List"/>

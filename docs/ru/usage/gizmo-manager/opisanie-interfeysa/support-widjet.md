@@ -1,5 +1,5 @@
 ---
 order: 2.5
-title: Виджет чата техподдержки
+title: Support widjet
 ---
 

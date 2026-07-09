@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Плагин единой авторизации
+title: Single auth plugin
 ---
 

@@ -1,5 +1,5 @@
 ---
 order: 1
-external: Product card
+title: Product card
 ---
 
