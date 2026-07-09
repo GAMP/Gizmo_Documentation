@@ -1,5 +1,6 @@
 ---
 order: 1
-external: Products
+title: Products
 ---
 
+<view defs="hierarchy=none" display="List"/>

@@ -1,5 +1,5 @@
 ---
 order: 7
-title: Для Разработчиков
+title: For Developers
 ---
 

@@ -1,5 +1,5 @@
 ---
 order: 2
-external: Notifications
+title: Notifications
 ---
 

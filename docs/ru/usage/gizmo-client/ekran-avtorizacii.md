@@ -1,5 +1,5 @@
 ---
 order: 2
-title: Экран авторизации
+title: Authorization screen
 ---
 

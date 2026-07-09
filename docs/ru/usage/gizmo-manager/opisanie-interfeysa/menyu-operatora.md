@@ -1,5 +1,5 @@
 ---
 order: 3
-external: Operators menu
+title: Operators menu
 ---
 

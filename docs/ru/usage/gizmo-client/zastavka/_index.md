@@ -1,5 +1,5 @@
 ---
 order: 1
-external: Screensaver
+title: Screensaver
 ---
 

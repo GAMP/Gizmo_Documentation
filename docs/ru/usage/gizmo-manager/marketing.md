@@ -1,5 +1,5 @@
 ---
 order: 3.96
-external: Marketing
+title: Marketing
 ---
 

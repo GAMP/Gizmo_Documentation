@@ -1,5 +1,5 @@
 ---
 order: 6
-title: Экран приложений
+title: Apps tab
 ---
 

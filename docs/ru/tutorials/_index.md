@@ -1,5 +1,5 @@
 ---
 order: 6
-title: Пошаговые инструкции
+title: Tutorials
 ---
 

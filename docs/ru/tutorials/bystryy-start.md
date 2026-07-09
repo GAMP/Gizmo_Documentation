@@ -1,5 +1,5 @@
 ---
 order: 1.5
-title: Быстрый старт
+title: Quick start
 ---
 

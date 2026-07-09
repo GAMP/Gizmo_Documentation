@@ -1,10 +1,6 @@
 ---
 order: 2
-title: Gizmo
+title: About
 ---
 
-Добро пожаловать на сайт документации по продукту **Gizmo**!
-
-Впервые на сайте? Начни с раздела Быстрый старт!
-
-## Оглавление
+<view defs="hierarchy=none" display="List"/>

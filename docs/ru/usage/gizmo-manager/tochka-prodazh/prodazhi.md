@@ -1,5 +1,5 @@
 ---
 order: 1
-external: Sales
+title: Sales
 ---
 

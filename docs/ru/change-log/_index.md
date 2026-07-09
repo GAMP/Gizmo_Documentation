@@ -1,5 +1,5 @@
 ---
 order: 8
-title: История изменений
+title: Change log
 ---
 
