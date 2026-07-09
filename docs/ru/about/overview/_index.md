@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Components
+title: Компоненты
 ---
 
 ## Gizmo system components
@@ -23,4 +23,4 @@ Gizmo is a comprehensive product that includes the following components:
 
 The main component of Gizmo system is Gizmo Server
 
-##
+## 

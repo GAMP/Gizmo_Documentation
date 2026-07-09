@@ -9,12 +9,12 @@ title: Организация
 
 Содержание раздела:
 
--  [Общие сведения](./obschie-svedeniya.md)
+-  [Общие сведения](./general.md)
 
--  [Подписка](./podpiska.md)
+-  [Подписка](./subscription.md)
 
--  [Налоги и валюта](./nalogi-i-valyuta.md)
+-  [Налоги и валюта](./taxes-and-currency.md)
 
--  [Филиалы](./filialy/_index.md)
+-  [Филиалы](./branches/_index.md)
 
--  [Пользовательское соглашение](./polzovatelskoe-soglashenie/_index.md)
+-  [Пользовательское соглашение](./user-agreements/_index.md)
