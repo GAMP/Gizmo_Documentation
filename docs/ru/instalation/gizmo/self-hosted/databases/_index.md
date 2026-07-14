@@ -1,16 +1,14 @@
 ---
 order: 0.8
-title: Databases
+title: Базы данных
 ---
 
-To run the Self-hosted version of Gizmo Server, a database installation is required. 
+Для запуска Self-hosted версии Gizmo Server потребуется установленная база данных. Gizmo Server поддерживает следующие СУБД:
 
-Gizmo Server supports the following databases:
-
--  [Postgres](./postgresql/_index.md)
+-  [PostgreSQL](./postgresql/_index.md)
 
 -  [Microsoft SQL](./microsoft-sql/_index.md)
 
 > [!NOTE]
 > 
-> For local installation on Windows operating systems, Microsoft SQL Server Express is recommended.
+> Для локальной установки на Windows рекомендуем Microsoft SQL Server Express.

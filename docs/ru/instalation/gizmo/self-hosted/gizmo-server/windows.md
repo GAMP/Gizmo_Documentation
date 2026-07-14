@@ -5,8 +5,8 @@ title: Windows
 
 > [!WARNING]
 > 
-> Before installing Gizmo Server, verify that your server PC meets the system requirements.
+> Прежде чем устанавливать Gizmo Server, убедитесь, что ваш сервер соответствует системным требованиям.
 
-## **Downloading the installer**
+## Загрузка установщика
 
-The latest version of the installer can be downloaded via the link.
+Актуальную версию установщика можно скачать по ссылке.
