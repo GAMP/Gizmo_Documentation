@@ -1,5 +1,5 @@
 ---
 order: 1
-title: Map -- getting started
+title: Map
 ---
 
