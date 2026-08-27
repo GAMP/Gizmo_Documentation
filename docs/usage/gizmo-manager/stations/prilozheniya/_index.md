@@ -1,5 +1,6 @@
 ---
+title: Apps
 order: 7
-external: Приложения
 ---
 
+<view defs="hierarchy=none" display="List"/>

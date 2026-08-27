@@ -1,5 +1,6 @@
 ---
+title: Layouts
 order: 5
-external: Слои карты
 ---
 
+<view defs="hierarchy=none" display="List"/>

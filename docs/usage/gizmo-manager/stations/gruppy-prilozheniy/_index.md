@@ -1,5 +1,5 @@
 ---
+title: Apps Groups
 order: 6
-external: Группы приложений
 ---
 
