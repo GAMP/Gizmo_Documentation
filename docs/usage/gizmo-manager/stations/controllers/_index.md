@@ -1,4 +1,6 @@
 ---
+title: Controllers
 order: 3
-external: Контроллеры
 ---
+
+<view defs="hierarchy=none" display="List"/>

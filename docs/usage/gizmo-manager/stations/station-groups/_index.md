@@ -1,5 +1,6 @@
 ---
+title: Host Groups
 order: 4
-external: Группы станций
 ---
 
+<view defs="hierarchy=none" display="List"/>

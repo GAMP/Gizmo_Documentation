@@ -1,6 +1,6 @@
 ---
-order: 4
 title: Группы станций
+order: 4
 ---
 
 ![](./station-groups.png){width=1919px height=1079px}

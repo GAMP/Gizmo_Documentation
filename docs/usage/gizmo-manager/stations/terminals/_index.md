@@ -1,5 +1,6 @@
 ---
+title: Endpoints
 order: 2
-external: Терминалы
 ---
 
+<view defs="hierarchy=none" display="List"/>

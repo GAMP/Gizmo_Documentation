@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Терминалы
+order: 2
 ---
 
 ![](./terminals.png){width=1919px height=1079px}

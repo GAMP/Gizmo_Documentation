@@ -1,6 +1,6 @@
 ---
-order: 3
 title: Контроллеры
+order: 3
 ---
 
 ![](./controllers.png){width=1919px height=1079px}
