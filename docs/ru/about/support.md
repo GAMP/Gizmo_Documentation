@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Поддержка
+order: 2
 ---
 
 **Мы доступны круглосуточно, и готовы помочь в любой ситуации -- просто напишите:**
@@ -10,3 +10,5 @@ title: Поддержка
 -  В группу VK -- <https://vk.com/gizmopowered>
 
 -  В Telegram -- <https://t.me/gizmosupportbot>
+
+-   2
