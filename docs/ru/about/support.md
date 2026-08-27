@@ -10,5 +10,3 @@ order: 2
 -  В группу VK -- <https://vk.com/gizmopowered>
 
 -  В Telegram -- <https://t.me/gizmosupportbot>
-
--   2
