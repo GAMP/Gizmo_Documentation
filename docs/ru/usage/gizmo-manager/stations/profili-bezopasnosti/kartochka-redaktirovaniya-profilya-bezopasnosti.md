@@ -51,7 +51,7 @@ title: Карточка профиля безопасности
 
 ### Hardware
 
--  **Disable USB Mass Storage** -- блокирует USB-накопители (флешки, внешние диски) на клиентском пк.
+-  **Disable USB Mass Storage** -- блокирует USB-накопители (флешки, внешние диски) на клиентском ПК.
 
 ### Edge
 
@@ -287,7 +287,7 @@ title: Карточка профиля безопасности
 
 -  **Disable tray contextual menu** -- отключает контекстное меню значков в трее.
 
--  **Prohibit access to Control Panel and PC settings** -- запрещает доступ к панели управления и параметрам пк.
+-  **Prohibit access to Control Panel and PC settings** -- запрещает доступ к панели управления и параметрам ПК.
 
 -  **Remove Logoff on the Start Menu** -- убирает пункт «Выход из системы» из меню «Пуск».
 
