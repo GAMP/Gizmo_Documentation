@@ -1,6 +1,6 @@
 ---
-order: 1.2
 title: Gizmo Companion
+order: 1.2
 ---
 
 > [!CAUTION]
