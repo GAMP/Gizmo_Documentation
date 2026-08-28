@@ -15,7 +15,7 @@ order: 10
 
 -  **Активации задач** -- назначена ли задача событию на игровом месте.
 
-Назначение задачи событиям выполняется на вкладке [«Активации задач»](./../task-activations.md), назначение запуску приложения -- в [карточке исполняемого файла](./../prilozheniya/kartochka-redaktirovaniya-ispolnyaemogo-fayla/kartochka-zadachi.md).
+Назначение задачи событиям выполняется на вкладке [«Активации задач»](./task-activations.md), назначение запуску приложения -- в [карточке исполняемого файла](./prilozheniya/kartochka-redaktirovaniya-ispolnyaemogo-fayla/kartochka-zadachi.md).
 
 ## Типы задач
 
