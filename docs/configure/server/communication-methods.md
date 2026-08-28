@@ -1,5 +1,5 @@
 ---
-order: 7
 title: Communication methods
+order: 7
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 1
 title: Register card
+order: 1
 ---
 

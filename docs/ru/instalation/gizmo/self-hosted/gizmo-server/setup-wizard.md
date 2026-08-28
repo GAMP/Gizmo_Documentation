@@ -1,6 +1,6 @@
 ---
-order: 0.9
 title: Мастер настройки Gizmo Server
+order: 0.9
 ---
 
 <html>

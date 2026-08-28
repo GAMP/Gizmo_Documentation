@@ -1,6 +1,6 @@
 ---
-order: 4
 title: Плагины и интеграции
+order: 4
 ---
 
 ![](./plugins.png){width=1919px height=1079px}

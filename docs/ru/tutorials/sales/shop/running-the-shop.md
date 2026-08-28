@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Товары и наборы
+order: 1
 ---
 
 <html>

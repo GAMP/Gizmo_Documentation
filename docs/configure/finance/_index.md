@@ -1,5 +1,5 @@
 ---
-order: 4.8
 title: Finances
+order: 4.8
 ---
 

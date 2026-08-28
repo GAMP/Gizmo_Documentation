@@ -1,5 +1,5 @@
 ---
-order: 3
 title: Taxes & Currency
+order: 3
 ---
 

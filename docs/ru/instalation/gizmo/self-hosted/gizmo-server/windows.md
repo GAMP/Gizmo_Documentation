@@ -1,6 +1,6 @@
 ---
-order: 0.8
 title: Windows
+order: 0.8
 ---
 
 > [!WARNING]

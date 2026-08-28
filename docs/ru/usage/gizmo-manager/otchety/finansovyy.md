@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Финансовый отчёт
+order: 1
 searchPhrases:
   - Финансовый отчёт
   - Смена

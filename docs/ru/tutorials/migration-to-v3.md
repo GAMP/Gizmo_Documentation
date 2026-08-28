@@ -1,6 +1,6 @@
 ---
-order: 4
 title: Миграция с V2 на V3
+order: 4
 ---
 
 <html>

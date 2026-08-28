@@ -1,5 +1,5 @@
 ---
-order: 4.5
 title: Cloud version
+order: 4.5
 ---
 

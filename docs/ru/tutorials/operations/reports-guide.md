@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Отчёты
+order: 1
 ---
 
 <html>

@@ -1,6 +1,6 @@
 ---
-order: 3.99
 title: Магазин
+order: 3.99
 searchPhrases:
   - Магазин
   - Склад

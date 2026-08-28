@@ -1,6 +1,6 @@
 ---
-order: 0.5
 title: Gizmo
+order: 0.5
 ---
 
 **Gizmo** is a comprehensive solution for managing entertainment businesses.

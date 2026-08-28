@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка атрибута
+order: 1
 ---
 
 ![](./attribute-card.png){width=1919px height=1079px}

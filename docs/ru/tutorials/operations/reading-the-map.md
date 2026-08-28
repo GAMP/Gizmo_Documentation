@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карта
+order: 1
 ---
 
 <html>

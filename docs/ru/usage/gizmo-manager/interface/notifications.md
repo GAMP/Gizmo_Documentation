@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Уведомления
+order: 2
 ---
 
 ![](./notifications.png){width=1919px height=1079px}

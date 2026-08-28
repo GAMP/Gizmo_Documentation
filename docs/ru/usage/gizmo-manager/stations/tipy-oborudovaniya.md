@@ -1,6 +1,6 @@
 ---
-order: 9
 title: Типы оборудования
+order: 9
 searchPhrases:
   - Оборудование
   - Инвентарь

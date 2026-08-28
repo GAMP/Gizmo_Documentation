@@ -1,4 +1,5 @@
 ---
-order: 4
 title: Navigation panel
+order: 4
 ---
+

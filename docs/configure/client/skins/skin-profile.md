@@ -1,5 +1,5 @@
 ---
-order: 1
 title: Skin profile card
+order: 1
 ---
 

@@ -1,6 +1,6 @@
 ---
-order: 3.96
 title: Маркетинг
+order: 3.96
 searchPhrases:
   - Маркетинг
   - Скидки

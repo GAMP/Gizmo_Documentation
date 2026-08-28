@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка редактирования группы приложений
+order: 1
 ---
 
 ![](./kartochka-redaktirovaniya-gruppy-prilozheniya.png){width=1919px height=1079px}

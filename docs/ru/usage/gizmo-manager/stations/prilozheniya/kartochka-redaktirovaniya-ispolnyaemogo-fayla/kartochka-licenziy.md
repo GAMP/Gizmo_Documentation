@@ -1,6 +1,6 @@
 ---
-order: 3
 title: Карточка лицензии
+order: 3
 ---
 
 ![](./kartochka-licenziy.png){width=1919px height=1079px}

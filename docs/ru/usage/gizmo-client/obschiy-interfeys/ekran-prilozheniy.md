@@ -1,5 +1,5 @@
 ---
-order: 6
 title: Apps tab
+order: 6
 ---
 

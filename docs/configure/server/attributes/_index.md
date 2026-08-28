@@ -1,5 +1,5 @@
 ---
-order: 1
 title: Attributes
+order: 1
 ---
 

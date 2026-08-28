@@ -1,5 +1,5 @@
 ---
-order: 4
 title: Configure
+order: 4
 ---
 

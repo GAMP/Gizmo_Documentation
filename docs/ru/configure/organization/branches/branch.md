@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка филиала
+order: 1
 ---
 
 ![](./branch.png){width=1919px height=1079px}

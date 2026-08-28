@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка редактирования компьютера
+order: 1
 ---
 
 ![](./computer-card.png){width=1919px height=1079px}

@@ -1,6 +1,6 @@
 ---
-order: 8
 title: Профили безопасности
+order: 8
 ---
 
 ![](./_index.png){width=1919px height=1079px}

@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Gizmo Server
+order: 1
 ---
 
 **Gizmo Server** is the main component of **Gizmo**.

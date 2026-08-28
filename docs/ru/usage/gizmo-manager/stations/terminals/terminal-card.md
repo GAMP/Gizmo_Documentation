@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка редактирования терминала
+order: 1
 ---
 
 ![](./terminal-card.png){width=1919px height=1079px}

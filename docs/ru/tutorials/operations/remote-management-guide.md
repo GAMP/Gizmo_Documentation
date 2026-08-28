@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Управление
+order: 1
 ---
 
 <html>

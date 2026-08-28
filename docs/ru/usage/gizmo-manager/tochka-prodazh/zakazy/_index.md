@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Заказы
+order: 2
 searchPhrases:
   - Журнал заказов
   - История заказов

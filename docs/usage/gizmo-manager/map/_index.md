@@ -1,5 +1,5 @@
 ---
-order: 0.26
 title: Map
+order: 0.26
 ---
 

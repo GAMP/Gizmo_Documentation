@@ -1,6 +1,6 @@
 ---
-order: 6
 title: Группы приложений
+order: 6
 ---
 
 ![](./_index.png){width=1919px height=1079px}

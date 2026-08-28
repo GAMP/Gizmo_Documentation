@@ -1,5 +1,5 @@
 ---
-order: 2
 title: Notifications
+order: 2
 ---
 

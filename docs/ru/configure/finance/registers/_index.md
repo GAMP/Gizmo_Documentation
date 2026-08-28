@@ -1,6 +1,6 @@
 ---
-order: 0.3
 title: Кассы
+order: 0.3
 ---
 
 ![](./registers.png){width=1919px height=1079px}

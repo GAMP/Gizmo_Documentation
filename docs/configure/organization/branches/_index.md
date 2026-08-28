@@ -1,5 +1,5 @@
 ---
-order: 4
 title: Branches
+order: 4
 ---
 

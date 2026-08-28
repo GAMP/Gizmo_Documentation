@@ -1,6 +1,6 @@
 ---
-order: 0.5
 title: Пакеты
+order: 0.5
 ---
 
 ![](./time-products.png){width=1919px height=1079px}

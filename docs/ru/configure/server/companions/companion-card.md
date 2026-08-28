@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Карточка компаньона
+order: 2
 ---
 
 ![](./companion-card.png){width=1919px height=1079px}
