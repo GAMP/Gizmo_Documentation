@@ -1,6 +1,6 @@
 ---
-order: 0.9
 title: Способы оплаты
+order: 0.9
 ---
 
 ![](./paymet-methods.png){width=1919px height=1079px}

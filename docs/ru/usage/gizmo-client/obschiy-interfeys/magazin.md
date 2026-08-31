@@ -1,5 +1,5 @@
 ---
-order: 7
 title: Shop tab
+order: 7
 ---
 

@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка редактирования слоя карты
+order: 1
 ---
 
 ![](./kartochka-redaktirovaniya-sloya-karty.png){width=714px height=383px}

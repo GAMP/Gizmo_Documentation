@@ -1,6 +1,6 @@
 ---
-order: 5
 title: Причины бана
+order: 5
 ---
 
 ![](./ban-reasons.png){width=1919px height=1079px}

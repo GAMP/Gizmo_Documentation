@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Операторы
+order: 1
 ---
 
 ![](./operators.png){width=1919px height=1079px}

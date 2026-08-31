@@ -1,6 +1,6 @@
 ---
-order: 4
 title: Скидки и акции
+order: 4
 ---
 
 <html>

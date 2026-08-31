@@ -1,6 +1,6 @@
 ---
-order: 3
 title: Карточка переменной
+order: 3
 ---
 
 ![](./variable-card.png){width=1919px height=1079px}

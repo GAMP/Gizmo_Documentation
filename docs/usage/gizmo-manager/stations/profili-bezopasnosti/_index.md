@@ -1,5 +1,6 @@
 ---
+title: Security Profiles
 order: 8
-external: "Профили безопасности "
 ---
 
+<view defs="hierarchy=none" display="List"/>

@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Очередь
+order: 1
 ---
 
 <html>

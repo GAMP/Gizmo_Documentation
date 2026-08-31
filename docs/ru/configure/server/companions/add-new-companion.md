@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Добавление нового компаньона
+order: 1
 ---
 
 ![](./add-new-companion.png){width=1919px height=1079px}

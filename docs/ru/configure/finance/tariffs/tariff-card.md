@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка тарифа
+order: 1
 ---
 
 ![](./tariff-card.png){width=1919px height=1079px}

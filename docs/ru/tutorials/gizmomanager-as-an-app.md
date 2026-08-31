@@ -1,6 +1,6 @@
 ---
-order: 5
 title: Gizmo Manager как приложение
+order: 5
 ---
 
 > [!CAUTION]

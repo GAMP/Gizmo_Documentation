@@ -1,5 +1,5 @@
 ---
-order: 5
 title: Invoices
+order: 5
 ---
 

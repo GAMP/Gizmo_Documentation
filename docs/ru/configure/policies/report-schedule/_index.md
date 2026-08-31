@@ -1,6 +1,6 @@
 ---
-order: 4
 title: Отправка отчётов
+order: 4
 ---
 
 ![](./report-schedule.png){width=1919px height=1079px}

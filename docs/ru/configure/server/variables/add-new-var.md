@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Добавление новой переменной
+order: 2
 ---
 
 ![](./add-new-var.png){width=1919px height=1079px}

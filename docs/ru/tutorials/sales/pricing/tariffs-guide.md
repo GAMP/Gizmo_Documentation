@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Тарификация
+order: 1
 ---
 
 <html>

@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Доступ к Gizmo по сети
+order: 1
 ---
 
 <html>

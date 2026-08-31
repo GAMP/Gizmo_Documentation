@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Components
+order: 1
 ---
 
 ## Gizmo system components

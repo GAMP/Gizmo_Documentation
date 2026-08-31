@@ -1,5 +1,5 @@
 ---
-order: 2
 title: Plugins creation
+order: 2
 ---
 

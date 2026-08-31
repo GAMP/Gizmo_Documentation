@@ -1,5 +1,5 @@
 ---
-order: 1
 title: Plugin instalation
+order: 1
 ---
 

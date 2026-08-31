@@ -1,5 +1,5 @@
 ---
-order: 1
 title: General
+order: 1
 ---
 

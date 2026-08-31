@@ -1,6 +1,6 @@
 ---
-order: 2
 title: Склад
+order: 2
 ---
 
 <html>

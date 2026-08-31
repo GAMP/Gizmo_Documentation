@@ -1,5 +1,5 @@
 ---
-order: 3.5
 title: Monitoring
+order: 3.5
 ---
 

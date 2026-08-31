@@ -1,5 +1,5 @@
 ---
-order: 7
 title: Как настроить WoL
+order: 7
 ---
 

@@ -1,5 +1,5 @@
 ---
-order: 1
 title: User agreement card
+order: 1
 ---
 

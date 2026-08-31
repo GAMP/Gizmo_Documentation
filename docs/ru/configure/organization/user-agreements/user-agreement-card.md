@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Карточка пользовательского соглашения
+order: 1
 ---
 
 ![](./user-agreement-card.png){width=1919px height=1079px}

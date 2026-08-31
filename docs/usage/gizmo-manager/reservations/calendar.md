@@ -1,5 +1,5 @@
 ---
+title: Calendar
 order: 1
-title: Hosts
 ---
 

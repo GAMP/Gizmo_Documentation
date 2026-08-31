@@ -1,4 +1,6 @@
 ---
+title: Hosts
 order: 0.280001
-external: Станции
 ---
+
+<view defs="hierarchy=none" display="List"/>

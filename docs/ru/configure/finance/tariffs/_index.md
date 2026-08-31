@@ -1,6 +1,6 @@
 ---
-order: 0.8
 title: Тарифы
+order: 0.8
 ---
 
 ![](./tariffs.png){width=1919px height=1079px}

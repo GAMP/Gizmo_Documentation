@@ -1,5 +1,6 @@
 ---
+title: Computers
 order: 1
-external: Компьютеры
 ---
 
+<view defs="hierarchy=none" display="List"/>

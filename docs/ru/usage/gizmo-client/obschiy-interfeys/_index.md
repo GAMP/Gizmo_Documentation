@@ -1,5 +1,5 @@
 ---
-order: 4
 title: User Interface
+order: 4
 ---
 

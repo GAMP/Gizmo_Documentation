@@ -1,6 +1,6 @@
 ---
-order: 1
 title: Бронирование
+order: 1
 ---
 
 <html>

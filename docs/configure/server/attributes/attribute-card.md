@@ -1,5 +1,5 @@
 ---
-order: 1
 title: Attribute card
+order: 1
 ---
 
