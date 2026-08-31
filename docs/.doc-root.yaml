@@ -4,10 +4,10 @@ supportedLanguages:
   - en
   - ru
 properties: []
-relatedLinks:
-  - url: https://Telegram.org
-    title: Telegram
-    icon: mail-question
+# relatedLinks:
+#  - url: https://Telegram.org
+#    title: Telegram
+#    icon: mail-question
 name: new-catalog
 repositoryName: new-catalog
 sourceName: github.com
