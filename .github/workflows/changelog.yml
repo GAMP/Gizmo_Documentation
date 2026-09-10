@@ -1,0 +1,45 @@
+name: Change log from YouTrack
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *" # daily, 06:00 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "changelog"
+  cancel-in-progress: false
+
+jobs:
+  changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate change log pages
+        env:
+          YOUTRACK_URL: ${{ vars.YOUTRACK_URL }}
+          YOUTRACK_TOKEN: ${{ secrets.YOUTRACK_TOKEN }}
+        run: node scripts/changelog.mjs
+
+      - name: Commit and push to dev
+        run: |
+          git add docs/change-log
+          if git diff --cached --quiet; then
+            echo "No new versions, nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "change-log: add versions from YouTrack"
+          git push origin HEAD:dev
