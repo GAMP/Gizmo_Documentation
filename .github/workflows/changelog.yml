@@ -29,7 +29,7 @@ jobs:
 
       - name: Generate change log pages
         env:
-          YOUTRACK_URL: ${{ vars.YOUTRACK_URL }}
+          YOUTRACK_URL: ${{ secrets.YOUTRACK_URL }}
           YOUTRACK_TOKEN: ${{ secrets.YOUTRACK_TOKEN }}
         run: node scripts/changelog.mjs
 
