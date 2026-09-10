@@ -9,6 +9,4 @@ order: 0.8
 
 -  [Microsoft SQL](./microsoft-sql/_index.md)
 
-> [!NOTE]
-> 
-> Для локальной установки на Windows рекомендуем Microsoft SQL Server Express.
+Для локальной установки на Windows рекомендуем Microsoft SQL Server Express.
