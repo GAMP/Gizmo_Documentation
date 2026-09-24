@@ -1,5 +1,5 @@
 ---
-title: About
+title: Установка
 order: 2
 ---
 
