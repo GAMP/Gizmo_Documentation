@@ -7,8 +7,9 @@
  *  - version comes from the "Released" field; only versions marked as released
  *    in YouTrack and >= MIN_VERSION are considered;
  *  - one page per version; versions that already have a page are skipped;
- *  - inside a page issues are grouped by "Type"; text is the "Release note"
- *    field, or the issue id when the note is empty.
+ *  - inside a page issues are grouped by "Type" (headings can be renamed via
+ *    CONFIG.typeLabels); text is the "Release note" field, or the issue id
+ *    when the note is empty.
  *
  * Env:
  *  YOUTRACK_TOKEN  permanent token (required)
@@ -29,8 +30,13 @@ export const CONFIG = {
   typeField: "Type",
   noteField: "Release note",
   minVersion: "3.0.94",
-  // Order of Type groups on a page. Types not listed here go after, alphabetically.
+  // Order of Type groups on a page (YouTrack names). Types not listed here go after, alphabetically.
   typeOrder: [],
+  // Headings shown on a page for YouTrack types. Types not listed here are shown as is.
+  typeLabels: {
+    Bug: "Fixed bugs",
+    Feature: "New features",
+  },
   outDir: path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "docs", "change-log"),
   pageSize: 100,
 };
@@ -142,7 +148,7 @@ export function renderPage(version, { releaseDate, items }) {
   const out = ["---", `title: ${version}`, `order: ${versionOrder(version)}`, "---", ""];
   if (releaseDate) out.push(`Release date: ${formatDate(releaseDate)}`, "");
   for (const type of sortTypes(byType.keys())) {
-    out.push(`## ${type}`, "");
+    out.push(`## ${CONFIG.typeLabels[type] ?? type}`, "");
     for (const it of byType.get(type).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }))) {
       out.push(listItem(it.text));
     }
