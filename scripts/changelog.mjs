@@ -7,9 +7,9 @@
  *  - version comes from the "Released" field; only versions marked as released
  *    in YouTrack and >= MIN_VERSION are considered;
  *  - one page per version; versions that already have a page are skipped;
- *  - inside a page issues are grouped by "Type" (headings can be renamed via
- *    CONFIG.typeLabels); text is the "Release note" field, or the issue id
- *    when the note is empty.
+ *  - inside a page issues are grouped by "Subsystem", then by "Type"
+ *    (type headings can be renamed via CONFIG.typeLabels); text is the
+ *    "Release note" field, or the issue id when the note is empty.
  *
  * Env:
  *  YOUTRACK_TOKEN  permanent token (required)
@@ -28,9 +28,14 @@ export const CONFIG = {
   state: "Verified Fixed",
   versionField: "Released",
   typeField: "Type",
+  subsystemField: "Subsystem",
   noteField: "Release note",
   minVersion: "3.0.94",
-  // Order of Type groups on a page (YouTrack names). Types not listed here go after, alphabetically.
+  // Order of Subsystem groups on a page. Subsystems not listed here go after, alphabetically;
+  // issues without a subsystem go last under `defaultSubsystem`.
+  subsystemOrder: [],
+  defaultSubsystem: "Other",
+  // Order of Type groups inside a subsystem (YouTrack names). Types not listed here go after, alphabetically.
   typeOrder: [],
   // Headings shown on a page for YouTrack types. Types not listed here are shown as is.
   typeLabels: {
@@ -94,8 +99,13 @@ function field(issue, name) {
   return issue.customFields?.find((f) => f.name === name)?.value ?? null;
 }
 
+/** Name of an enum field value; for multi-value fields the first value is used. */
+function enumName(value) {
+  return (Array.isArray(value) ? value[0]?.name : value?.name) || null;
+}
+
 /**
- * Turns raw issues into { [version]: { releaseDate, items: [{ id, type, text }] } }.
+ * Turns raw issues into { [version]: { releaseDate, items: [{ id, subsystem, type, text }] } }.
  * Only released versions >= minVersion are kept.
  */
 export function collectVersions(issues) {
@@ -107,10 +117,10 @@ export function collectVersions(issues) {
     );
     if (releasedValues.length === 0) continue;
 
-    const typeValue = field(issue, CONFIG.typeField);
-    const type = (Array.isArray(typeValue) ? typeValue[0]?.name : typeValue?.name) || "Other";
+    const type = enumName(field(issue, CONFIG.typeField)) || "Other";
+    const subsystem = enumName(field(issue, CONFIG.subsystemField)) || CONFIG.defaultSubsystem;
     const note = (field(issue, CONFIG.noteField)?.text ?? "").trim();
-    const item = { id: issue.idReadable, type, text: note || issue.idReadable };
+    const item = { id: issue.idReadable, subsystem, type, text: note || issue.idReadable };
 
     for (const v of releasedValues) {
       const entry = (versions[v.name] ??= { releaseDate: v.releaseDate ?? null, items: [] });
@@ -127,12 +137,19 @@ function formatDate(ms) {
   return new Date(ms).toISOString().slice(0, 10);
 }
 
-function sortTypes(types) {
-  const rank = (t) => {
-    const i = CONFIG.typeOrder.indexOf(t);
-    return i === -1 ? CONFIG.typeOrder.length : i;
+function sortByOrder(keys, order, last = null) {
+  const rank = (k) => {
+    if (k === last) return order.length + 1;
+    const i = order.indexOf(k);
+    return i === -1 ? order.length : i;
   };
-  return [...types].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+  return [...keys].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+}
+
+function groupBy(items, key) {
+  const map = new Map();
+  for (const it of items) (map.get(it[key]) ?? map.set(it[key], []).get(it[key])).push(it);
+  return map;
 }
 
 /** Multi-line notes must stay inside the list item: continuation lines are indented. */
@@ -142,17 +159,20 @@ function listItem(text) {
 }
 
 export function renderPage(version, { releaseDate, items }) {
-  const byType = new Map();
-  for (const it of items) (byType.get(it.type) ?? byType.set(it.type, []).get(it.type)).push(it);
-
   const out = ["---", `title: ${version}`, `order: ${versionOrder(version)}`, "---", ""];
   if (releaseDate) out.push(`Release date: ${formatDate(releaseDate)}`, "");
-  for (const type of sortTypes(byType.keys())) {
-    out.push(`## ${CONFIG.typeLabels[type] ?? type}`, "");
-    for (const it of byType.get(type).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }))) {
-      out.push(listItem(it.text));
+
+  const bySubsystem = groupBy(items, "subsystem");
+  for (const subsystem of sortByOrder(bySubsystem.keys(), CONFIG.subsystemOrder, CONFIG.defaultSubsystem)) {
+    out.push(`## ${subsystem}`, "");
+    const byType = groupBy(bySubsystem.get(subsystem), "type");
+    for (const type of sortByOrder(byType.keys(), CONFIG.typeOrder)) {
+      out.push(`### ${CONFIG.typeLabels[type] ?? type}`, "");
+      for (const it of byType.get(type).sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }))) {
+        out.push(listItem(it.text));
+      }
+      out.push("");
     }
-    out.push("");
   }
   return out.join("\n");
 }
