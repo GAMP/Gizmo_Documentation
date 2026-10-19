@@ -5,4 +5,4 @@ order: 2
 
 Как удерживать клиентов -- бонусные баллы, акции, промокоды.
 
-<view defs="hierarchy=none" display="List"/>
+<view defs="hierarchy=none" display="List" />
