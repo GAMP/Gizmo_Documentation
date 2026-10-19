@@ -1,4 +1,4 @@
 ---
+title: Акции
 order: 6
-external: Promotions
 ---

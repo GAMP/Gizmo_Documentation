@@ -1,4 +1,4 @@
 ---
+title: Скидки
 order: 4
-external: Discounts
 ---

@@ -1,4 +1,4 @@
 ---
+title: Испытания
 order: 3
-external: Challenges
 ---
