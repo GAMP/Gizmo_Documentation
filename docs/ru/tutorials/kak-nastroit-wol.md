@@ -1,4 +1,4 @@
 ---
 title: Как настроить WoL
-order: 7
+order: 9
 ---

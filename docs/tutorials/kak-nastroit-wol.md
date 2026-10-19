@@ -1,5 +1,4 @@
 ---
-order: 7
+order: 9
 external: Как настроить WoL
 ---
-

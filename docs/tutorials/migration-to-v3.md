@@ -1,5 +1,4 @@
 ---
-order: 4
+order: 10
 title: Migration to v3
 ---
-

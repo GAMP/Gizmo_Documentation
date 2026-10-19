@@ -1,5 +1,4 @@
 ---
-order: 6
+order: 8
 title: Club operations
 ---
-
