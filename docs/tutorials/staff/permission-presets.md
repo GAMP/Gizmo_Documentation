@@ -1,5 +1,4 @@
 ---
-order: 2
+order: 3
 title: Choosing a permission preset
 ---
-
