@@ -1,6 +1,6 @@
 ---
 title: Карточка группы пользователей
-order: 4
+order: 1
 aliases:
   - path: ru/usage/gizmo-manager/users/user-group-card
     moved: "2026-08-28T15:29:05Z"
