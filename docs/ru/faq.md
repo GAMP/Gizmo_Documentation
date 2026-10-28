@@ -12,7 +12,11 @@ searchPhrases:
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .hero { position: relative; overflow: hidden; isolation: isolate; border-radius: 18px; padding: 28px 32px 30px; background: linear-gradient(135deg, #03050b 0%, #0b1230 50%, #1d3480 100%) padding-box; border: 1px solid #222c55; animation: hero-in 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
 .hero-glow { position: absolute; width: 360px; height: 360px; right: -120px; top: -160px; border-radius: 50%; background: radial-gradient(circle, rgba(91, 124, 240, 0.45) 0%, rgba(91, 124, 240, 0) 65%); filter: blur(6px); animation: hero-float 7s ease-in-out infinite alternate; pointer-events: none; }
@@ -42,39 +46,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 </div>
 </div>
 
-<script>
-(function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-</script>
-
 </html>
 
 ## 🌐 **Общие вопросы**
@@ -82,7 +53,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -151,43 +126,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -196,9 +134,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
@@ -211,7 +146,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -291,43 +230,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -336,9 +238,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
@@ -349,7 +248,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -418,43 +321,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -463,9 +329,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
@@ -476,7 +339,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -538,43 +405,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -583,9 +413,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
@@ -596,7 +423,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -684,43 +515,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -729,9 +523,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
@@ -742,7 +533,11 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 <html>
 
 <style>
-html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+html { --page-bg: #121212; }
+@media (prefers-color-scheme: light) { html { --page-bg: #ffffff; } }
+html[data-theme="dark"] { --page-bg: #121212; }
+html[data-theme="light"] { --page-bg: #ffffff; }
+html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
 * { box-sizing: border-box; }
 .faq { display: flex; flex-direction: column; gap: 12px; padding: 4px 2px 10px; }
 .faq-item { position: relative; border-radius: 16px; overflow: hidden; isolation: isolate; background: linear-gradient(135deg, #04060d 0%, #0b1230 52%, #1a2d6e 100%) padding-box; border: 1px solid #1d274d; transform: translateY(10px); animation: faq-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--i, 0) * 70ms); transition: border-color 0.3s; }
@@ -830,43 +625,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
 
 <script>
 (function () {
-  function isClear(c) {
-    return !c || c === 'transparent' || /rgba\(.*,\s*0\)$/.test(c);
-  }
-  function applyBg() {
-    var bg = 'transparent';
-    try {
-      var el = window.frameElement;
-      if (el) {
-        var cs = window.parent.getComputedStyle(el);
-        if (cs.colorScheme) document.documentElement.style.colorScheme = cs.colorScheme;
-      }
-      while (el) {
-        var c = window.parent.getComputedStyle(el).backgroundColor;
-        if (!isClear(c)) { bg = c; break; }
-        el = el.parentElement;
-      }
-    } catch (e) {}
-    document.documentElement.style.backgroundColor = bg;
-    document.body.style.backgroundColor = bg;
-  }
-  applyBg();
-  try {
-    var pdoc = window.parent.document;
-    var mo = new MutationObserver(applyBg);
-    mo.observe(pdoc.documentElement, { attributes: true });
-    if (pdoc.body) mo.observe(pdoc.body, { attributes: true });
-  } catch (e) {}
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
-})();
-(function () {
-  var root = document.querySelector('.faq');
-  function fit() {
-    try {
-      var frame = window.frameElement;
-      if (frame) frame.style.height = Math.ceil(root.getBoundingClientRect().height) + 'px';
-    } catch (e) {}
-  }
   Array.prototype.forEach.call(document.querySelectorAll('.faq-item'), function (item, i) {
     item.style.setProperty('--i', i);
     var btn = item.querySelector('.faq-q');
@@ -875,9 +633,6 @@ html, body { margin: 0; padding: 0; background: transparent; font-family: 'Segoe
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   });
-  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(root);
-  window.addEventListener('load', fit);
-  fit();
 })();
 </script>
 
