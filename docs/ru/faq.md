@@ -1,5 +1,5 @@
 ---
-title: Частые вопросы пользователей
+title: FAQ
 order: 6.3
 searchPhrases:
   - как мне
