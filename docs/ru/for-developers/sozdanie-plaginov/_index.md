@@ -1,4 +1,6 @@
 ---
-title: Plugins creation
+title: Создание плагинов
 order: 2
 ---
+
+<view defs="hierarchy=none" display="List"/>

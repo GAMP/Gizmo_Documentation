@@ -66,7 +66,7 @@ Windows
 </td>
 <td colspan="2">
 
-**C:/Program Files/Gizmo Server/backup**
+`C:\Program Files\NETProjects\Gizmo Server\data\Backup`
 
 </td>
 </tr>
@@ -78,7 +78,7 @@ Linux
 </td>
 <td colspan="2">
 
-**\\opt\\gizmo-service\\backup**
+`/opt/gizmo-service/backup`
 
 </td>
 </tr>
@@ -90,7 +90,7 @@ Docker
 </td>
 <td colspan="2">
 
-**\\app\\mount\\backup**
+`/app/mount/backup`
 
 </td>
 </tr>

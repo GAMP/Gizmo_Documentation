@@ -1,4 +1,8 @@
 ---
-title: New skin for Gizmo Client
+title: Создание темы для Gizmo Client
 order: 3
 ---
+
+> [!NOTE]
+>
+> Данный раздел находится в разработке.
