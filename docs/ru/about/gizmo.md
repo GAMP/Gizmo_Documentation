@@ -3,24 +3,24 @@ title: Gizmo
 order: 0.5
 ---
 
-**Gizmo** is a comprehensive solution for managing entertainment businesses.
+**Gizmo** -- комплексное решение для управления бизнесом в сфере развлечений.
 
-## Use Cases
+## Где применяется
 
-**Gizmo** can be used for:
+**Gizmo** подходит для:
 
--  Internet cafes and gaming clubs
+-  компьютерных клубов и интернет-кафе;
 
--  Lounge spaces
+-  лаунж-пространств;
 
--  VR spaces
+-  VR-клубов;
 
--  Interactive exhibitions
+-  интерактивных выставок;
 
--  Tournament competitions
+-  турниров и соревнований;
 
--  School and university computer labs
+-  компьютерных классов в школах и вузах;
 
--  Digital libraries
+-  цифровых библиотек;
 
--  and more.
+-  и многого другого.

@@ -3,24 +3,22 @@ title: Компоненты
 order: 1
 ---
 
-## Gizmo system components
+## Компоненты системы Gizmo
 
-Gizmo is a comprehensive product that includes the following components:
+Gizmo -- комплексный продукт, в который входят следующие компоненты:
 
 -  [Gizmo Server](./gizmo-server.md)
 
--  Gizmo Manager
+-  [Gizmo Manager](./gizmo-manager.md)
 
--  Gizmo Client
+-  [Gizmo Client](./gizmo-client.md)
 
--  Gizmo Companion
+-  [Gizmo Companion](./gizmo-companion/_index.md)
 
--  Gizmo Manager Mobile (coming soon)
+-  Gizmo Manager Mobile (в разработке)
 
--  Gizmo Clubs (coming soon)
+-  Gizmo Clubs (в разработке)
 
--  Gizmo Controller App (coming soon)
+-  Gizmo Controller App (в разработке)
 
-The main component of Gizmo system is Gizmo Server
-
-##
+Главный компонент системы -- Gizmo Server.

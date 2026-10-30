@@ -3,51 +3,47 @@ title: Gizmo Server
 order: 1
 ---
 
-**Gizmo Server** is the main component of **Gizmo**.
+**Gizmo Server** -- главный компонент **Gizmo**.
 
-## Gizmo Architecture
+## Архитектура Gizmo
 
-![](./gizmo-server.png "Gizmo arch"){width=7048px height=3208px}
+![](./gizmo-server.png "Архитектура Gizmo"){width=7048px height=3208px}
 
-### Gizmo Server
+### Версии Gizmo Server
 
-Gizmo Server have two versions:
+Gizmo Server существует в двух вариантах:
 
--  Cloud version (SaaS)
+-  Self-hosted версия -- сервер разворачивается на вашем собственном оборудовании.
 
--  Self-hosted version
-
-
-
-Self-hosted version has three variants of installation:
-
--  Gizmo Server for Windows
-
--  Gizmo Server for Linux
-
--  Gizmo Server for Docker
+-  Облачная версия (в разработке) -- подробнее в статье [«Облачная версия»](./../../instalation/gizmo/cloud.md).
 
 
 
-### Databases
+Self-hosted версию можно установить тремя способами:
 
-For Self-hosted solution there are two variants of databases:
+-  Gizmo Server для Windows
 
--  Postgres (version 15 and above)
+-  Gizmo Server для Linux
 
--  Microsoft SQL Server (version 2017 and above)
+-  Gizmo Server для Docker
 
-> [!NOTE]
-> 
-> For the Self-hosted version, the database can be installed and hosted either together with Gizmo Server (on the same server) or separately from it (including on an external network).
+
+
+### Базы данных
+
+Self-hosted версия работает с одной из двух баз данных:
+
+-  PostgreSQL (версии 15 и выше)
+
+-  Microsoft SQL Server (версии 2017 и выше)
 
 > [!NOTE]
 > 
-> For the Cloud version, a PostgreSQL database is used.
+> В Self-hosted версии базу данных можно установить вместе с Gizmo Server (на том же сервере) или отдельно от него -- в том числе во внешней сети.
 
 
 
-### Minimum server system requirements for the Self-hosted version
+### Минимальные системные требования к серверу для Self-hosted версии
 
 <tabs>
 
@@ -55,95 +51,77 @@ For Self-hosted solution there are two variants of databases:
 
 **Windows**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 1 Gb SSD
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 8 ГБ DDR4.
+-  **Диск** -- 1 ГБ SSD.
 
 
 
 **Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 4 Gb DDR4
-
-Storage: 1 Gb SSD
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 4 ГБ DDR4.
+-  **Диск** -- 1 ГБ SSD.
 
 
 
-**Docker** (Linux version)
+**Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
-
-RAM: 2 Gb DDR4
-
-Storage: 1 Gb SSD
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 2 ГБ DDR4.
+-  **Диск** -- 1 ГБ SSD.
 
 </tab>
 
-<tab name="Database">
+<tab name="База данных">
 
 **Windows**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 8 ГБ DDR4.
+-  **Диск** -- 30 ГБ SSD NVMe.
 
 
 
-**Debian**
+**Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 8 ГБ DDR4.
+-  **Диск** -- 30 ГБ SSD NVMe.
 
 
 
-**Docker** (Linux version)
+**Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
-
-RAM: 4 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 4 ГБ DDR4.
+-  **Диск** -- 30 ГБ SSD NVMe.
 
 </tab>
 
-<tab name="Gizmo Server & Database">
+<tab name="Gizmo Server и база данных">
 
 **Windows**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 16 Gb DDR4
-
-Storage: 40 Gb SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 16 ГБ DDR4.
+-  **Диск** -- 40 ГБ SSD NVMe.
 
 
 
-**Debian**
+**Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 40 Gb SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 8 ГБ DDR4.
+-  **Диск** -- 40 ГБ SSD NVMe.
 
 
 
-**Docker** (Linux version)
+**Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
-
-RAM: 4-8 Gb DDR4 (8 Gb is recommended for 50+ connected clients)
-
-Storage: 40 Гб SSD NVMe
+-  **Процессор** -- Intel Core i3 8-го поколения.
+-  **Память** -- 4--8 ГБ DDR4 (для 50+ подключённых клиентов рекомендуем 8 ГБ).
+-  **Диск** -- 40 ГБ SSD NVMe.
 
 </tab>
 
