@@ -110,18 +110,18 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Что такое база данных и для чего она нужна?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p><strong>База данных</strong> — это цифровой архив, где программное обеспечение <strong>хранит информацию о работе клуба</strong>. Именно в базе данных содержится важная информация: профили гостей, остаток средств на счёте, стоимость игрового времени, история покупок и многое другое.</p>
-<div class="cl cl-important"><div class="cl-t">Важно</div><p>Обратите внимание: при установке Gizmo Server база данных <strong>не устанавливается</strong> на устройство вместе с сервером. Подробнее об установке базы данных — в этом руководстве.</p></div>
+<div class="cl cl-important"><div class="cl-t">Важно</div><p>Обратите внимание: при установке Gizmo Server база данных <strong>не устанавливается</strong> на устройство вместе с сервером. Подробнее об установке базы данных — в статье «Базы данных».</p></div>
 <div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Как хранить копии базы данных в облаке, чтобы не потерять их вместе с сервером, — в руководстве «Резервное копирование в облако».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как начать работать с Gizmo?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Всё очень просто — достаточно двух шагов:</p>
 <ol><li>Зарегистрируйтесь на нашем сайте.</li><li>Установите и настройте программу по шагам из статьи «Быстрый старт».</li></ol>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Если вы переходите с Gizmo V2, воспользуйтесь руководством «Миграция с V2 на V3». Чтобы открывать Gizmo Manager в отдельном окне, как обычную программу, — руководство «Gizmo Manager как приложение».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Если вы переходите с Gizmo V2, воспользуйтесь руководством «Миграция с V2 на V3». Как открывать Gizmo Manager в отдельном окне, как обычную программу, — в руководстве «Gizmo Manager как приложение».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Могу ли я обновить версию Gizmo V2 на новую самостоятельно?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p><strong>Да</strong>, обновиться можно самостоятельно. Все шаги переноса настроек клуба на <strong>Gizmo V3</strong> мы подробно описали в руководстве «Миграция с V2 на V3».</p>
 <p>⏱️ <strong>Время:</strong> 30–50 минут</p>
-<div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Перед началом миграции обязательно сделайте <strong>резервную копию базы данных</strong> и проводите обновление в нерабочее для клуба время.</p></div>
+<div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Перед началом миграции обязательно сделайте <strong>резервную копию базы данных</strong> и проведите обновление в нерабочее для клуба время.</p></div>
 <div class="cl cl-tip"><div class="cl-t">Совет</div><p>💬 Если на каком-то этапе возникнут трудности, обратитесь в поддержку.</p></div>
 </div></div></div></div>
 </div>
@@ -141,7 +141,13 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
@@ -164,6 +170,8 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 *Внешние ресурсы:*
 
 - [Сайт Gizmo -- регистрация](https://gizmopowered.ru)
+
+</details>
 
 ## 🛠️ **Вопросы по настройке**
 
@@ -230,14 +238,14 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 <div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Сеть» и «Доступ к Gizmo по сети». Как открывать Gizmo Manager на другом ПК в отдельном окне, как обычную программу, — в руководстве «Gizmo Manager как приложение».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как исправить ошибку с сертификатами при подключении к серверу?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
-<p>Для работы по https Gizmo Server по умолчанию использует встроенный самоподписанный сертификат, и браузер может ему не доверять. Чтобы ошибка ушла, установите собственный доверенный SSL-сертификат в формате PFX:</p>
+<p>Для работы по https Gizmo Server по умолчанию использует встроенный самоподписанный сертификат, и браузер может ему не доверять. Чтобы ошибка исчезла, установите собственный доверенный SSL-сертификат в формате PFX:</p>
 <ol><li>Откройте <strong>Настройки → Сервер → Сеть</strong>.</li><li>В блоке <strong>Сертификат PFX</strong> нажмите <strong>Обзор</strong> и выберите файл сертификата.</li><li>Перезагрузите Gizmo Server — без этого новый сертификат не применится.</li></ol>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>Чтобы вернуться к встроенному самоподписанному сертификату, нажмите <strong>Очистить</strong> в том же блоке.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статье «Сеть».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статье «Сеть». Пошаговая настройка — в руководстве «Как установить SSL-сертификат на сервер».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Что делать, если компьютер не может подключиться к серверу?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Признаки проблемы: загрузка Gizmo Client не завершается, иконка сервера красная или ПК не появляется в <strong>Станции → Компьютеры</strong>. Прежде чем писать в поддержку, пройдитесь по короткому чек-листу:</p>
-<ol><li><strong>Лицензии.</strong> В <strong>Настройки → Организация → Подписка</strong> подписка должна быть активна. Лицензий должно быть не меньше, чем подключённых игровых мест, включая консоли.</li><li><strong>Сеть.</strong> Клиентский ПК должен быть в той же локальной сети, что и сервер. В <strong>Настройки → Сервер → Сеть → Правила подключения</strong> должны быть включены <strong>Автоматическое обнаружение</strong> и <strong>Восстановление имени хоста</strong>. Проверьте также, не блокирует ли соединение антивирус или файрвол.</li><li><strong>Клиент.</strong> Скачайте установщик Gizmo Client из <strong>Настройки → Другое → О программе</strong>, чтобы его версия была совместима с сервером. Затем перезапустите клиент и ПК и проверьте, что не запущено несколько копий клиента.</li><li><strong>Привязка.</strong> Если ПК появился в <strong>Станции → Компьютеры</strong>, но не виден на карте, укажите для него <strong>Филиал</strong>, <strong>Группу станций</strong> и <strong>Слой карты</strong>.</li></ol>
+<ol><li><strong>Лицензии.</strong> Откройте <strong>Настройки → Организация → Подписка</strong>: подписка должна быть активна. Лицензий должно быть не меньше, чем подключённых игровых мест, включая консоли.</li><li><strong>Сеть.</strong> Клиентский ПК должен быть в той же локальной сети, что и сервер. В <strong>Настройки → Сервер → Сеть → Правила подключения</strong> должны быть включены <strong>Автоматическое обнаружение</strong> и <strong>Восстановление имени хоста</strong>. Проверьте также, не блокирует ли соединение антивирус или файрвол.</li><li><strong>Клиент.</strong> Скачайте установщик Gizmo Client из <strong>Настройки → Другое → О программе</strong>, чтобы его версия была совместима с сервером. Затем перезапустите клиент и ПК и проверьте, что не запущено несколько копий клиента.</li><li><strong>Привязка.</strong> Если ПК появился в <strong>Станции → Компьютеры</strong>, но не виден на карте, укажите для него <strong>Филиал</strong>, <strong>Группу станций</strong> и <strong>Слой карты</strong>.</li></ol>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>Если в правилах подключения включено <strong>Только зарегистрированные</strong>, сервер автоматически отклонит новый компьютер. Добавьте его вручную или временно отключите этот параметр.</p></div>
 <div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в руководстве «Проблемы подключения клиентских пк». Как узнать адрес сервера в локальной сети — в руководстве «Доступ к Gizmo по сети».</p></div>
 </div></div></div></div>
@@ -248,9 +256,9 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как включить компьютер по сети?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Выключенный компьютер можно включить прямо из Gizmo Manager — для этого используется технология Wake On LAN.</p>
-<ol><li>Включите Wake On LAN на самом клиентском ПК — в BIOS/UEFI и в настройках сетевой карты.</li><li>Убедитесь, что в карточке компьютера (<strong>Станции → Компьютеры</strong>) указан <strong>MAC адрес</strong> — по нему отправляется сигнал на включение.</li><li>В разделе <strong>Карта</strong> выберите одно или несколько игровых мест и в группе <strong>Хосты</strong> нажмите <strong>Включить</strong>. Это же действие есть в контекстном меню по правой кнопке мыши. Для этого у оператора должно быть разрешение <strong>Включение хостов</strong> (категория <strong>«Управление»</strong>).</li></ol>
+<ol><li>Включите Wake On LAN на самом клиентском ПК — в BIOS/UEFI и в настройках сетевой карты.</li><li>Убедитесь, что в карточке компьютера (<strong>Станции → Компьютеры</strong>) указан <strong>MAC-адрес</strong> — по нему отправляется сигнал на включение.</li><li>В разделе <strong>Карта</strong> выберите одно или несколько игровых мест и в группе <strong>Хосты</strong> нажмите <strong>Включить</strong>. Это же действие есть в контекстном меню по правой кнопке мыши. Для этого у оператора должно быть разрешение <strong>Включение хостов</strong> (категория <strong>«Управление»</strong>).</li></ol>
 <div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Если Wake On LAN на клиентском ПК не настроен, команда <strong>Включить</strong> не сработает. В Windows 10 включение по сети из обычного выключения не поддерживается, пока включён быстрый запуск — подробнее в статье Microsoft.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карта» и «Карточка редактирования компьютера».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карта» и «Карточка редактирования компьютера». Пошаговая настройка — в руководстве «Как удалённо включить, перезагрузить и выключить пк».</p></div>
 </div></div></div></div>
 </div>
 
@@ -269,13 +277,21 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
 - [Доступ к Gizmo по сети](./tutorials/client-shell/network-access.md)
 - [Gizmo Manager как приложение](./tutorials/gizmomanager-as-an-app.md)
 - [Проблемы подключения клиентских пк](./tutorials/client-shell/client-connection-troubleshooting.md)
+- [Как установить SSL-сертификат на сервер](./tutorials/client-shell/ssl-certificate.md)
+- [Как удалённо включить, перезагрузить и выключить пк](./tutorials/hosts-operations/power-management.md)
 
 *Справочные статьи:*
 
@@ -286,6 +302,8 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 *Внешние ресурсы:*
 
 - [Wake On LAN в Windows -- статья Microsoft](https://learn.microsoft.com/ru-ru/troubleshoot/windows-client/setup-upgrade-and-drivers/wake-on-lan-feature)
+
+</details>
 
 ### 🖥️ *Сервер и обновления*
 
@@ -351,15 +369,15 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как безопасно перезапустить сервер, если клиенты играют?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Пока сервер перезапускается, клиентские ПК теряют с ним связь. Что при этом произойдёт с сеансами клиентов, зависит от настроек оболочки в <strong>Настройки → Клиент → Оболочка → Сеанс пользователя</strong>:</p>
-<ol><li>Проверьте опции <strong>Выход из системы отключенных клиентов</strong> и <strong>Завершение ожидающих сеансов</strong>. Если включена хотя бы одна из них, сеанс клиента завершится, когда связь с сервером пропадёт дольше, чем задано в <strong>Время ожидания</strong> (по умолчанию — 180 секунд): в Gizmo Client — при включённой опции <strong>Выход из системы отключенных клиентов</strong>, на сервере и в Gizmo Manager — при включённой опции <strong>Завершение ожидающих сеансов</strong>.</li><li>Если эти опции включены, перезапустите сервер так, чтобы он снова заработал до того, как истечёт время ожидания. Если выключены, сеансы клиентов не завершатся автоматически из-за потери связи.</li><li>Перезапустите сервер. Если он работает как служба, остановите и снова запустите её в конфигураторе ConfigurationTool, в разделе <strong>«Управление Сервисом Gizmo»</strong>. Если как консольное приложение, закройте его и запустите снова.</li></ol>
+<ol><li>Проверьте опции <strong>Выход из системы отключенных клиентов</strong> и <strong>Завершение ожидающих сеансов</strong>. Если включена хотя бы одна из них, сеанс клиента завершится, когда связь с сервером пропадёт дольше, чем задано в поле <strong>Время ожидания</strong> (по умолчанию — 180 секунд): в Gizmo Client — при включённой опции <strong>Выход из системы отключенных клиентов</strong>, на сервере и в Gizmo Manager — при включённой опции <strong>Завершение ожидающих сеансов</strong>.</li><li>Если эти опции включены, перезапустите сервер так, чтобы он снова заработал до того, как истечёт время ожидания. Если выключены, сеансы клиентов не завершатся автоматически из-за потери связи.</li><li>Перезапустите сервер. Если он работает как служба, остановите и снова запустите её в конфигураторе ConfigurationTool, в разделе <strong>«Управление Сервисом Gizmo»</strong>. Если как консольное приложение, закройте его и запустите снова.</li></ol>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>Изменения опций <strong>Время ожидания</strong>, <strong>Выход из системы отключенных клиентов</strong> и <strong>Завершение ожидающих сеансов</strong> применяются только после перезагрузки Gizmo Client. Поменять их «на лету» прямо перед перезапуском не получится — лучше настроить их заранее.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Оболочка» и «Режимы работы сервера».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Оболочка» и «Режимы работы сервера». Пошаговый порядок — в руководстве «Как перезапустить сервер Gizmo».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Почему на карте отображается только часть моих компьютеров?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Чаще всего дело в подписке или в настройках самих станций. Проверьте по порядку:</p>
 <ol><li><strong>Лицензии.</strong> Откройте <strong>Настройки → Организация → Подписка</strong> и убедитесь, что подписка действительна, а в поле <strong>Всего лицензий</strong> указано не меньше игровых мест, чем вы подключили. Учтите, что в это число входят не только компьютеры, но и консоли и другие игровые места, заведённые как терминалы.</li><li><strong>Привязка станции.</strong> В <strong>Станции → Компьютеры</strong> проверьте, что у каждого ПК указаны <strong>Филиал</strong>, <strong>Группа станций</strong> и <strong>Слои карты</strong> — без этого ПК не появится на карте.</li><li><strong>Слой карты.</strong> Если в клубе несколько слоёв (например, этажи или зоны), переключитесь на нужный слой — на карте видны только места выбранного слоя.</li><li><strong>Доступ оператора.</strong> Карта показывает игровые места, доступные текущему оператору. Проверьте, что в карточке оператора выбраны все нужные <strong>Филиалы</strong>.</li></ol>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>Если подписка отображается некорректно, введите логин и пароль от аккаунта на сайте Gizmo повторно, сохраните изменения и обновите данные в блоке <strong>«Сведения о подписке»</strong>.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Подписка», «Компьютеры» и «Проблемы подключения клиентских пк». Как устроены слои карты — в руководстве «Карта». Если на одном сервере работают несколько клубов, читайте руководство «Несколько клубов на одном сервере».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Подписка», «Компьютеры» и «Проблемы подключения клиентских пк». Как устроены слои карты — в руководстве «Как работать с картой клуба». Если на одном сервере работают несколько клубов, читайте руководство «Несколько клубов на одном сервере».</p></div>
 </div></div></div></div>
 </div>
 
@@ -378,15 +396,22 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
 - [Миграция с V2 на V3](./tutorials/migration-to-v3.md)
 - [Резервное копирование в облако](./tutorials/operations/cloud-backup.md)
 - [Проблемы подключения клиентских пк](./tutorials/client-shell/client-connection-troubleshooting.md)
-- [Карта](./tutorials/operations/reading-the-map.md)
+- [Как работать с картой клуба](./tutorials/operations/reading-the-map.md)
 - [Несколько клубов на одном сервере](./tutorials/operations/multiple-clubs-setup.md)
+- [Как перезапустить сервер Gizmo](./tutorials/operations/server-restart.md)
 
 *Справочные статьи:*
 
@@ -398,6 +423,8 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Терминалы](./usage/gizmo-manager/stations/terminals/_index.md)
 - [Подписка](./configure/organization/subscription.md)
 - [Компьютеры](./usage/gizmo-manager/stations/computers/_index.md)
+
+</details>
 
 ### 👥 *Операторы и отчёты*
 
@@ -457,14 +484,14 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 <div class="faq">
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Не получается закрыть смену или провести операцию — недостаточно прав. Что делать?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Скорее всего, в наборе прав оператора не хватает нужного разрешения или в его карточке неверно настроена работа со сменой. Исправить это может сотрудник, у которого есть разрешения категории <strong>«Настройки»</strong>:</p>
-<ol><li>Откройте <strong>Настройки → Операторы и настройки прав доступа → Права доступа</strong> и выберите набор прав, назначенный этому оператору.</li><li>Включите недостающие разрешения. Для работы с кассой проверьте категорию <strong>«Терминал»</strong> (просмотр транзакций, внесение и изъятие средств) и разрешение <strong>«Просмотр ожидаемого»</strong> в категории <strong>«Смена»</strong>, для продаж — категорию <strong>«Продажи»</strong>. Найти нужный пункт поможет поле «Поиск».</li><li>Откройте <strong>Настройки → Операторы и настройки прав доступа → Операторы</strong> и выберите оператора. В блоке <strong>Разрешение</strong> проверьте поля <strong>Предустановка прав доступа</strong> и <strong>Филиалы</strong>. В блоке <strong>Смена</strong> проверьте режим: при <strong>Отключено</strong> смена для оператора не используется. Если ему нужно открывать и закрывать смену, выберите <strong>Необязательно</strong> или <strong>Обязательно</strong>.</li></ol>
+<ol><li>Откройте <strong>Настройки → Операторы и настройки прав доступа → Права доступа</strong> и выберите набор прав, назначенный этому оператору.</li><li>Включите недостающие разрешения. Для работы с кассой проверьте категорию <strong>«Терминал»</strong> (просмотр транзакций, внесение и изъятие средств) и разрешение <strong>«Просмотр ожидаемого»</strong> в категории <strong>«Смена»</strong>, для продаж — категорию <strong>«Продажи»</strong>. Найти нужный пункт поможет поле «Поиск».</li><li>Откройте <strong>Настройки → Операторы и настройки прав доступа → Операторы</strong> и выберите оператора. В блоке <strong>Разрешение</strong> проверьте поля <strong>Предустановка прав доступа</strong> и <strong>Филиалы</strong>. В блоке <strong>Смена</strong> проверьте режим: при значении <strong>Отключено</strong> смена для оператора не используется. Если ему нужно открывать и закрывать смену, выберите <strong>Необязательно</strong> или <strong>Обязательно</strong>.</li></ol>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>Некоторые разрешения зависят от других: пока не включено «родительское» разрешение, «дочерние» отображаются серым и недоступны для выбора.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка прав доступа», «Карточка оператора» и «Как выбрать готовый набор прав доступа».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка прав доступа», «Карточка оператора» и «Как выбрать готовый набор прав доступа». Как открывать и закрывать смену — в руководстве «Как управлять сменами в менеджере».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Почему в журнале смен и в других отчётах не отображается информация?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Чаще всего отчёт пустой потому, что фильтры не применены или выбран период, за который нет данных. Проверьте:</p>
 <ol><li><strong>Фильтры применены.</strong> В отчётах с фильтрами (например, в «Финансовом отчёте») после выбора параметров нажмите <strong>Применить фильтры</strong>.</li><li><strong>Период указан верно.</strong> Проверьте даты и время. Если в периоде <strong>Пользовательское</strong> указан отрезок, где не было смен и продаж, отчёт будет пустым.</li><li><strong>Фильтры не слишком узкие.</strong> Если выбран конкретный <strong>Оператор</strong> или <strong>Место кассира</strong>, в отчёт попадут только их операции.</li><li><strong>Часовой пояс и расписание.</strong> В <strong>Настройки → Организация → Общие</strong> должен быть указан ваш актуальный часовой пояс — по нему определяются дата и время всех записей, в том числе транзакций. Там же проверьте <strong>Рабочее расписание по умолчанию</strong> — оно используется при построении отчётов.</li></ol>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Отчеты» и «Финансовый отчёт», а с чего начать работу с отчётами — в руководстве «Отчёты».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Отчеты» и «Финансовый отчёт», а с чего начать работу с отчётами — в руководстве «Как работать с отчётами и настроить их отправку на почту».</p></div>
 </div></div></div></div>
 </div>
 
@@ -483,12 +510,19 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
 - [Как выбрать готовый набор прав доступа](./tutorials/staff/permission-presets.md)
-- [Отчёты](./tutorials/operations/reports-guide.md)
+- [Как работать с отчётами и настроить их отправку на почту](./tutorials/operations/reports-guide.md)
+- [Как управлять сменами в менеджере](./tutorials/operations/shifts.md)
 
 *Справочные статьи:*
 
@@ -496,6 +530,8 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Карточка оператора](./configure/operators-and-permissions/operators/operators-card.md)
 - [Отчеты](./usage/gizmo-manager/otchety/_index.md)
 - [Финансовый отчёт](./usage/gizmo-manager/otchety/finansovyy.md)
+
+</details>
 
 ### 💳 *Продажи, скидки и лояльность*
 
@@ -557,32 +593,32 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 <p>В Gizmo V3 сканер штрихкодов работает через <strong>Gizmo Companion</strong> — приложение, которое связывает сервер Gizmo с кассовым оборудованием. Companion устанавливается на ПК, с которого идут продажи, и привязывается к кассе.</p>
 <ol><li>В Gizmo Manager откройте <strong>Настройки → Сервер → Компаньоны</strong>, нажмите <strong>«Создать Companion»</strong> и задайте понятное имя (например, по расположению точки продаж). Откройте созданный компаньон и скопируйте его токен.</li><li>В разделе <strong>Настройки → Другое → О программе</strong> скачайте Gizmo Companion и установите его на ПК администратора, к которому подключён сканер.</li><li>Откройте Companion на этом ПК (ярлык на рабочем столе или адрес <code>localhost:8000</code> в браузере). Укажите <strong>Протокол</strong>, <strong>Имя хоста</strong> (IP сервера) и <strong>Порт</strong>, вставьте токен и сохраните. В менеджере статус компаньона должен смениться на <strong>«Подключено»</strong>.</li><li>В Companion на панели слева откройте <strong>POS устройства</strong> и укажите COM-порт сканера штрихкода.</li><li>Перейдите в <strong>Настройки → Финансовый → Кассы</strong>, откройте кассу этого ПК и укажите <strong>Филиал</strong>, <strong>Компаньон</strong> (только что созданный), <strong>Номер</strong> и <strong>Имя</strong>. Сохраните изменения.</li></ol>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>Чтобы товар находился по сканеру, заполните поле <strong>Штрихкод</strong> в его карточке. Для товаров с маркировкой «Честный знак» сканер обязателен.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Быстрый старт» (раздел «Касса»), «Компаньоны» и «Карточка кассы».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Пошаговая настройка — в руководстве «Как подключить Companion и настроить кассу». Подробнее — в статьях «Быстрый старт» (раздел «Касса»), «Компаньоны» и «Карточка кассы».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как мне добавить товары?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Сначала товар создаётся в разделе <strong>Магазин</strong>. Затем его количество заносится на склад через складскую операцию.</p>
 <ol><li>Откройте <strong>Магазин → Товары</strong> и нажмите <strong>«Создать товар»</strong>. Укажите имя, товарную группу и цену, при желании прикрепите изображение.</li><li>В блоке <strong>Доступность</strong> включите нужный <strong>Филиал</strong> и отметьте группы пользователей, которым доступен товар.</li><li>В блоке <strong>Склад</strong> включите <strong>Складской учёт</strong>, если товар должен списываться со склада, и сохраните карточку.</li><li>Чтобы внести количество, откройте <strong>Магазин → Складские операции</strong>, нажмите <strong>«Складская операция»</strong> и выберите тип <strong>Входящий</strong>, способ поступления — <strong>«Вручную»</strong>.</li><li>Выберите филиал и склад, добавьте товары, укажите их количество и себестоимость (можно 0) и нажмите <strong>«Продолжить»</strong>.</li></ol>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>Если в карточке товара не включён филиал, товар нельзя будет продать. Если не включён <strong>Складской учёт</strong>, товар не появится на складе.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Товары и наборы» и «Склад».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в руководствах «Товары и наборы» и «Склад».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как мне предоставить бесплатное время пользователю?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Бесплатное время можно выдать <strong>скидкой 100%</strong> на тарифы и (или) пакеты времени. Скидка собирается в скидочную группу, которая назначается группе пользователей, а нужного пользователя вы переводите в эту группу.</p>
-<ol><li>Откройте <strong>Маркетинг → Скидки</strong> и нажмите <strong>«Создать скидку»</strong>. Включите скидку, укажите имя и включите доступность для своего филиала.</li><li>В блоке <strong>Целевые группы</strong> нажмите <strong>«Создать группу назначения»</strong> и выберите <strong>«Тарифы»</strong> (и/или <strong>«Пакеты»</strong>). Добавьте нужные позиции кнопкой <strong>+</strong> или отметьте <strong>«Включить все»</strong>. В <strong>Активации группы</strong> и <strong>Условии активации</strong> укажите <strong>«Любой»</strong>.</li><li>В блоке <strong>Вознаграждение</strong> выберите тип <strong>«Скидка»</strong>, в поле <strong>Применить к</strong> — <strong>«Строка заказа»</strong>, тип расчёта — <strong>«Процент»</strong> со значением 100. Сохраните скидку.</li><li>В <strong>Маркетинг → Скидочные группы</strong> создайте группу скидок и добавьте в неё эту скидку.</li><li>В <strong>Пользователи → Группы пользователей</strong> создайте группу (например, «Бесплатное время») и в блоке <strong>Группа скидок</strong> укажите созданную скидочную группу.</li><li>Откройте карточку пользователя и выберите эту группу в поле <strong>Группа</strong>.</li></ol>
+<ol><li>Откройте <strong>Маркетинг → Скидки</strong> и нажмите <strong>«Создать скидку»</strong>. Включите скидку, укажите имя и включите доступность для своего филиала.</li><li>В блоке <strong>Целевые группы</strong> нажмите <strong>«Создать группу назначения»</strong> и выберите <strong>«Тарифы»</strong> (и/или <strong>«Пакеты»</strong>). Добавьте нужные позиции кнопкой <strong>+</strong> или отметьте <strong>«Включить все»</strong>. В полях <strong>Активация группы</strong> и <strong>Условие активации</strong> выберите <strong>«Любой»</strong>.</li><li>В блоке <strong>Вознаграждение</strong> выберите тип <strong>«Скидка»</strong>, в поле <strong>Применить к</strong> — <strong>«Строка заказа»</strong>, тип расчёта — <strong>«Процент»</strong> со значением 100. Сохраните скидку.</li><li>В <strong>Маркетинг → Скидочные группы</strong> создайте группу скидок и добавьте в неё эту скидку.</li><li>В <strong>Пользователи → Группы пользователей</strong> создайте группу (например, «Бесплатное время») и в блоке <strong>Группа скидок</strong> укажите созданную скидочную группу.</li><li>Откройте карточку пользователя и в блоке <strong>Организация пользователей</strong> выберите эту группу в поле <strong>Группа пользователей</strong>.</li></ol>
 <div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Скидка действует на всех участников группы. Когда бесплатное время больше не нужно, верните пользователя в его обычную группу.</p></div>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>В новой группе пользователей проверьте блоки <strong>Выставление счетов</strong> и <strong>Доступ</strong>. Если в них не включены источники оплаты времени и группы станций, гость не сможет играть.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Другой способ — отдельный пакет времени или тариф с ценой 0, доступный только этой группе. Он описан в статье «Льготы для персонала». Как создать группу пользователей и перевести в неё гостя — в руководстве «Группы пользователей». Все поля скидки — в статье «Карточка скидки».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Другой способ — отдельный пакет времени или тариф с ценой 0, доступный только этой группе. Он описан в руководстве «Льготы для персонала». Пошаговая настройка скидок — в руководстве «Скидки и акции». Как создать группу пользователей и перевести в неё гостя — в руководстве «Группы пользователей». Все поля скидки — в статье «Карточка скидки».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как мне установить фиксированные цены на товары для разных пользователей или групп пользователей?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Особые цены для групп в V3 задаются в разделе <strong>Маркетинг</strong>, через скидки. Для каждого товара создаётся своя скидка с фиксированной суммой, равной разнице между обычной ценой и нужной.</p>
-<ol><li>Откройте <strong>Маркетинг → Скидки</strong> и нажмите <strong>«Создать скидку»</strong>. Включите скидку, задайте имя (например, «Энергетик — VIP») и включите доступность для своего филиала.</li><li>В блоке <strong>Целевые группы</strong> создайте группу назначения <strong>«Товары»</strong> и добавьте кнопкой <strong>+</strong> нужный товар. В <strong>Активации группы</strong> и <strong>Условии активации</strong> укажите <strong>«Любой»</strong>.</li><li>В блоке <strong>Вознаграждение</strong> выберите <strong>«Скидка»</strong>, в поле <strong>Применить к</strong> — <strong>«Строка заказа»</strong>, тип расчёта — <strong>«Фиксированный»</strong>. Укажите сумму скидки: например, если товар стоит 150, а для группы должен стоить 120, укажите 30.</li><li>Повторите шаги 1–3 для каждого товара с особой ценой.</li><li>В <strong>Маркетинг → Скидочные группы</strong> создайте группу скидок и добавьте в неё все эти скидки.</li><li>В <strong>Пользователи → Группы пользователей</strong> откройте нужную группу и в блоке <strong>Группа скидок</strong> укажите созданную скидочную группу.</li></ol>
+<ol><li>Откройте <strong>Маркетинг → Скидки</strong> и нажмите <strong>«Создать скидку»</strong>. Включите скидку, задайте имя (например, «Энергетик — VIP») и включите доступность для своего филиала.</li><li>В блоке <strong>Целевые группы</strong> создайте группу назначения <strong>«Товары»</strong> и добавьте кнопкой <strong>+</strong> нужный товар. В полях <strong>Активация группы</strong> и <strong>Условие активации</strong> выберите <strong>«Любой»</strong>.</li><li>В блоке <strong>Вознаграждение</strong> выберите <strong>«Скидка»</strong>, в поле <strong>Применить к</strong> — <strong>«Строка заказа»</strong>, тип расчёта — <strong>«Фиксированный»</strong>. Укажите сумму скидки: например, если товар стоит 150, а для группы должен стоить 120, укажите 30.</li><li>Повторите шаги 1–3 для каждого товара с особой ценой.</li><li>В <strong>Маркетинг → Скидочные группы</strong> создайте группу скидок и добавьте в неё все эти скидки.</li><li>В <strong>Пользователи → Группы пользователей</strong> откройте нужную группу и в блоке <strong>Группа скидок</strong> укажите созданную скидочную группу.</li></ol>
 <div class="cl cl-note"><div class="cl-t">Примечание</div><p>Одна скидка может входить в несколько скидочных групп, поэтому одни и те же цены можно дать нескольким группам пользователей. Чтобы дать особые цены одному человеку, создайте для него отдельную группу пользователей.</p></div>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>Фиксированная сумма начисляется за заказ, а не за единицу товара, поэтому при покупке нескольких штук итоговая цена может отличаться от ожидаемой. Перед запуском проверьте расчёт на тестовой продаже.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка скидки» и «Карточка группы скидок». Пример пошаговой настройки процентной скидки на пакеты и тарифы — в руководстве «Миграция с V2 на V3» (раздел 2.11). Как настроить группы пользователей — в руководстве «Группы пользователей», как создать товар и задать его обычную цену — в руководстве «Товары и наборы».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка скидки» и «Карточка группы скидок». Пошаговая настройка скидок — в руководстве «Скидки и акции», пример процентной скидки на пакеты и тарифы — в руководстве «Миграция с V2 на V3» (раздел 2.11). Как настроить группы пользователей — в руководстве «Группы пользователей», как создать товар и задать его обычную цену — в руководстве «Товары и наборы».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Почему сессия клиента завершается с долгом?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>У клиента есть два разных значения: <strong>Депозиты</strong> — сумма на депозите, и <strong>Баланс</strong> — состояние денежного счёта клиента. Отрицательный баланс означает задолженность. Проверьте настройки:</p>
 <ol><li><strong>Кредит в группе пользователей.</strong> В <strong>Пользователи → Группы пользователей</strong> откройте группу клиента и посмотрите блок <strong>Кредит</strong>. Если в <strong>Разрешить кредит на продажу</strong> или <strong>Разрешить использовать кредит</strong> выбрано <strong>Неограниченно</strong> или <strong>Ограниченный</strong>, клиент может уходить в минус.</li><li><strong>Оплата с депозита.</strong> В настройках счетов (<strong>Настройки → Финансовый → Счета</strong>) есть параметр <strong>Удержание депозитов за неоплаченное время сеанса</strong>. При его включении сумма за неоплаченное время автоматически списывается с депозита при закрытии баланса. Там же для каждой группы пользователей можно включить <strong>Авто оплата с депозитов</strong> для автоматически выставленных счетов.</li><li><strong>Источники оплаты времени.</strong> В блоке <strong>Выставление счетов</strong> группы пользователей проверьте, включены ли <strong>Пакет времени</strong> и <strong>Депозиты</strong>. Если <strong>Депозиты</strong> выключены, время не будет оплачиваться с депозита.</li></ol>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка группы пользователей» и «Счета». Что ещё настраивается в группе пользователей — в руководстве «Группы пользователей».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка группы пользователей» и «Счета». Что ещё настраивается в группе пользователей — в руководстве «Группы пользователей», как давать гостям играть в долг — в руководстве «Как включить постоплату».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как устроена система лояльности в баллах?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Баллы — это внутренняя валюта клуба: гость получает их за покупки или игровое время, копит и тратит на следующие покупки.</p>
@@ -607,7 +643,13 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
@@ -619,6 +661,9 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Бонусные баллы для клиентов](./tutorials/loyalty/loyalty-program.md)
 - [Пакеты времени](./tutorials/sales/pricing/time-packages-guide.md)
 - [Система лояльности](./tutorials/loyalty/_index.md)
+- [Как подключить Companion и настроить кассу](./tutorials/sales/register/companion-and-register.md)
+- [Скидки и акции](./tutorials/loyalty/discounts-and-promotions.md)
+- [Как включить постоплату](./tutorials/staff/postpay.md)
 
 *Справочные статьи:*
 
@@ -629,6 +674,8 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Карточка группы скидок](./usage/gizmo-manager/marketing/discount-groups/discount-group-card.md)
 - [Карточка группы пользователей](./usage/gizmo-manager/users/user-groups/user-group-card.md)
 - [Счета](./configure/finance/invoices.md)
+
+</details>
 
 ### 🎮 *Клиентская оболочка*
 
@@ -697,20 +744,20 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 <ol><li>Откройте <strong>Станции → Приложения</strong>, затем карточку нужной игры и её исполняемый файл.</li><li>Перейдите на вкладку <strong>Личные файлы</strong> и нажмите <strong>+ Создать новый личный файл</strong>.</li><li>В поле <strong>Источник</strong> укажите путь к папке с сохранениями на клиентском ПК. Если нужно сохранить запись реестра, включите параметр <strong>Реестр</strong> и укажите путь к ней в поле <strong>Источник</strong>.</li><li>Выберите <strong>Активацию</strong>: <strong>На старте</strong> — файлы возвращаются на ПК при запуске игры; <strong>При входе в систему</strong> — при входе гостя в аккаунт (при большом количестве ЛФП вход может заметно замедлиться).</li><li>При необходимости задайте <strong>Квоту</strong> — сколько МБ может занимать сохранение одного клиента (0 — без ограничения).</li></ol>
 <p>Копирование с клиентского ПК на сервер всегда происходит, когда гость выходит из системы. Папку на сервере, где хранятся личные файлы, можно указать в <strong>Настройки → Клиент → Файловая система</strong> → <strong>Путь к пользовательскому хранилищу</strong>.</p>
 <div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Если сжатый размер сохранения больше квоты, оно не будет записано на сервер.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статьях «Карточка ЛФП» и «Файловая система». Как убирать чужие сессии лаунчеров между гостями, читайте в руководстве «Очистка сессий игр и лаунчеров». Как добавить игру и создать её исполняемый файл — в руководстве «Как добавить игру в клиентскую оболочку».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Пошаговая настройка — в руководстве «Как сохранять прогресс игр гостей между сеансами». Подробнее — в статьях «Карточка ЛФП» и «Файловая система». Как убирать чужие сессии лаунчеров между гостями, читайте в руководстве «Очистка сессий игр и лаунчеров». Как добавить игру и создать её исполняемый файл — в руководстве «Как добавить игру в клиентскую оболочку».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как настроить автоматическое обновление игр?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Для этого используются <strong>профили развёртывания</strong>. Вы обновляете игру один раз в папке на сервере, а Gizmo сам сверяет её с папкой на клиентском ПК и копирует только изменившиеся файлы. При необходимости он удаляет на клиенте файлы, которых больше нет в источнике.</p>
 <ol><li>Откройте <strong>Станции → Приложения</strong>, затем карточку игры и её исполняемый файл.</li><li>Перейдите на вкладку <strong>Развёртывания</strong> и нажмите <strong>+ Создать новую установку</strong>.</li><li>В поле <strong>Источник</strong> укажите папку с актуальной версией игры на ПК с Gizmo Server, а в поле <strong>Пункт назначения</strong> — папку игры на клиентском ПК.</li><li>Выберите <strong>Режим сравнения</strong>. Чем тщательнее сравнение, тем меньше вероятность ошибки, но тем медленнее обновление. Самый быстрый вариант — <strong>Быстрый</strong>, самый надёжный — <strong>Тщательный</strong> (дополнительно сверяет хеш-сумму файлов).</li></ol>
 <p>Развёртывание выполняется перед запуском игры. Если включён параметр <strong>Auto Launch</strong>, игра запустится сразу после него, без повторного нажатия.</p>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>Чтобы обновление не заполнило диск клиентского ПК, задайте минимальный процент свободного места: <strong>Настройки → Клиент → Файловая система</strong> → <strong>Развёртывание</strong>, параметр <strong>Всегда оставлять % свободного места на диске при использовании профилей развёртывания</strong>. Если после развёртывания места останется меньше, операция будет прервана.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статье «Карточка развёртывания». Как добавить игру и создать исполняемый файл, читайте в руководстве «Как добавить игру в клиентскую оболочку». Как очищать данные лаунчеров между сеансами гостей — в руководстве «Очистка сессий игр и лаунчеров».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Пошаговая настройка — в руководстве «Как настроить автоматическое обновление игр». Подробнее — в статье «Карточка развёртывания». Как добавить игру и создать исполняемый файл, читайте в руководстве «Как добавить игру в клиентскую оболочку». Как очищать данные лаунчеров между сеансами гостей — в руководстве «Очистка сессий игр и лаунчеров».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как поменять пароль менеджера для клиентской оболочки?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Откройте <strong>Настройки → Клиент → Оболочка</strong> и в блоке <strong>Общее</strong> укажите новое значение в поле <strong>Пароль менеджера</strong>. С этим паролем в скрытом окне Gizmo Client открывается режим обслуживания. В нём можно свернуть оболочку, деактивировать или удалить Gizmo Client.</p>
 <div class="cl cl-important"><div class="cl-t">Важно</div><p>По умолчанию пароль менеджера — <code>password</code>. Обязательно смените его и храните в надёжном месте: с этим паролем можно свернуть оболочку, деактивировать или удалить Gizmo Client.</p></div>
 <div class="cl cl-warning"><div class="cl-t">Внимание</div><p>Изменения вступят в силу только после перезагрузки Gizmo Client.</p></div>
-<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статье «Оболочка».</p></div>
+<div class="cl cl-tip"><div class="cl-t">Совет</div><p>📖 Подробнее — в статье «Оболочка». Как свернуть оболочку или удалить Gizmo Client — в руководстве «Как свернуть, отключить или удалить оболочку».</p></div>
 </div></div></div></div>
 <div class="faq-item"><button class="faq-q" type="button" aria-expanded="false"><span class="faq-ico">?</span><span>Как мне настроить скин для оболочки?</span><svg class="faq-chev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="faq-a"><div class="faq-a-in"><div class="faq-body">
 <p>Внешний вид оболочки задаётся <strong>профилями темы оформления</strong>. Для разных групп станций можно сделать разные профили, например отдельный для VIP-зоны.</p>
@@ -740,7 +787,13 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 </html>
 
-**📖 Подробнее по теме**
+<details>
+
+<summary>
+
+📖 **Подробнее по теме**
+
+</summary>
 
 *Инструкции:*
 
@@ -749,6 +802,9 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Как добавить игру в клиентскую оболочку](./tutorials/client-shell/add-app-to-shell.md)
 - [Как настроить скин оболочки](./tutorials/client-shell/skin-setup.md)
 - [Аккаунты клиентов](./tutorials/staff/user-accounts-guide.md)
+- [Как сохранять прогресс игр гостей между сеансами](./tutorials/client-shell/personal-files.md)
+- [Как настроить автоматическое обновление игр](./tutorials/client-shell/game-auto-update.md)
+- [Как свернуть, отключить или удалить оболочку](./tutorials/client-shell/remove-shell.md)
 
 *Справочные статьи:*
 
@@ -759,3 +815,6 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Оболочка](./configure/client/shell.md)
 - [Темы оформления](./configure/client/skins/_index.md)
 - [Карточка профиля темы оформления](./configure/client/skins/skin-profile.md)
+
+</details>
+
