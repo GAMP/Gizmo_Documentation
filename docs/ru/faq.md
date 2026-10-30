@@ -817,4 +817,3 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 - [Карточка профиля темы оформления](./configure/client/skins/skin-profile.md)
 
 </details>
-
