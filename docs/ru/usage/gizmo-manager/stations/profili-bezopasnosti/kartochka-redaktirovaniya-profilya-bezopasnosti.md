@@ -982,7 +982,7 @@ order: 1
 
 -  **MMC Policy Restrict Send Console Message** -- запрещает отправку сообщений другим пользователям сети через консоль.
 
--  **MMC Policy Restrict RAS Dialin - User Node** -- запрещает узел настройки удалённого доступа для конкретного пользователя.
+-  **MMC Policy Restrict RAS Dialin -- User Node** -- запрещает узел настройки удалённого доступа для конкретного пользователя.
 
 -  **MMC Policy Restrict Extended View (Web View)** -- запрещает расширенный (веб) режим отображения MMC.
 

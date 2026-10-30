@@ -15,11 +15,11 @@ Gizmo is a comprehensive product that includes the following components:
 
 -  Gizmo Companion
 
--  Gizmo Manager Mobile (comming soon)
+-  Gizmo Manager Mobile (coming soon)
 
--  Gizmo Clubs (comming soon)
+-  Gizmo Clubs (coming soon)
 
--  Gizmo Controller App (comming soon)
+-  Gizmo Controller App (coming soon)
 
 The main component of Gizmo system is Gizmo Server
 
