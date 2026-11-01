@@ -1,5 +1,5 @@
 ---
 title: Change log
-order: 8
+order: 7
 ---
 

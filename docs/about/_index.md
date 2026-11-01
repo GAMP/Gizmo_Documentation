@@ -1,6 +1,6 @@
 ---
 title: About
-order: 2
+order: 1
 ---
 
 <view defs="hierarchy=none" display="List"/>

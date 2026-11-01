@@ -1,6 +1,6 @@
 ---
 title: Разработчикам
-order: 7
+order: 6
 ---
 
 <view defs="hierarchy=none" display="List"/>

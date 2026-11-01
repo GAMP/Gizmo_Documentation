@@ -1,0 +1,159 @@
+---
+title: Как настроить очередь на места
+order: 1
+---
+
+<html>
+
+<style>
+  html, body { margin: 0; padding: 0; background: #1a1e33; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+  @media (prefers-color-scheme: light) { html, body { background: #ffffff; } }
+  * { box-sizing: border-box; }
+  .gx-card { position: relative; width: 100%; border-radius: 18px; overflow: hidden; background: #232a4a; background-image: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%); border: none; box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.04) inset; padding: 26px 32px 28px; font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif; }
+  .gx-card .gx-glow { position: absolute; inset: -30px -44px auto -60px; height: 200px; background: radial-gradient(45% 100% at 8% 0%, rgba(82, 110, 211, 0.28) 0%, rgba(82, 110, 211, 0) 72%); filter: blur(2px); pointer-events: none; }
+  .gx-card .gx-card-content { position: relative; }
+  .gx-card .gx-kicker { display: flex; align-items: center; gap: 8px; margin: 0 0 14px 0; color: #7c93e8; font-size: 12px; line-height: 1.3; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .gx-card .gx-kicker svg { flex: none; width: 15px; height: 15px; }
+  .gx-card .gx-title { max-width: 560px; margin: 0 0 18px 0; color: #ffffff; font-size: clamp(22px, 3vw, 27px); line-height: 1.34; font-weight: 700; letter-spacing: -0.015em; }
+  .gx-card .gx-meta { display: flex; align-items: center; color: rgba(255, 255, 255, 0.5); font-size: 11.5px; line-height: 1; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .gx-card .gx-meta-sep { margin: 0 12px; opacity: 0.4; }
+  .gx-card .gx-meta-level { color: #86efac; }
+  .gx-card .gx-meta-level.medium { color: #fde68a; }
+  .gx-card .gx-meta-level.high { color: #fca5a5; }
+</style>
+
+<div class="gx-card">
+  <div class="gx-glow"></div>
+  <div class="gx-card-content">
+    <p class="gx-kicker">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="14" y2="18"/></svg>
+      В этом блоке вы узнаете
+    </p>
+    <h2 class="gx-title">Как настроить очередь ожидания и поставить в неё гостя</h2>
+    <div class="gx-meta">
+      <span>10–15 минут</span>
+      <span class="gx-meta-sep">/</span>
+      <span class="gx-meta-level">Низкая сложность</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var LIGHT_BG = '#ffffff'; var DARK_BG = '#1a1e33';
+  function applyBg() {
+    var theme = document.documentElement.dataset.theme;
+    if (theme !== 'light' && theme !== 'dark') { theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    var bg = theme === 'light' ? LIGHT_BG : DARK_BG;
+    document.documentElement.style.backgroundColor = bg; document.body.style.backgroundColor = bg;
+  }
+  applyBg();
+  new MutationObserver(applyBg).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyBg);
+})();
+</script>
+
+</html>
+
+
+
+Вечер пятницы: все пк заняты, а у стойки ждут ещё трое гостей. Чтобы администратору не приходилось держать в голове, кто пришёл первым и кто согласен только на VIP-зону, в Gizmo есть **очередь ожидания**. Оператор ставит гостя в очередь, а Gizmo сам считает, когда освободится подходящее место и какое именно.
+
+Сначала один раз настроим правила очереди для всего клуба, затем выдадим операторам право с ней работать и поставим в очередь первого гостя.
+
+
+
+<note type="hotfixes" title="Шаг 1. Проверьте группы хостов" collapsed="true">
+
+Очередь ведётся по группам хостов: гость ждёт не любое место, а место из конкретной группы, например «Standart» или «VIP». Поэтому сначала убедитесь, что станции клуба разложены по группам в **Станции -> Группы станций**.
+
+Как устроены группы станций -- в статье [«Группы станций»](./../../../../documents/contents/usage/gizmo-manager/stations/station-groups/_index.md).
+
+</note>
+
+<note type="hotfixes" title="Шаг 2. Задайте общие правила очереди" collapsed="true">
+
+Откройте **Настройки -> Политики -> Очередь ожидания**. Блок **Глобальные настройки** действует на все группы хостов и представлен таблицей из трёх столбцов: **Функция**, **Включить** и **После минут**.
+
+- **Льготный период перед выходом из системы** -- сколько минут есть у гостя из очереди, чтобы войти в систему, когда для него освободилось место. Если он не войдёт за это время, его переместят в конец очереди или удалят из неё. Укажите время, за которое гость успеет дойти до пк, -- например, 5 минут.
+- **Следующий по времени** -- сколько минут следующий гость в очереди сохраняет приоритет на освободившийся хост.
+- **Время удаления** -- через сколько минут неактивный гость автоматически удаляется из очереди.
+- **Удаление пользователя из всех очередей при входе в систему** -- включите, чтобы гость, который уже сел за пк, автоматически пропадал из всех очередей и не занимал место в других группах.
+
+</note>
+
+<note type="hotfixes" title="Шаг 3. Настройте очередь для каждой группы хостов" collapsed="true">
+
+Ниже, в блоке **Очередь**, перечислены группы хостов с их **Филиалом**. Для каждой группы включите нужное:
+
+- **Удалить включенные** -- гости будут автоматически удаляться из очереди этой группы по истечении **Времени удаления** из шага 2.
+- **Включить следующий в очереди** -- для этой группы заработает режим **Следующий по времени** из шага 2.
+- **Включить приоритеты** -- для этой группы будет учитываться приоритет групп пользователей из шага 4.
+
+</note>
+
+<note type="hotfixes" title="Шаг 4. Задайте приоритет групп пользователей" collapsed="true">
+
+Если постоянные или VIP-гости должны получать место раньше остальных, настройте блок **Приоритет** на той же странице.
+
+1. Найдите в списке нужную группу пользователей.
+2. Перетащите её за иконку перетаскивания <icon code="grip-vertical" /> на нужную позицию: чем выше группа в списке, тем выше её приоритет.
+3. Проверьте, что для групп хостов, где должен работать приоритет, в блоке **Очередь** включено **Включить приоритеты**.
+
+Сохраните настройки. Описание всех полей -- в статье [«Очередь ожидания»](./../../../../documents/contents/configure/policies/queue.md) раздела «Настройка». Как создать группы пользователей -- в инструкции [«Группы пользователей»](./../staff/user-groups.md).
+
+</note>
+
+<note type="hotfixes" title="Шаг 5. Дайте операторам доступ к очереди" collapsed="true">
+
+Ставить гостей в очередь может только оператор с нужным разрешением.
+
+1. Откройте **Настройки -> Операторы и настройки прав доступа -> Права доступа** и выберите набор прав, назначенный операторам стойки.
+2. В категории **Очередь ожидания** включите разрешение **Управление очередью ожидания**. Найти его поможет поле «Поиск».
+3. Сохраните набор прав.
+
+Все разрешения -- в статье [«Карточка прав доступа»](./../../../../documents/contents/configure/operators-and-permissions/permissions/permission-card.md). Чем отличаются готовые наборы прав -- в инструкции [«Как выбрать готовый набор прав доступа»](./../staff/permission-presets.md).
+
+</note>
+
+<note type="hotfixes" title="Шаг 6. Поставьте гостя в очередь" collapsed="true">
+
+1. Откройте раздел **Очередь** на левой панели.
+2. Нажмите **Добавить в очередь** в правом верхнем углу.
+3. Укажите пользователя и группу хостов, на места которой он готов сесть.
+
+> [!WARNING]
+>
+> Чем уже выбранная группа, тем дольше ожидание: гость, согласный на любое место, получит его раньше, чем гость, который ждёт конкретную зону. Если гостю всё равно, где играть, выбирайте самую широкую группу.
+
+</note>
+
+<note type="hotfixes" title="Шаг 7. Следите за очередью" collapsed="true">
+
+Над таблицей ожидающих есть вкладки: **Все** и по одной на каждую группу хостов. В таблице видно:
+
+- **Позиция** -- место гостя в очереди: чем меньше число, тем раньше подойдёт его очередь;
+- **Время в очереди** -- сколько гость уже ждёт;
+- **Расчетное время** -- когда ожидается освобождение подходящего места, -- его можно сразу назвать гостю;
+- **Планируемый хост** -- игровое место, которое освободится первым.
+
+Все колонки таблицы -- в статье [«Очередь»](./../../../../documents/contents/usage/gizmo-manager/ochered.md) раздела «Использование».
+
+### Когда подходит очередь гостя
+
+> [!NOTE]
+>
+> Данный раздел находится в разработке.
+
+</note>
+
+<note type="hotfixes" title="Заключение" collapsed="true">
+
+Очередь ожидания работает:
+
+- гость, которого оператор поставил в очередь, видит своё расчётное время, а администратору не нужно запоминать порядок вручную;
+- когда подходящее место освобождается, у следующего в очереди есть льготный период на вход -- если он не успел, очередь переходит дальше;
+- гости из групп с более высоким приоритетом получают место раньше -- там, где включены приоритеты;
+- сев за пк, гость автоматически пропадает из всех очередей, если включено **Удаление пользователя из всех очередей при входе в систему**.
+
+</note>

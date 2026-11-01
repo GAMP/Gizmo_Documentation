@@ -1,6 +1,6 @@
 ---
 title: Плагины
-order: 6.8
+order: 5
 ---
 
 <view defs="hierarchy=none" display="List"/>

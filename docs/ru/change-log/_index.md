@@ -1,6 +1,6 @@
 ---
 title: История обновлений
-order: 8
+order: 7
 ---
 
 <view defs="hierarchy=none" display="List"/>
