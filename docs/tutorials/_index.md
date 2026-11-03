@@ -1,5 +1,6 @@
 ---
-order: 6
 title: Tutorials
+order: 6
 ---
 
+<view defs="hierarchy=none" display="List"/>

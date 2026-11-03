@@ -241,7 +241,7 @@ order: 1
 
 -  **Explorer Dont Set Autoplay Checkbox** -- не показывает флажок «Всегда выполнять это действие» в диалоге автозапуска.
 
--  **Exolorer Hide Power Options** -- скрывает кнопки управления питанием: сон, перезагрузка, завершение работы.
+-  **Explorer Hide Power Options** -- скрывает кнопки управления питанием: сон, перезагрузка, завершение работы.
 
 -  **Explorer Allow No Autorun** -- запрещает автозапуск (тот же параметр, что и Explorer No Autorun).
 
@@ -511,8 +511,6 @@ order: 1
 
 -  **Explorer Clear Tiles On Exit** -- очищает плитки меню «Пуск» при выходе пользователя.
 
--  **Explorer Disable Context Menus In Start** -- отключает контекстные меню в меню «Пуск».
-
 -  **Explorer Disable Notification Center** -- отключает Центр уведомлений Windows.
 
 -  **Explorer Disable Search Box Suggestions** -- отключает подсказки в поисковой строке.
@@ -521,13 +519,9 @@ order: 1
 
 -  **Explorer Enable Legacy Balloon Notifications** -- отключает современный стиль уведомлений в пользу старого вида (balloon).
 
--  **Explorer Explorer Ribbon Starts Minimized** -- лента проводника при запуске свёрнута.
-
 -  **Explorer Hide Content View Mode Snippets** -- скрывает предпросмотр содержимого в режиме просмотра «Содержимое».
 
 -  **Explorer Hide People Bar** -- скрывает панель «Люди» на панели задач.
-
--  **Explorer Hide Recently Added Apps** -- скрывает список недавно установленных приложений в меню «Пуск».
 
 -  **Explorer No Autoplay Fornon Volume** -- отключает автозапуск для устройств, не являющихся томами.
 
@@ -829,12 +823,6 @@ order: 1
 
 -  **Windows Store Require Private Store Only** -- запрещает установку только из корпоративного магазина организации.
 
--  **Windows Store Disable OS Upgrade** -- блокирует предложения обновления версии Windows через Store.
-
--  **Windows Store Remove Windows Store** -- удаляет доступ к приложению Microsoft Store.
-
--  **Windows Store Require Private Store Only** -- запрещает установку только из корпоративного магазина организации.
-
 ### Active desktop
 
 -  **Active Desktop NoAdding Components** -- запрещает добавлять компоненты активного рабочего стола.
@@ -1063,9 +1051,9 @@ order: 1
 
 ### Task scheduler
 
--  **Task Scheducler Allow Browse** -- запрещает обзор запланированных задач через интерфейс.
+-  **Task Scheduler Allow Browse** -- запрещает обзор запланированных задач через интерфейс.
 
--  **Task Scheducler Task Creation** -- запрещает пользователю создавать новые запланированные задачи.
+-  **Task Scheduler Task Creation** -- запрещает пользователю создавать новые запланированные задачи.
 
 ### Windows error reporting
 

@@ -34,4 +34,4 @@ Gizmo -- не одна программа, а несколько приложе�
 
 -  Gizmo Controller App
 
--  Gizmo Anywere
+-  Gizmo Anywhere
