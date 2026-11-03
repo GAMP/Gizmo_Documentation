@@ -3,148 +3,117 @@ title: Gizmo Server
 order: 1
 ---
 
-**Gizmo Server** is the main component of **Gizmo**.
+**Gizmo Server** -- главный компонент **Gizmo**, ядро всей системы: обрабатывает операции, хранит данные о клиентах и управляет остальными компонентами. К нему подключаются Gizmo Manager, все игровые пк с Gizmo Client и Gizmo Companion.
 
-## Gizmo Architecture
+## <icon code="info" /> Кратко
 
-![](./gizmo-server.png "Gizmo arch"){width=7048px height=3208px}
+| **Где работает** | На сервере клуба: Windows, Linux или Docker |
+|---|---|
+| **Кто использует** | Администратор клуба -- при установке и обслуживании |
+| **Что нужно для работы** | База данных PostgreSQL или Microsoft SQL Server |
 
-### Gizmo Server
+## <icon code="cloud" /> Версии Gizmo Server
 
-Gizmo Server have two versions:
+Gizmo Server существует в двух вариантах:
 
--  Cloud version (SaaS)
+- **Self-hosted версия** -- сервер разворачивается на вашем собственном оборудовании.
+- **Облачная версия** (в разработке) -- подробнее в статье [«Облачная версия»](./../../instalation/gizmo/cloud.md).
 
--  Self-hosted version
+Self-hosted версию можно установить тремя способами:
 
+- Gizmo Server для Windows
+- Gizmo Server для Linux
+- Gizmo Server для Docker
 
+## <icon code="database" /> Базы данных
 
-Self-hosted version has three variants of installation:
+База данных -- это цифровой архив, где Gizmo хранит информацию о работе клуба: профили гостей, остаток средств на счёте, стоимость игрового времени, история покупок и многое другое.
 
--  Gizmo Server for Windows
+Self-hosted версия работает с одной из двух баз данных:
 
--  Gizmo Server for Linux
-
--  Gizmo Server for Docker
-
-
-
-### Databases
-
-For Self-hosted solution there are two variants of databases:
-
--  Postgres (version 15 and above)
-
--  Microsoft SQL Server (version 2017 and above)
+- PostgreSQL (версии 15 и выше)
+- Microsoft SQL Server (версии 2017 и выше)
 
 > [!NOTE]
-> 
-> For the Self-hosted version, the database can be installed and hosted either together with Gizmo Server (on the same server) or separately from it (including on an external network).
+>
+> База данных не устанавливается вместе с Gizmo Server -- её нужно установить отдельно. Её можно разместить на том же сервере, что и Gizmo Server, или отдельно от него -- в том числе во внешней сети. Подробнее -- в статье [«Базы данных»](./../../instalation/gizmo/self-hosted/databases/_index.md).
 
-> [!NOTE]
-> 
-> For the Cloud version, a PostgreSQL database is used.
-
-
-
-### Minimum server system requirements for the Self-hosted version
+## <icon code="cpu" /> Минимальные системные требования к серверу для Self-hosted версии
 
 <tabs>
+  <tab name="Gizmo Server">
+    **Windows**
 
-<tab name="Gizmo Server">
-
-**Windows**
-
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 1 Gb SSD
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 8 ГБ DDR4.
+    - **Диск** -- 1 ГБ SSD.
 
 
 
-**Linux**
+    **Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 4 Gb DDR4
-
-Storage: 1 Gb SSD
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 4 ГБ DDR4.
+    - **Диск** -- 1 ГБ SSD.
 
 
 
-**Docker** (Linux version)
+    **Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 2 ГБ DDR4.
+    - **Диск** -- 1 ГБ SSD.
+  </tab>
+  <tab name="База данных">
+    **Windows**
 
-RAM: 2 Gb DDR4
-
-Storage: 1 Gb SSD
-
-</tab>
-
-<tab name="Database">
-
-**Windows**
-
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 8 ГБ DDR4.
+    - **Диск** -- 30 ГБ SSD NVMe.
 
 
 
-**Debian**
+    **Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 8 ГБ DDR4.
+    - **Диск** -- 30 ГБ SSD NVMe.
 
 
 
-**Docker** (Linux version)
+    **Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 4 ГБ DDR4.
+    - **Диск** -- 30 ГБ SSD NVMe.
+  </tab>
+  <tab name="Gizmo Server и база данных">
+    **Windows**
 
-RAM: 4 Gb DDR4
-
-Storage: 30 Gb SSD NVMe
-
-</tab>
-
-<tab name="Gizmo Server & Database">
-
-**Windows**
-
-CPU: Intel Core i3 8th gen
-
-RAM: 16 Gb DDR4
-
-Storage: 40 Gb SSD NVMe
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 16 ГБ DDR4.
+    - **Диск** -- 40 ГБ SSD NVMe.
 
 
 
-**Debian**
+    **Linux**
 
-CPU: Intel Core i3 8th gen
-
-RAM: 8 Gb DDR4
-
-Storage: 40 Gb SSD NVMe
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 8 ГБ DDR4.
+    - **Диск** -- 40 ГБ SSD NVMe.
 
 
 
-**Docker** (Linux version)
+    **Docker** (версия для Linux)
 
-CPU: Intel Core i3 8th gen
-
-RAM: 4-8 Gb DDR4 (8 Gb is recommended for 50+ connected clients)
-
-Storage: 40 Гб SSD NVMe
-
-</tab>
-
+    - **Процессор** -- Intel Core i3 8-го поколения.
+    - **Память** -- 4--8 ГБ DDR4 (для 50+ подключённых клиентов рекомендуем 8 ГБ).
+    - **Диск** -- 40 ГБ SSD NVMe.
+  </tab>
 </tabs>
+
+## <icon code="book-open" /> Подробнее
+
+- [«Быстрый старт»](./../../instalation/quick-install.md) -- установка и первая настройка Gizmo по шагам.
+- [«Резервная копия»](./../../configure/server/backup.md) -- автоматические копии базы данных.
+- [«Как перезапустить сервер Gizmo»](./../../tutorials/operations/server-restart.md)

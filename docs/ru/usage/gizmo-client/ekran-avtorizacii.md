@@ -1,4 +1,8 @@
 ---
-title: Authorization screen
+title: Экран авторизации
 order: 2
 ---
+
+> [!NOTE]
+>
+> Данный раздел находится в разработке.

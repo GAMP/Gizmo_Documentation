@@ -1,4 +1,6 @@
 ---
-title: Variables. How to use
+title: Использование переменных
 order: 3
 ---
+
+<view defs="hierarchy=none" display="List"/>
