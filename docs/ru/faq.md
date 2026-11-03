@@ -388,7 +388,7 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 > [!TIP]
 > 
-> 📖 Подробнее -- в статьях [«Карточка группы пользователей»](./usage/gizmo-manager/users/user-groups/user-group-card.md) и [«Счета»](./configure/finance/invoices.md). Что ещё настраивается в группе пользователей -- в руководстве [«Группы пользователей»](./tutorials/staff/user-groups.md), как давать гостям играть в долг -- в руководстве [«Как включить постоплату»](./tutorials/staff/postpay.md).
+> 📖 Подробнее -- в статьях [«Карточка группы пользователей»](./usage/gizmo-manager/users/user-groups/user-group-card.md) и [«Счета»](./configure/finance/invoices.md). Что ещё настраивается в группе пользователей -- в руководстве [«Группы пользователей»](./tutorials/staff/user-groups.md), как давать гостям играть в долг -- в руководстве [«Как включить постоплату»](./tutorials/staff/postpay.md). Чем депозит отличается от баланса и в каком порядке списывается время -- в статье [«Время, депозит и баланс -- частые вопросы»](./articles/billing-faq.md).
 
 </note>
 
@@ -427,7 +427,7 @@ html, body { margin: 0; padding: 0; background: var(--page-bg); font-family: 'Se
 
 > [!TIP]
 > 
-> 📖 Подробнее -- в статье [«Профили безопасности»](./tutorials/client-shell/security-profiles.md). Полный список политик -- в статье [«Карточка профиля безопасности»](./usage/gizmo-manager/stations/profili-bezopasnosti/kartochka-redaktirovaniya-profilya-bezopasnosti.md).
+> 📖 Подробнее -- в статье [«Профили безопасности»](./tutorials/client-shell/security-profiles.md). Полный список политик -- в статье [«Карточка профиля безопасности»](./usage/gizmo-manager/stations/profili-bezopasnosti/kartochka-redaktirovaniya-profilya-bezopasnosti.md). Как скрыть панель задач целиком с помощью задачи -- в статье [«Полезные скрипты для задач»](./articles/useful-task-scripts.md#скрыть-панель-задач).
 
 </note>
 
