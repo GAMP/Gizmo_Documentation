@@ -1,5 +1,5 @@
 ---
-title: Instalation
+title: Installation
 order: 3
 ---
 

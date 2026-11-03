@@ -1,5 +1,8 @@
 ---
+title: User attributes
 order: 2
-title: User atributes
 ---
 
+> [!NOTE]
+>
+> This section is under development.
