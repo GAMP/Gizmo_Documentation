@@ -7,7 +7,7 @@ Gizmo is not one program but several apps that work together. The main component
 
 
 
-**IMAGE: Gizmo architecture diagram -- Gizmo Server with the database, connected to Gizmo Manager, gaming PCs with Gizmo Client and Gizmo Companion**
+![](./overview.webp "Gizmo Arch"){width=7048px height=3208px}
 
 ## <icon code="layers" /> Main components
 
@@ -20,18 +20,13 @@ Gizmo is not one program but several apps that work together. The main component
 
 ## <icon code="share-2" /> How the components are connected
 
--  **Gizmo Server** works together with a **database** (PostgreSQL or Microsoft SQL Server) that stores all club information: guest profiles, balances, prices, purchase history.
-
--  **Gizmo Manager** and all gaming PCs with **Gizmo Client** connect to Gizmo Server over the club network.
-
--  **Gizmo Companion** is installed on every point of sale, connects to the server and is linked to a register in Gizmo Manager. Without it, card payments and receipt printing are not available.
+- **Gizmo Server** works together with a **database** (PostgreSQL or Microsoft SQL Server) that stores all club information: guest profiles, balances, prices, purchase history.
+- **Gizmo Manager** and all gaming PCs with **Gizmo Client** connect to Gizmo Server over the club network.
+- **Gizmo Companion** is installed on every point of sale, connects to the server and is linked to a register in Gizmo Manager. Without it, card payments and receipt printing are not available.
 
 ## <icon code="hourglass" /> In development
 
--  Gizmo Manager Mobile
-
--  Gizmo Clubs
-
--  Gizmo Controller App
-
--  Gizmo Anywhere
+- Gizmo Manager Mobile
+- Gizmo Clubs
+- Gizmo Controller App
+- Gizmo Anywhere

@@ -20,7 +20,7 @@ Gizmo Companion отвечает за взаимодействие сервер�
 - **эквайринговые терминалы** -- для приёма оплаты картами;
 - **POS-периферия** -- денежные ящики, сканеры штрихкодов, считыватели смарт-карт и чековые принтеры.
 
-![](./what-is-gizmo-companion-2.webp){width=2403px height=1161px scale=523px}
+![](./gizmo-companion.webp "Gizmo Companion"){width=1881px height=890px}
 
 > [!WARNING]
 >
