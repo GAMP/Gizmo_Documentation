@@ -12,6 +12,8 @@ order: 4
 | **Кто использует** | Гости клуба |
 | **Что нужно для работы** | Подключение к [Gizmo Server](./gizmo-server.md) по сети клуба |
 
+![](./gizmo-client.webp "Gizmo Client"){width=1600px height=900px}
+
 ## <icon code="monitor" /> Что видит гость
 
 - **Экран авторизации** -- вход в свою учётную запись.
