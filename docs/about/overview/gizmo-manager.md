@@ -16,6 +16,8 @@ order: 3
 >
 > There is no full desktop app for Gizmo V3 -- it uses a web architecture that lets you manage the club from any device with a browser. You can install the Gizmo Manager page from the browser as an app -- see the [Gizmo Manager as an App](./../../tutorials/gizmomanager-as-an-app.md) guide.
 
+![](./gizmo-manager.webp "Gizmo Manager"){width=1920px height=965px}
+
 ## <icon code="list-checks" /> What you can do
 
 - **Serve the floor** -- seat guests, track seat occupancy and time on the map, put guests in the waiting line, reserve seats.

@@ -12,6 +12,8 @@ order: 4
 | **Who uses it** | Club guests |
 | **What it needs** | A connection to [Gizmo Server](./gizmo-server.md) over the club network |
 
+![](./gizmo-client.webp "Gizmo Client (Grafit skin)"){width=1600px height=900px}
+
 ## <icon code="monitor" /> What the guest sees
 
 - **The login screen** -- signing in to their account.

@@ -19,7 +19,7 @@ Gizmo Companion handles the communication between the Gizmo server and the club'
 - **card terminals** -- to accept card payments;
 - **POS peripherals** -- cash drawers, barcode scanners, smart card readers and receipt printers.
 
-**IMAGE: Diagram of Gizmo Companion connecting Gizmo Server to POS hardware -- card terminal, cash drawer, barcode scanner, receipt printer**
+![](./gizmo-companion.webp "Gizmo Companion"){width=1865px height=866px}
 
 > [!WARNING]
 >
